@@ -1,0 +1,316 @@
+2021-12-19 16:01:50,878 : WARN  : main :  : Node : CSV Reader : 3:1 : Please specify a file
+2021-12-19 16:13:09,828 : WARN  : main :  : Node : File Reader : 3:3 : Please specify a file
+2021-12-19 16:22:51,620 : WARN  : main :  : WrappedNodeDialog : String Manipulation (Multi Column) : 3:5 : failed to apply settings: org.knime.ext.sun.nodes.script.compile.CompilationFailedException: Unable to compile expression
+ERROR at line 66
+The method __variable_0removeChars(java.lang.String) is undefined for the type Expression0
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return __variable_0removeChars("?");
+org.knime.core.node.InvalidSettingsException: org.knime.ext.sun.nodes.script.compile.CompilationFailedException: Unable to compile expression
+ERROR at line 66
+The method __variable_0removeChars(java.lang.String) is undefined for the type Expression0
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return __variable_0removeChars("?");
+	at org.knime.base.node.preproc.stringmanipulation.multicolumn.MultiColumnStringManipulationNodeModel.validateSettings(MultiColumnStringManipulationNodeModel.java:264)
+	at org.knime.core.node.Node.validateModelSettings(Node.java:690)
+	at org.knime.core.node.workflow.NativeNodeContainer.performValidateSettings(NativeNodeContainer.java:1100)
+	at org.knime.core.node.workflow.SingleNodeContainer.validateSettings(SingleNodeContainer.java:913)
+	at org.knime.core.node.workflow.WorkflowManager.loadNodeSettings(WorkflowManager.java:1975)
+	at org.knime.core.node.workflow.NodeContainer.applySettingsFromDialog(NodeContainer.java:1088)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.applySettingsFromDialog(NodeContainerWrapper.java:264)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doApply(WrappedNodeDialog.java:644)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.doOK(WrappedNodeDialog.java:559)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog$5.widgetSelected(WrappedNodeDialog.java:495)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.open(WrappedNodeDialog.java:199)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:935)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:843)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:832)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.performRequest(NodeContainerEditPart.java:396)
+	at org.eclipse.gef.tools.SelectEditPartTracker.performOpen(SelectEditPartTracker.java:194)
+	at org.eclipse.gef.tools.SelectEditPartTracker.handleDoubleClick(SelectEditPartTracker.java:137)
+	at org.knime.workbench.editor2.WorkflowSelectionDragEditPartsTracker.handleDoubleClick(WorkflowSelectionDragEditPartsTracker.java:126)
+	at org.eclipse.gef.tools.AbstractTool.mouseDoubleClick(AbstractTool.java:1069)
+	at org.eclipse.gef.tools.SelectionTool.mouseDoubleClick(SelectionTool.java:527)
+	at org.eclipse.gef.EditDomain.mouseDoubleClick(EditDomain.java:231)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseDoubleClicked(DomainEventDispatcher.java:291)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseDoubleClick(LightweightSystem.java:518)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:200)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:184)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+Caused by: org.knime.ext.sun.nodes.script.compile.CompilationFailedException: Unable to compile expression
+ERROR at line 66
+The method __variable_0removeChars(java.lang.String) is undefined for the type Expression0
+  Line : 65    public java.lang.String internalEvaluate() throws Abort {
+  Line : 66  return __variable_0removeChars("?");
+	at org.knime.ext.sun.nodes.script.compile.JavaCodeCompiler.compile(JavaCodeCompiler.java:333)
+	at org.knime.ext.sun.nodes.script.expression.Expression.<init>(Expression.java:217)
+	at org.knime.ext.sun.nodes.script.expression.Expression.compile(Expression.java:619)
+	at org.knime.ext.sun.nodes.script.settings.JavaScriptingSettings.setInputAndCompile(JavaScriptingSettings.java:432)
+	at org.knime.base.node.preproc.stringmanipulation.multicolumn.MultiColumnStringManipulationCalculator.create(MultiColumnStringManipulationCalculator.java:274)
+	at org.knime.base.node.preproc.stringmanipulation.multicolumn.MultiColumnStringManipulationNodeModel.validateSettings(MultiColumnStringManipulationNodeModel.java:256)
+	... 57 more
+2021-12-19 16:27:14,404 : WARN  : KNIME-Worker-15-String To Number 3:7 :  : AbstractStringToNumberNodeModel : String To Number : 3:7 : Values in 26 cells could not be parsed, first error: '?' (RowKey: Row37, Position: 1)
+2021-12-19 16:27:14,406 : WARN  : KNIME-Worker-15-String To Number 3:7 :  : Node : String To Number : 3:7 : Problems occurred, see Console messages.
+2021-12-19 16:27:49,623 : WARN  : main :  : Node : String Replacer : 3:8 : Selected column 'null' does not exist in input table
+2021-12-19 16:40:36,903 : WARN  : KNIME-Worker-84-Missing Value 3:6 :  : Node : Missing Value : 3:6 : Column "STDs: Time since first diagnosis" still contains missing values.
+Column "STDs: Time since last diagnosis" still contains missing values.
+Column "IUD" still contains missing values.
+Column "IUD (years)" still contains missing values.
+Column "Smokes (years)" still contains missing values.
+Column "Smokes (packs/year)" still contains missing values.
+Column "Hormonal Contraceptives (years)" still contains missing values.
+Column "STDs" still contains missing values.
+Column "STDs (number)" still contains missing values.
+Column "STDs:condylomatosis" still contains missing values.
+Column "STDs:cervical condylomatosis" still contains missing values.
+Column "STDs:vaginal condylomatosis" still contains missing values.
+Column "STDs:vulvo-perineal condylomatosis" still contains missing values.
+Column "STDs:syphilis" still contains missing values.
+Column "STDs:pelvic inflammatory disease" still contains missing values.
+Column "STDs:genital herpes" still contains missing values.
+Column "STDs:molluscum contagiosum" still contains missing values.
+Column "STDs:AIDS" still contains missing values.
+Column "STDs:HIV" still contains missing values.
+Column "STDs:Hepatitis B" still contains missing values.
+Column "STDs:HPV" still contains missing values.
+2021-12-20 15:59:39,060 : WARN  : main :  : Node : Column Comparator : 0:9 : No column is selected for comparison.
+2021-12-20 16:08:06,232 : WARN  : ModalContext :  : Node : Column Comparator : 0:9 : No column is selected for comparison.
+2021-12-20 16:27:06,662 : WARN  : KNIME-Worker-18-Column Auto Type Cast 0:7 :  : Node : Column Comparator : 0:9 : No column is selected for comparison.
+2021-12-20 16:30:16,184 : WARN  : main :  : Node : Math Formula (Multi Column) : 0:13 : No configuration available
+2021-12-20 16:30:41,160 : WARN  : main :  : WrappedNodeDialog : Math Formula (Multi Column) : 0:13 : failed to apply settings: No such column: column
+org.knime.core.node.InvalidSettingsException: No such column: column
+	at org.knime.ext.jep.ExpressionParser.handleColumn(ExpressionParser.java:348)
+	at org.knime.ext.jep.ExpressionParser.dollarFound(ExpressionParser.java:264)
+	at org.knime.ext.jep.ExpressionParser.parse(ExpressionParser.java:171)
+	at org.knime.ext.jep.ExpressionParser.<init>(ExpressionParser.java:146)
+	at org.knime.ext.jep.multicolumn.MultiColumnJEPNodeModel.createParsersForSelectedColumns(MultiColumnJEPNodeModel.java:301)
+	at org.knime.ext.jep.multicolumn.MultiColumnJEPNodeDialogPane.saveSettingsTo(MultiColumnJEPNodeDialogPane.java:323)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:532)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:766)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2021-12-20 16:32:07,036 : WARN  : KNIME-Worker-28-Column Auto Type Cast 0:7 :  : Node : Column Comparator : 0:9 : No column is selected for comparison.
+2021-12-20 16:49:52,173 : WARN  : KNIME-Worker-51-Missing Value 0:6 :  : Node : Missing Value : 0:6 : Column "Smokes (years)" still contains missing values.
+Column "Smokes (packs/year)" still contains missing values.
+2021-12-20 16:55:20,665 : WARN  : AWT-EventQueue-0 :  : ColumnHandlingFactorySelectionPanel : Missing Value : 0:6 : get warnings during panel validation: [Some columns no longer exist (red bordered)]
+2021-12-20 16:55:20,688 : WARN  : AWT-EventQueue-0 :  : ColumnHandlingFactorySelectionPanel : Missing Value : 0:6 : get warnings during panel validation: [Some columns no longer exist (red bordered)]
+2021-12-20 16:59:53,054 : WARN  : main :  : Node : AttributeSelectedClassifier (3.7) : 0:12 : No target column specified. Target column was set to Biopsy
+2021-12-20 17:00:17,350 : ERROR : KNIME-Worker-91-AttributeSelectedClassifier (3.7) 0:12 :  : Node : AttributeSelectedClassifier (3.7) : 0:12 : Execute failed: Unsupported attribute type exception in Weka: weka.classifiers.trees.j48.C45PruneableClassifierTree: Cannot handle numeric class!
+org.knime.core.node.InvalidSettingsException: Unsupported attribute type exception in Weka: weka.classifiers.trees.j48.C45PruneableClassifierTree: Cannot handle numeric class!
+	at org.knime.ext.weka37.classifier.WekaClassifierNodeModel.execute(WekaClassifierNodeModel.java:272)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2021-12-20 17:02:36,894 : ERROR : KNIME-Worker-94-AttributeSelectedClassifier (3.7) 0:12 :  : Node : AttributeSelectedClassifier (3.7) : 0:12 : Execute failed: Weka classifier cannot work with given data. Reason: weka.attributeSelection.InfoGainAttributeEval: Cannot handle numeric class!
+java.lang.Exception: Weka classifier cannot work with given data. Reason: weka.attributeSelection.InfoGainAttributeEval: Cannot handle numeric class!
+	at org.knime.ext.weka37.classifier.WekaClassifierNodeModel.execute(WekaClassifierNodeModel.java:238)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2021-12-20 17:03:11,806 : ERROR : KNIME-Worker-95-AttributeSelectedClassifier (3.7) 0:12 :  : Node : AttributeSelectedClassifier (3.7) : 0:12 : Execute failed: Weka classifier cannot work with given data. Reason: weka.attributeSelection.CorrelationAttributeEval: Cannot handle numeric class!
+java.lang.Exception: Weka classifier cannot work with given data. Reason: weka.attributeSelection.CorrelationAttributeEval: Cannot handle numeric class!
+	at org.knime.ext.weka37.classifier.WekaClassifierNodeModel.execute(WekaClassifierNodeModel.java:238)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2021-12-20 17:05:04,530 : WARN  : main :  : Node : Feature Selection Loop Start (1:1) : 0:5:8 : No feature columns selected. Please specify the feature columns in the dialog.
+2021-12-20 17:05:25,750 : WARN  : main :  : Node : Feature Selection Loop Start (1:1) : 0:5:8 : No feature columns selected. Please specify the feature columns in the dialog.
+2021-12-20 17:07:12,221 : WARN  : main :  : Node : Naive Bayes Learner : 0:5:11 : Classification column preset to null
+2021-12-20 17:07:12,222 : WARN  : main :  : Node : Naive Bayes Learner : 0:5:11 : Classification column not found in input table
+2021-12-20 17:08:08,249 : WARN  : main :  : Node : Scorer (deprecated) : 0:5:7 : Column 'class' not found.
+2021-12-20 17:10:49,236 : WARN  : main :  : Node : Scorer (deprecated) : 0:5:7 : Column 'class' not found.
+2021-12-20 17:11:08,804 : WARN  : main :  : Node : Scorer (deprecated) : 0:5:7 : Column 'class' not found.
+2021-12-20 17:11:42,144 : ERROR : KNIME-Worker-99-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : Execute failed: Missing value support disabled, see node configuration dialog.
+java.lang.IllegalStateException: Missing value support disabled, see node configuration dialog.
+	at org.knime.base.node.mine.regression.RegressionTrainingRow$MissingHandling.isMissing(RegressionTrainingRow.java:93)
+	at org.knime.base.node.mine.regression.RegressionTrainingRow.<init>(RegressionTrainingRow.java:184)
+	at org.knime.base.node.mine.regression.RegressionTrainingDataIterator.next(RegressionTrainingDataIterator.java:138)
+	at org.knime.base.node.mine.regression.RegressionTrainingDataIterator.next(RegressionTrainingDataIterator.java:1)
+	at org.knime.base.node.mine.regression.linear2.learner.Learner.processTable(Learner.java:176)
+	at org.knime.base.node.mine.regression.linear2.learner.Learner.perform(Learner.java:114)
+	at org.knime.base.node.mine.regression.linear2.learner.LinReg2Learner.execute(LinReg2Learner.java:150)
+	at org.knime.base.node.mine.regression.linear2.learner.LinReg2LearnerNodeModel.execute(LinReg2LearnerNodeModel.java:169)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2021-12-20 17:12:15,373 : WARN  : KNIME-Worker-102-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:15,549 : WARN  : KNIME-Worker-116-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:15,626 : WARN  : KNIME-Worker-110-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:15,782 : WARN  : KNIME-Worker-101-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:15,989 : WARN  : KNIME-Worker-101-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:16,035 : WARN  : KNIME-Worker-109-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:16,081 : WARN  : KNIME-Worker-104-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:16,586 : WARN  : KNIME-Worker-114-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:16,630 : WARN  : KNIME-Worker-112-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:16,673 : WARN  : KNIME-Worker-114-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:16,759 : WARN  : KNIME-Worker-112-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:16,864 : WARN  : KNIME-Worker-98-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:17,231 : WARN  : KNIME-Worker-117-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:17,315 : WARN  : KNIME-Worker-112-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:17,429 : WARN  : KNIME-Worker-101-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:17,657 : WARN  : KNIME-Worker-114-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:17,695 : WARN  : KNIME-Worker-117-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:17,786 : WARN  : KNIME-Worker-115-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:18,118 : WARN  : KNIME-Worker-104-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:18,178 : WARN  : KNIME-Worker-98-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:18,307 : WARN  : KNIME-Worker-98-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:18,402 : WARN  : KNIME-Worker-115-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:18,662 : WARN  : KNIME-Worker-119-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:18,779 : WARN  : KNIME-Worker-99-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:18,815 : WARN  : KNIME-Worker-107-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:18,910 : WARN  : KNIME-Worker-103-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:19,147 : WARN  : KNIME-Worker-107-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:19,293 : WARN  : KNIME-Worker-109-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:19,341 : WARN  : KNIME-Worker-121-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:19,365 : WARN  : KNIME-Worker-110-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:19,390 : WARN  : KNIME-Worker-112-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:19,497 : WARN  : KNIME-Worker-118-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:19,682 : WARN  : KNIME-Worker-110-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:19,748 : WARN  : KNIME-Worker-105-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:19,874 : WARN  : KNIME-Worker-108-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:20,085 : WARN  : KNIME-Worker-107-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:20,160 : WARN  : KNIME-Worker-107-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:20,217 : WARN  : KNIME-Worker-120-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:20,342 : WARN  : KNIME-Worker-109-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:20,524 : WARN  : KNIME-Worker-107-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:20,569 : WARN  : KNIME-Worker-114-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:20,589 : WARN  : KNIME-Worker-115-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:20,705 : WARN  : KNIME-Worker-103-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:20,729 : WARN  : KNIME-Worker-111-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:20,793 : WARN  : KNIME-Worker-114-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:20,814 : WARN  : KNIME-Worker-114-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:20,833 : WARN  : KNIME-Worker-121-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:20,900 : WARN  : KNIME-Worker-101-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:20,922 : WARN  : KNIME-Worker-116-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:21,057 : WARN  : KNIME-Worker-119-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:21,164 : WARN  : KNIME-Worker-98-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:21,222 : WARN  : KNIME-Worker-121-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:21,244 : WARN  : KNIME-Worker-101-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:21,309 : WARN  : KNIME-Worker-114-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:21,327 : WARN  : KNIME-Worker-97-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:21,371 : WARN  : KNIME-Worker-112-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:21,648 : WARN  : KNIME-Worker-116-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:21,753 : WARN  : KNIME-Worker-114-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:21,804 : WARN  : KNIME-Worker-112-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:21,852 : WARN  : KNIME-Worker-111-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:21,905 : WARN  : KNIME-Worker-112-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:21,958 : WARN  : KNIME-Worker-108-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:22,011 : WARN  : KNIME-Worker-119-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:22,077 : WARN  : KNIME-Worker-106-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:22,144 : WARN  : KNIME-Worker-104-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:22,303 : WARN  : KNIME-Worker-115-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:22,356 : WARN  : KNIME-Worker-121-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:22,415 : WARN  : KNIME-Worker-97-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:22,431 : WARN  : KNIME-Worker-117-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:22,462 : WARN  : KNIME-Worker-112-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:22,532 : WARN  : KNIME-Worker-103-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:22,548 : WARN  : KNIME-Worker-113-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:22,592 : WARN  : KNIME-Worker-113-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:22,649 : WARN  : KNIME-Worker-100-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:22,668 : WARN  : KNIME-Worker-114-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:22,683 : WARN  : KNIME-Worker-103-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:22,873 : WARN  : KNIME-Worker-117-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:22,902 : WARN  : KNIME-Worker-102-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:22,959 : WARN  : KNIME-Worker-114-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:23,015 : WARN  : KNIME-Worker-120-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:23,057 : WARN  : KNIME-Worker-110-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:23,073 : WARN  : KNIME-Worker-111-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:23,152 : WARN  : KNIME-Worker-110-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:23,185 : WARN  : KNIME-Worker-98-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:23,201 : WARN  : KNIME-Worker-109-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:23,232 : WARN  : KNIME-Worker-101-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:23,347 : WARN  : KNIME-Worker-105-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:23,398 : WARN  : KNIME-Worker-103-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:23,506 : WARN  : KNIME-Worker-117-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:23,522 : WARN  : KNIME-Worker-121-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:23,550 : WARN  : KNIME-Worker-98-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:23,581 : WARN  : KNIME-Worker-111-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:12:23,596 : WARN  : KNIME-Worker-118-Linear Regression Learner 0:5:12 :  : Node : Linear Regression Learner : 0:5:12 : The following columns are redundant and will not contribute to the model: STDs:vulvo-perineal condylomatosis. Coefficient statistics will not be accurate and contain missing information.
+2021-12-20 17:14:00,713 : WARN  : main :  : Node : Decision Tree Learner : 0:5:14 : Table contains no nominal attribute for classification.
+2021-12-20 17:15:49,365 : WARN  : main :  : Node : Category To Number : 0:15 : No columns selected.
+2021-12-20 17:19:16,678 : WARN  : main :  : Node : Decision Tree Learner : 0:5:14 : Guessing target column: "prediction(cancer)".
+2021-12-20 17:19:53,641 : WARN  : main :  : Node : Scorer (deprecated) : 0:5:7 : Column 'Prediction (Dx:Cancer)' not found.
