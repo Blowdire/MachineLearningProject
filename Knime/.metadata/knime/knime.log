@@ -314,3 +314,90 @@ java.lang.IllegalStateException: Missing value support disabled, see node config
 2021-12-20 17:15:49,365 : WARN  : main :  : Node : Category To Number : 0:15 : No columns selected.
 2021-12-20 17:19:16,678 : WARN  : main :  : Node : Decision Tree Learner : 0:5:14 : Guessing target column: "prediction(cancer)".
 2021-12-20 17:19:53,641 : WARN  : main :  : Node : Scorer (deprecated) : 0:5:7 : Column 'Prediction (Dx:Cancer)' not found.
+2021-12-24 16:35:35,862 : ERROR : main :  : MAEFileUtils :  :  : Schrodinger Knime plugins: Neither SCHRODINGER environment nor preference is set. You can set SCHRODINGER installation location in the Schrodinger Preferences.
+2021-12-24 16:35:35,867 : WARN  : main :  : SchrodFileUtils :  :  : SCHRODINGER is not set properly.
+2021-12-24 16:35:35,869 : WARN  : Thread-7 :  : PythonService :  :  : PythonService is not initilized
+2021-12-24 16:35:35,875 : WARN  : Thread-7 :  : PythonService :  :  : Failed to start python service.
+2021-12-24 16:36:40,660 : WARN  : ForkJoinPool.commonPool-worker-3 :  : MoePreferencePage :  :  : Path to MOE not set in Preferences. Please check!
+2021-12-24 16:39:11,801 : WARN  : main :  : Node : XGBoost Tree Ensemble Learner : 0:17 : The specified target is not contained in the input table. Please select a valid target in the dialog.
+2021-12-24 16:41:29,885 : WARN  : main :  : Node : Partitioning : 0:18 : No sampling method selected
+2021-12-24 16:43:14,598 : WARN  : main :  : Node : Scorer : 0:20 : No columns selected yet.
+2021-12-24 17:09:04,407 : WARN  : KNIME-Worker-11-Missing Value 0:21 :  : Node : Missing Value : 0:21 : The current settings use missing value handling methods that cannot be represented in PMML 4.2
+2021-12-24 17:09:19,969 : WARN  : KNIME-Worker-12-Statistics 0:22 :  : Node : Statistics : 0:22 : Maximum number of unique possible values (1000) exceeds for column(s): "dt"
+2021-12-24 17:09:34,713 : WARN  : KNIME-Worker-15-Statistics 0:22 :  : Node : Statistics : 0:22 : Maximum number of unique possible values (1000) exceeds for column(s): "dt","LandMinTemperature","LandMaxTemperature","LandAverageTemperature","LandAndOceanAverageTemperature"
+2021-12-24 17:12:09,242 : WARN  : main :  : Node : Table Reader : 0:23 : Please specify a file
+2021-12-24 17:14:22,292 : WARN  : main :  : Node : Lag Column : 0:22 : No configuration available
+2021-12-24 17:21:48,907 : WARN  : main :  : Node : Sorter : 0:23 : No selected columns to sort
+2021-12-24 17:24:10,812 : WARN  : main :  : Node : Column Rename : 0:24 : No configuration available
+2021-12-24 17:27:00,703 : WARN  : KNIME-Worker-27-Linear Correlation 0:15 :  : Node : Linear Correlation : 0:15 : Some numeric column(s) contained missing values: "LandAverageTemperature(next month)"
+2021-12-24 17:27:00,707 : WARN  : KNIME-Worker-27-Linear Correlation 0:15 :  : Node : XGBoost Tree Ensemble Learner : 0:17 : The specified target is not contained in the input table. Please select a valid target in the dialog.
+2021-12-24 17:28:07,700 : WARN  : main :  : Node : XGBoost Tree Ensemble Learner (Regression) : 0:25 : No possible values available for column 'dt (String)'.
+2021-12-24 17:28:18,674 : WARN  : main :  : Node : XGBoost Linear Ensemble Learner (Regression) : 0:26 : No possible values available for column 'dt (String)'.
+2021-12-24 17:29:48,493 : WARN  : main :  : Node : XGBoost Tree Ensemble Learner (Regression) : 0:25 : No possible values available for column 'dt (String)'.
+2021-12-24 17:29:48,494 : WARN  : main :  : Node : XGBoost Linear Ensemble Learner (Regression) : 0:26 : No possible values available for column 'dt (String)'.
+2021-12-24 17:29:55,304 : WARN  : KNIME-Worker-30-Partitioning 0:18 :  : Node : XGBoost Tree Ensemble Learner (Regression) : 0:25 : No possible values available for column 'dt (String)'.
+2021-12-24 17:29:55,304 : WARN  : KNIME-Worker-30-Partitioning 0:18 :  : Node : XGBoost Linear Ensemble Learner (Regression) : 0:26 : No possible values available for column 'dt (String)'.
+2021-12-24 17:30:18,923 : WARN  : main :  : Node : XGBoost Tree Ensemble Learner (Regression) : 0:25 : No possible values available for column 'dt (String)'.
+2021-12-24 17:30:44,206 : ERROR : KNIME-Worker-31-XGBoost Tree Ensemble Learner (Regression) 0:25 :  : Node : XGBoost Tree Ensemble Learner (Regression) : 0:25 : Execute failed: org.knime.core.data.convert.map.MappingException: java.lang.IllegalArgumentException: Missing value encountered
+java.lang.IllegalStateException: org.knime.core.data.convert.map.MappingException: java.lang.IllegalArgumentException: Missing value encountered
+	at org.knime.xgboost.core.data.LPIterator.next(LPIterator.java:109)
+	at org.knime.xgboost.core.data.LPDataConverter.createDMatrix(LPDataConverter.java:91)
+	at org.knime.xgboost.base.nodes.learner.XGBLearnerNodeModel.execute(XGBLearnerNodeModel.java:142)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: org.knime.core.data.convert.map.MappingException: java.lang.IllegalArgumentException: Missing value encountered
+	at org.knime.xgboost.core.data.AbstractLPPrimitiveCellValueConsumer.consumeMissingCellValue(AbstractLPPrimitiveCellValueConsumer.java:77)
+	at org.knime.xgboost.core.data.AbstractLPPrimitiveCellValueConsumer.consumeMissingCellValue(AbstractLPPrimitiveCellValueConsumer.java:1)
+	at org.knime.core.data.convert.map.DoubleCellValueConsumer.consumeCellValue(DoubleCellValueConsumer.java:82)
+	at org.knime.core.data.convert.map.DoubleCellValueConsumer.consumeCellValue(DoubleCellValueConsumer.java:1)
+	at org.knime.core.data.convert.map.DefaultDataRowConsumer$ObjectMapper.map(DefaultDataRowConsumer.java:417)
+	at org.knime.core.data.convert.map.DefaultDataRowConsumer.consumeDataRow(DefaultDataRowConsumer.java:247)
+	at org.knime.xgboost.core.data.LPIterator.next(LPIterator.java:104)
+	... 15 more
+Caused by: java.lang.IllegalArgumentException: Missing value encountered
+	... 22 more
+2021-12-24 17:30:58,485 : ERROR : KNIME-Worker-32-XGBoost Tree Ensemble Learner (Regression) 0:25 :  : Node : XGBoost Tree Ensemble Learner (Regression) : 0:25 : Execute failed: org.knime.core.data.convert.map.MappingException: java.lang.IllegalArgumentException: Missing value encountered
+java.lang.IllegalStateException: org.knime.core.data.convert.map.MappingException: java.lang.IllegalArgumentException: Missing value encountered
+	at org.knime.xgboost.core.data.LPIterator.next(LPIterator.java:109)
+	at org.knime.xgboost.core.data.LPDataConverter.createDMatrix(LPDataConverter.java:91)
+	at org.knime.xgboost.base.nodes.learner.XGBLearnerNodeModel.execute(XGBLearnerNodeModel.java:142)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: org.knime.core.data.convert.map.MappingException: java.lang.IllegalArgumentException: Missing value encountered
+	at org.knime.xgboost.core.data.AbstractLPPrimitiveCellValueConsumer.consumeMissingCellValue(AbstractLPPrimitiveCellValueConsumer.java:77)
+	at org.knime.xgboost.core.data.AbstractLPPrimitiveCellValueConsumer.consumeMissingCellValue(AbstractLPPrimitiveCellValueConsumer.java:1)
+	at org.knime.core.data.convert.map.DoubleCellValueConsumer.consumeCellValue(DoubleCellValueConsumer.java:82)
+	at org.knime.core.data.convert.map.DoubleCellValueConsumer.consumeCellValue(DoubleCellValueConsumer.java:1)
+	at org.knime.core.data.convert.map.DefaultDataRowConsumer$ObjectMapper.map(DefaultDataRowConsumer.java:417)
+	at org.knime.core.data.convert.map.DefaultDataRowConsumer.consumeDataRow(DefaultDataRowConsumer.java:247)
+	at org.knime.xgboost.core.data.LPIterator.next(LPIterator.java:104)
+	... 15 more
+Caused by: java.lang.IllegalArgumentException: Missing value encountered
+	... 22 more
+2021-12-24 17:31:32,187 : WARN  : KNIME-Worker-35-Linear Correlation 0:15 :  : Node : XGBoost Linear Ensemble Learner (Regression) : 0:26 : No possible values available for column 'dt (String)'.
+2021-12-24 17:31:32,232 : WARN  : KNIME-Worker-37-Partitioning 0:18 :  : Node : XGBoost Linear Ensemble Learner (Regression) : 0:26 : No possible values available for column 'dt (String)'.
+2021-12-24 17:33:07,805 : WARN  : main :  : Node : Scorer : 0:20 : Column 'prediction(cancer)' not found.
+2021-12-24 17:33:12,141 : WARN  : KNIME-Worker-39-XGBoost Predictor (Regression) 0:27 :  : Node : Scorer : 0:20 : Column 'prediction(cancer)' not found.
+2021-12-24 17:34:14,702 : WARN  : main :  : Node : Numeric Scorer : 0:28 : No columns selected for reference
