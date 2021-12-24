@@ -26,7 +26,7 @@
                 "nrfails": 0,
                 "exectime": 1024,
                 "nrcreated": 2,
-                "successor": "org.knime.ext.weka37.predictor3.WekaPredictorNodeFactory#Weka Predictor (3.7)"
+                "successor": "org.knime.base.node.preproc.correlation.filter.CorrelationFilterNodeFactory#Correlation Filter"
             },
             {
                 "id": "org.knime.base.node.preproc.extractmissingvaluecause.ExtractMissingValueCauseNodeFactory#Extract Missing Value Cause",
@@ -243,6 +243,14 @@
                 "exectime": 4062,
                 "nrcreated": 1,
                 "successor": "org.knime.base.node.mine.scorer.accuracy.AccuracyScorerNodeFactory#Scorer (deprecated)"
+            },
+            {
+                "id": "org.knime.base.node.preproc.correlation.compute2.CorrelationCompute2NodeFactory#Linear Correlation",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 271,
+                "nrcreated": 1,
+                "successor": "org.knime.base.node.preproc.correlation.filter.CorrelationFilterNodeFactory#Correlation Filter"
             }
         ],
         "metaNodes": {
@@ -250,14 +258,14 @@
         "wrappedNodes": {
         }
     },
-    "uptime": 3838288,
-    "workflowsOpened": 2,
+    "uptime": 3122606,
+    "workflowsOpened": 3,
     "remoteWorkflowsOpened": 0,
     "workflowsImported": 0,
     "workflowsExported": 0,
-    "launches": 3,
+    "launches": 4,
     "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
-    "timeSinceLastStart": 4482948,
+    "timeSinceLastStart": 975563,
     "crashes": 0,
-    "properlyShutDown": true
+    "properlyShutDown": false
 }
