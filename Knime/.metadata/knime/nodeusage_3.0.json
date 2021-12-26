@@ -134,19 +134,19 @@
             },
             {
                 "id": "org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory#Column Filter",
-                "nrexecs": 1,
+                "nrexecs": 3,
                 "nrfails": 0,
-                "exectime": 0,
-                "nrcreated": 1,
-                "successor": "org.knime.base.node.preproc.pmml.missingval.compute.MissingValueHandlerNodeFactory#Missing Value"
+                "exectime": 2,
+                "nrcreated": 3,
+                "successor": "org.knime.ext.weka366.predictor2.WekaPredictorNodeFactory#Weka Predictor (3.6)"
             },
             {
                 "id": "org.knime.base.node.preproc.correlation.filter.CorrelationFilterNodeFactory#Correlation Filter",
-                "nrexecs": 0,
+                "nrexecs": 3,
                 "nrfails": 0,
-                "exectime": 0,
+                "exectime": 38,
                 "nrcreated": 1,
-                "successor": "org.knime.xgboost.base.nodes.learner.XGBTreeClassificationLearnerNodeFactory#XGBoost Tree Ensemble Learner"
+                "successor": "org.knime.base.node.mine.regression.linear2.learner.LinReg2LearnerNodeFactory2#Linear Regression Learner"
             },
             {
                 "id": "org.knime.ext.weka37.classifier.WekaClassifierNodeFactory#AttributeSelectedClassifier (3.7)",
@@ -158,35 +158,35 @@
             },
             {
                 "id": "org.knime.ext.weka37.predictor3.WekaPredictorNodeFactory#Weka Predictor (3.7)",
-                "nrexecs": 1,
+                "nrexecs": 3,
                 "nrfails": 0,
-                "exectime": 292,
-                "nrcreated": 1,
+                "exectime": 497,
+                "nrcreated": 2,
                 "successor": "n/a"
             },
             {
                 "id": "org.knime.base.node.mine.regression.linear2.learner.LinReg2LearnerNodeFactory2#Linear Regression Learner",
-                "nrexecs": 465,
+                "nrexecs": 466,
                 "nrfails": 1,
-                "exectime": 3338,
-                "nrcreated": 1,
+                "exectime": 4021,
+                "nrcreated": 3,
                 "successor": "org.knime.base.node.mine.regression.predict3.RegressionPredictorNodeFactory2#Regression Predictor"
             },
             {
                 "id": "org.knime.base.node.preproc.partition.PartitionNodeFactory#Partitioning",
-                "nrexecs": 1397,
+                "nrexecs": 1399,
                 "nrfails": 0,
-                "exectime": 2386,
+                "exectime": 2470,
                 "nrcreated": 1,
-                "successor": "org.knime.xgboost.base.nodes.learner.XGBTreeClassificationLearnerNodeFactory#XGBoost Tree Ensemble Learner"
+                "successor": "org.knime.xgboost.base.nodes.learner.XGBLinearRegressionLearnerNodeFactory#XGBoost Linear Ensemble Learner (Regression)"
             },
             {
                 "id": "org.knime.base.node.mine.regression.predict3.RegressionPredictorNodeFactory2#Regression Predictor",
-                "nrexecs": 465,
+                "nrexecs": 466,
                 "nrfails": 0,
-                "exectime": 2961,
-                "nrcreated": 1,
-                "successor": "org.knime.base.node.mine.scorer.accuracy.AccuracyScorerNodeFactory#Scorer (deprecated)"
+                "exectime": 3318,
+                "nrcreated": 3,
+                "successor": "org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory#Column Filter"
             },
             {
                 "id": "org.knime.base.node.meta.feature.selection.FeatureSelectionLoopStartNodeFactory#Feature Selection Loop Start (1:1)",
@@ -246,9 +246,9 @@
             },
             {
                 "id": "org.knime.base.node.preproc.correlation.compute2.CorrelationCompute2NodeFactory#Linear Correlation",
-                "nrexecs": 1,
+                "nrexecs": 3,
                 "nrfails": 0,
-                "exectime": 271,
+                "exectime": 832,
                 "nrcreated": 1,
                 "successor": "org.knime.base.node.preproc.correlation.filter.CorrelationFilterNodeFactory#Correlation Filter"
             },
@@ -286,9 +286,145 @@
             },
             {
                 "id": "org.knime.base.node.preproc.columnlag.LagColumnNodeFactory#Lag Column",
-                "nrexecs": 4,
+                "nrexecs": 7,
                 "nrfails": 0,
-                "exectime": 417,
+                "exectime": 692,
+                "nrcreated": 1,
+                "successor": "org.knime.base.node.preproc.rename.RenameNodeFactory#Column Rename"
+            },
+            {
+                "id": "org.knime.base.node.preproc.sorter.SorterNodeFactory#Sorter",
+                "nrexecs": 2,
+                "nrfails": 0,
+                "exectime": 153,
+                "nrcreated": 1,
+                "successor": "org.knime.base.node.preproc.columnlag.LagColumnNodeFactory#Lag Column"
+            },
+            {
+                "id": "org.knime.base.node.preproc.rename.RenameNodeFactory#Column Rename",
+                "nrexecs": 2,
+                "nrfails": 0,
+                "exectime": 2,
+                "nrcreated": 1,
+                "successor": "org.knime.base.node.preproc.correlation.filter.CorrelationFilterNodeFactory#Correlation Filter"
+            },
+            {
+                "id": "org.knime.xgboost.base.nodes.learner.XGBTreeRegressionLearnerNodeFactory#XGBoost Tree Ensemble Learner (Regression)",
+                "nrexecs": 1,
+                "nrfails": 2,
+                "exectime": 548,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.xgboost.base.nodes.learner.XGBLinearRegressionLearnerNodeFactory#XGBoost Linear Ensemble Learner (Regression)",
+                "nrexecs": 2,
+                "nrfails": 0,
+                "exectime": 70,
+                "nrcreated": 1,
+                "successor": "org.knime.xgboost.base.nodes.predictor.XGBRegressionPredictorNodeFactory#XGBoost Predictor (Regression)"
+            },
+            {
+                "id": "org.knime.xgboost.base.nodes.predictor.XGBRegressionPredictorNodeFactory#XGBoost Predictor (Regression)",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 119,
+                "nrcreated": 1,
+                "successor": "org.knime.base.node.viz.table.TableNodeFactory#Interactive Table (local)"
+            },
+            {
+                "id": "org.knime.base.node.mine.scorer.numeric2.NumericScorer2NodeFactory#Numeric Scorer",
+                "nrexecs": 2,
+                "nrfails": 0,
+                "exectime": 29,
+                "nrcreated": 2,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.viz.table.TableNodeFactory#Interactive Table (local)",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 16,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.js.base.node.viz.plotter.scatterSelectionAppender.ScatterPlotNodeFactory#Scatter Plot",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 135,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.viz.plotter.scatter.ScatterPlotterNodeFactory#Scatter Plot (local)",
+                "nrexecs": 2,
+                "nrfails": 0,
+                "exectime": 23,
+                "nrcreated": 2,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.ext.jep.JEPNodeFactory#Math Formula",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 37,
+                "nrcreated": 1,
+                "successor": "org.knime.base.node.preproc.normalize3.Normalizer3NodeFactory#Normalizer"
+            },
+            {
+                "id": "org.knime.base.node.preproc.normalize3.Normalizer3NodeFactory#Normalizer",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 106,
+                "nrcreated": 1,
+                "successor": "org.knime.ext.jfc.node.histogram.JfcHistogramChartNodeFactory#Histogram Chart (JFreeChart)"
+            },
+            {
+                "id": "org.knime.dynamic.js.v30.DynamicJSNodeFactory#Histogram",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.viz.histogram.node.HistogramNodeFactory#Interactive Histogram (local)",
+                "nrexecs": 2,
+                "nrfails": 0,
+                "exectime": 14,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.ext.jfc.node.histogram.JfcHistogramChartNodeFactory#Histogram Chart (JFreeChart)",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 587,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.ext.weka37.classifier.WekaClassifierNodeFactory#LinearRegression (3.7)",
+                "nrexecs": 3,
+                "nrfails": 0,
+                "exectime": 274,
+                "nrcreated": 1,
+                "successor": "org.knime.ext.weka37.predictor3.WekaPredictorNodeFactory#Weka Predictor (3.7)"
+            },
+            {
+                "id": "org.knime.ext.weka366.predictor2.WekaPredictorNodeFactory#Weka Predictor (3.6)",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
+                "nrcreated": 1,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.ext.weka366.classifier.WekaClassifierNodeFactory#LinearRegression (3.6)",
+                "nrexecs": 0,
+                "nrfails": 0,
+                "exectime": 0,
                 "nrcreated": 1,
                 "successor": "n/a"
             }
@@ -298,14 +434,14 @@
         "wrappedNodes": {
         }
     },
-    "uptime": 3041737,
+    "uptime": 3291950,
     "workflowsOpened": 3,
     "remoteWorkflowsOpened": 0,
     "workflowsImported": 0,
     "workflowsExported": 0,
-    "launches": 5,
+    "launches": 6,
     "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
-    "timeSinceLastStart": 2718264,
+    "timeSinceLastStart": 3101732,
     "crashes": 1,
     "properlyShutDown": false
 }

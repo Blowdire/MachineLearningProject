@@ -401,3 +401,13 @@ Caused by: java.lang.IllegalArgumentException: Missing value encountered
 2021-12-24 17:33:07,805 : WARN  : main :  : Node : Scorer : 0:20 : Column 'prediction(cancer)' not found.
 2021-12-24 17:33:12,141 : WARN  : KNIME-Worker-39-XGBoost Predictor (Regression) 0:27 :  : Node : Scorer : 0:20 : Column 'prediction(cancer)' not found.
 2021-12-24 17:34:14,702 : WARN  : main :  : Node : Numeric Scorer : 0:28 : No columns selected for reference
+2021-12-26 18:17:12,025 : ERROR : main :  : MAEFileUtils :  :  : Schrodinger Knime plugins: Neither SCHRODINGER environment nor preference is set. You can set SCHRODINGER installation location in the Schrodinger Preferences.
+2021-12-26 18:17:12,028 : WARN  : main :  : SchrodFileUtils :  :  : SCHRODINGER is not set properly.
+2021-12-26 18:17:12,028 : WARN  : Thread-6 :  : PythonService :  :  : PythonService is not initilized
+2021-12-26 18:17:12,032 : WARN  : Thread-6 :  : PythonService :  :  : Failed to start python service.
+2021-12-26 18:17:55,484 : WARN  : ForkJoinPool.commonPool-worker-5 :  : MoePreferencePage :  :  : Path to MOE not set in Preferences. Please check!
+2021-12-26 18:43:37,824 : WARN  : main :  : Node : Math Formula : 0:34 : No configuration available
+2021-12-26 18:47:39,479 : WARN  : main :  : Node : Normalizer : 0:35 : Auto-configure: [0, 1] normalization on all numeric columns: "LandAverageTemperature(next month)", "Prediction (LandAverageTemperature(next month))", "residual"
+2021-12-26 18:55:57,380 : WARN  : main :  : Node : Numeric Scorer : 0:39 : No columns selected for reference
+2021-12-26 19:01:56,907 : WARN  : main :  : Node : LinearRegression (3.7) : 0:41 : No target column specified. Target column was set to LandAverageTemperature(next month)
+2021-12-26 19:09:01,430 : WARN  : main :  : Node : LinearRegression (3.6) : 0:41 : No target column specified. Target column was set to LandAverageTemperature(next month)
