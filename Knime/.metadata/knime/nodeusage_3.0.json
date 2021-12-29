@@ -1,6 +1,6 @@
 
 {
-    "version": "4.4.2.v202110181013",
+    "version": "4.5.0.v202112011542",
     "created": "2021-12-19 16:01",
     "nodestats": {
         "nodes": [
@@ -562,14 +562,15 @@
         "wrappedNodes": {
         }
     },
-    "uptime": 2481854,
-    "workflowsOpened": 3,
+    "uptime": 2274692,
+    "workflowsOpened": 5,
     "remoteWorkflowsOpened": 0,
+    "columnarStorageWorkflowsOpened": 0,
     "workflowsImported": 0,
     "workflowsExported": 0,
-    "launches": 12,
+    "launches": 14,
     "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
-    "timeSinceLastStart": 703595,
-    "crashes": 2,
-    "properlyShutDown": false
+    "timeSinceLastStart": 1889841,
+    "crashes": 3,
+    "properlyShutDown": true
 }

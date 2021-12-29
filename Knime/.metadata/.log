@@ -10028,3 +10028,366 @@ Caused by: java.util.zip.ZipException: zip END header not found
 	at java.base/java.util.zip.ZipFile.<init>(Unknown Source)
 	at org.eclipse.osgi.framework.util.SecureAction.getZipFile(SecureAction.java:335)
 	... 34 more
+!SESSION 2021-12-29 21:00:26.412 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.10
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2021-12-29 21:02:13.277
+!MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ArrangeWindowHandler' from bundle '317'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ArrangeWindowHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.15.0.v20201125-0918
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:519)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:617)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:89)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:141)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:999)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:140)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:405)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:346)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:227)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:94)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:37)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:276)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:573)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:183)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2021-12-29 21:02:13.292
+!MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.MinimizeWindowHandler' from bundle '317'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.MinimizeWindowHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.15.0.v20201125-0918
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:519)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:617)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:89)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:141)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:999)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:140)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:405)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:346)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:227)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:94)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:37)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:276)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:573)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:183)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2021-12-29 21:02:13.296
+!MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ZoomWindowHandler' from bundle '317'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ZoomWindowHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.15.0.v20201125-0918
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:519)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:617)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:89)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:141)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:999)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:140)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:405)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:346)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:227)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:94)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:37)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:276)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:573)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:183)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2021-12-29 21:02:13.301
+!MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CloseDialogHandler' from bundle '317'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CloseDialogHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.15.0.v20201125-0918
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:519)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:617)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:89)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.processActiveHandler(HandlerProcessingAddon.java:141)
+	at org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon.postConstruct(HandlerProcessingAddon.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:999)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:140)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:405)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:346)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:227)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:94)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:37)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:276)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:573)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:183)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2021-12-29 21:02:13.333
+!MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler' from bundle '317'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.15.0.v20201125-0918
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:519)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:617)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:89)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:37)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:276)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:573)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:183)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.075
+!MESSAGE Removing PartDescriptorImpl with the "com.knime.licenses.view.LicenseStoreView" id and the "Licenses" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.079
+!MESSAGE Removing HandlerImpl with the "org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ArrangeWindowHandler" id.It points to the non available "bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ArrangeWindowHandler" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.082
+!MESSAGE Removing HandlerImpl with the "org.eclipse.e4.ui.workbench.renderers.swt.cocoa.MinimizeWindowHandler" id.It points to the non available "bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.cocoa.MinimizeWindowHandler" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.085
+!MESSAGE Removing HandlerImpl with the "org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ZoomWindowHandler" id.It points to the non available "bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.cocoa.ZoomWindowHandler" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.089
+!MESSAGE Removing HandlerImpl with the "org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CloseDialogHandler" id.It points to the non available "bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CloseDialogHandler" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.096
+!MESSAGE Removing PartDescriptorImpl with the "com.knime.workbench.repository.view.CustomRepositoryView" id and the "Custom Node Repository" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.099
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.ant.ui.views.AntView" id and the "Ant" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.101
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.birt.report.designer.ui.lib.explorer.view" id and the "Resource Explorer" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.104
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.birt.report.designer.ui.views.data.DataView" id and the "Data Explorer" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.108
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.birt.report.designer.ui.attributes.AttributeView" id and the "Property Editor" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.113
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" id and the "Data Source Explorer" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.119
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.datatools.sqltools.plan.planView" id and the "Execution Plan" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.121
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.datatools.sqltools.result.resultView" id and the "SQL Results" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.125
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.jdt.debug.ui.DisplayView" id and the "Debug Shell" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.127
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.jdt.junit.ResultView" id and the "JUnit" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.130
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.jdt.ui.PackageExplorer" id and the "Package Explorer" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.165
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.jdt.ui.TypeHierarchy" id and the "Type Hierarchy" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.265
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.jdt.ui.ProjectsView" id and the "Projects" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.268
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.jdt.ui.PackagesView" id and the "Packages" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.271
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.jdt.ui.TypesView" id and the "Types" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.275
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.jdt.ui.MembersView" id and the "Members" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.312
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.jdt.callhierarchy.view" id and the "Call Hierarchy" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.316
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.ui.texteditor.TemplatesView" id and the "Templates" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.319
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.jdt.ui.SourceView" id and the "Declaration" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.321
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.jdt.ui.JavadocView" id and the "Javadoc" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.324
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.pde.api.tools.ui.views.apitooling.views.apitoolingview" id and the "API Tools" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.326
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.pde.runtime.RegistryBrowser" id and the "Plug-in Registry" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.328
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.pde.ui.PluginsView" id and the "Plug-ins" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.330
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.pde.ui.FeaturesView" id and the "Features" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.331
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.pde.ui.DependenciesView" id and the "Plug-in Dependencies" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.333
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.pde.ui.TargetPlatformState" id and the "Target Platform State" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.335
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.pde.ui.ImageBrowserView" id and the "Plug-in Image Browser" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.353
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.wst.common.snippets.internal.ui.SnippetsView" id and the "Snippets" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.356
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.wst.xml.ui.views.annotations.XMLAnnotationsView" id and the "Documentation" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.357
+!MESSAGE Removing PartDescriptorImpl with the "org.eclipse.wst.xml.ui.contentmodel.view" id and the "Content Model" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.359
+!MESSAGE Removing PartDescriptorImpl with the "org.erlwood.knime.views.HelpInfo" id and the "Web Viewer" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2021-12-29 21:02:38.360
+!MESSAGE Removing PartDescriptorImpl with the "org.knime.reporting.designer.view.dataset.explorer" id and the "Data Sets" label.It points to the non available "bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" class. Bundle might have been uninstalled
+!SESSION 2021-12-29 21:05:49.483 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.10
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data file:/C:/Users/GRMITALY/Desktop/uniProjects/MachineLearningProject/Knime/
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2021-12-29 21:06:06.515
+!MESSAGE Unable to load class 'org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler' from bundle '317'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler cannot be found by org.eclipse.e4.ui.workbench.renderers.swt_0.15.0.v20201125-0918
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:519)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:617)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:89)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:37)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:276)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:573)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:183)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)

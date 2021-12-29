@@ -607,3 +607,94 @@ java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 0
 2021-12-29 16:23:00,871 : WARN  : main :  : Node : Numeric Scorer : 0:67:5 : No columns selected for reference
 2021-12-29 16:23:05,019 : WARN  : KNIME-Worker-9-X-Partitioner 0:67:2 :  : Node : Numeric Scorer : 0:67:5 : No columns selected for reference
 2021-12-29 16:23:05,589 : WARN  : KNIME-Worker-8-X-Aggregator 0:67:1 :  : Node : Numeric Scorer : 0:67:5 : No columns selected for reference
+2021-12-29 21:04:52,161 : WARN  : ModalContext :  : FileNodePersistor : MISSING XGBoost Linear Ensemble Learner (Regression) : 0:67:3 : Unable to load port content for node "MISSING XGBoost Linear Ensemble Learner (Regression)": Invalid spec class "org.knime.xgboost.core.model.XGBModelPortObjectSpec"
+java.io.IOException: Invalid spec class "org.knime.xgboost.core.model.XGBModelPortObjectSpec"
+	at org.knime.core.node.FileNodePersistor.lambda$0(FileNodePersistor.java:421)
+	at java.base/java.util.Optional.orElseThrow(Unknown Source)
+	at org.knime.core.node.FileNodePersistor.loadPortObject(FileNodePersistor.java:421)
+	at org.knime.core.node.FileNodePersistor.loadPort(FileNodePersistor.java:373)
+	at org.knime.core.node.FileNodePersistor.loadPorts(FileNodePersistor.java:330)
+	at org.knime.core.node.FileNodePersistor.load(FileNodePersistor.java:995)
+	at org.knime.core.node.workflow.FileNativeNodeContainerPersistor.loadNCAndWashModelSettings(FileNativeNodeContainerPersistor.java:254)
+	at org.knime.core.node.workflow.FileSingleNodeContainerPersistor.loadNodeContainer(FileSingleNodeContainerPersistor.java:268)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8514)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8415)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8530)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8415)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8530)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8415)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8369)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8290)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8263)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:8108)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:184)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2021-12-29 21:04:52,168 : WARN  : ModalContext :  : Node : MISSING XGBoost Linear Ensemble Learner (Regression) : 0:67:3 : Node can't be executed - Node "XGBoost Linear Ensemble Learner (Regression)" not available from extension "KNIME XGBoost Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.xgboost" is not installed)
+2021-12-29 21:04:52,328 : WARN  : ModalContext :  : FileNodePersistor : MISSING XGBoost Linear Ensemble Learner (Regression) : 0:26 : Unable to load port content for node "MISSING XGBoost Linear Ensemble Learner (Regression)": Invalid spec class "org.knime.xgboost.core.model.XGBModelPortObjectSpec"
+java.io.IOException: Invalid spec class "org.knime.xgboost.core.model.XGBModelPortObjectSpec"
+	at org.knime.core.node.FileNodePersistor.lambda$0(FileNodePersistor.java:421)
+	at java.base/java.util.Optional.orElseThrow(Unknown Source)
+	at org.knime.core.node.FileNodePersistor.loadPortObject(FileNodePersistor.java:421)
+	at org.knime.core.node.FileNodePersistor.loadPort(FileNodePersistor.java:373)
+	at org.knime.core.node.FileNodePersistor.loadPorts(FileNodePersistor.java:330)
+	at org.knime.core.node.FileNodePersistor.load(FileNodePersistor.java:995)
+	at org.knime.core.node.workflow.FileNativeNodeContainerPersistor.loadNCAndWashModelSettings(FileNativeNodeContainerPersistor.java:254)
+	at org.knime.core.node.workflow.FileSingleNodeContainerPersistor.loadNodeContainer(FileSingleNodeContainerPersistor.java:268)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8514)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8415)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8530)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8415)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8369)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8290)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8263)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:8108)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:184)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2021-12-29 21:04:52,330 : WARN  : ModalContext :  : Node : MISSING XGBoost Linear Ensemble Learner (Regression) : 0:26 : Node can't be executed - Node "XGBoost Linear Ensemble Learner (Regression)" not available from extension "KNIME XGBoost Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.xgboost" is not installed)
+2021-12-29 21:04:53,199 : WARN  : ModalContext :  : FileNodePersistor : MISSING LinearRegression (3.6) : 0:41 : Unable to load port content for node "MISSING LinearRegression (3.6)": Invalid spec class "org.knime.ext.weka366.ports.WekaClassifierModelPortObjectSpec"
+java.io.IOException: Invalid spec class "org.knime.ext.weka366.ports.WekaClassifierModelPortObjectSpec"
+	at org.knime.core.node.FileNodePersistor.lambda$0(FileNodePersistor.java:421)
+	at java.base/java.util.Optional.orElseThrow(Unknown Source)
+	at org.knime.core.node.FileNodePersistor.loadPortObject(FileNodePersistor.java:421)
+	at org.knime.core.node.FileNodePersistor.loadPort(FileNodePersistor.java:373)
+	at org.knime.core.node.FileNodePersistor.loadPorts(FileNodePersistor.java:330)
+	at org.knime.core.node.FileNodePersistor.load(FileNodePersistor.java:995)
+	at org.knime.core.node.workflow.FileNativeNodeContainerPersistor.loadNCAndWashModelSettings(FileNativeNodeContainerPersistor.java:254)
+	at org.knime.core.node.workflow.FileSingleNodeContainerPersistor.loadNodeContainer(FileSingleNodeContainerPersistor.java:268)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8514)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8415)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8530)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8415)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8369)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8290)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8263)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:8108)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:184)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2021-12-29 21:04:53,202 : WARN  : ModalContext :  : Node : MISSING LinearRegression (3.6) : 0:41 : Node can't be executed - Node "LinearRegression (3.6)" not available from extension "KNIME Weka Data Mining Integration (3.6)" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.weka_3.6" is not installed)
+2021-12-29 21:04:53,961 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Errors during load: Status: DataLoadError: Knime_Machine_Learning 1 0 loaded with error during data load
+2021-12-29 21:04:53,961 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: DataLoadError: Knime_Machine_Learning 1 0
+2021-12-29 21:04:53,962 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Node "XGBoost Linear Ensemble Learner (Regression)" not available from extension "KNIME XGBoost Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.xgboost" is not installed)
+2021-12-29 21:04:53,962 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Node "XGBoost Predictor (Regression)" not available from extension "KNIME XGBoost Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.xgboost" is not installed)
+2021-12-29 21:04:53,962 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Node "Histogram Chart (JFreeChart)" not available from extension "KNIME JFreeChart" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.jfreechart" is not installed)
+2021-12-29 21:04:53,963 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Node "LinearRegression (3.6)" not available from extension "KNIME Weka Data Mining Integration (3.6)" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.weka_3.6" is not installed)
+2021-12-29 21:04:53,963 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Node "Weka Predictor (3.6)" not available from extension "KNIME Weka Data Mining Integration (3.6)" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.weka_3.6" is not installed)
+2021-12-29 21:04:53,963 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Metanode 1 : 2 0:67
+2021-12-29 21:04:53,963 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "XGBoost Linear Ensemble Learner (Regression)" not available from extension "KNIME XGBoost Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.xgboost" is not installed)
+2021-12-29 21:04:53,964 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "XGBoost Predictor (Regression)" not available from extension "KNIME XGBoost Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.xgboost" is not installed)
+2021-12-29 21:04:53,964 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: MISSING XGBoost Linear Ensemble Learner (Regression) 0:67:3
+2021-12-29 21:04:53,964 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: DataLoadError: Unable to load port content for node "MISSING XGBoost Linear Ensemble Learner (Regression)": Invalid spec class "org.knime.xgboost.core.model.XGBModelPortObjectSpec"
+2021-12-29 21:04:53,964 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: DataLoadError: State has changed from EXECUTED to IDLE
+2021-12-29 21:04:53,965 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: State has changed from EXECUTED to IDLE
+2021-12-29 21:04:53,965 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: MISSING XGBoost Linear Ensemble Learner (Regression) 0:26
+2021-12-29 21:04:53,965 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "MISSING XGBoost Linear Ensemble Learner (Regression)": Invalid spec class "org.knime.xgboost.core.model.XGBModelPortObjectSpec"
+2021-12-29 21:04:53,966 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: State has changed from EXECUTED to IDLE
+2021-12-29 21:04:53,966 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: MISSING LinearRegression (3.6) 0:41
+2021-12-29 21:04:53,966 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "MISSING LinearRegression (3.6)": Invalid spec class "org.knime.ext.weka366.ports.WekaClassifierModelPortObjectSpec"
+2021-12-29 21:04:53,967 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: State has changed from EXECUTED to IDLE
+2021-12-29 21:04:53,968 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Interactive Histogram (local) 0:37
+2021-12-29 21:04:53,968 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Loading model internals failed: Binning column not found
+2021-12-29 21:11:55,874 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Errors during load: Status: DataLoadError: Knime_Machine_Learning 1 0 loaded with error during data load
+2021-12-29 21:11:55,889 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: DataLoadError: Knime_Machine_Learning 1 0
+2021-12-29 21:11:55,889 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Interactive Histogram (local) 0:37
+2021-12-29 21:11:55,890 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Loading model internals failed: Binning column not found
