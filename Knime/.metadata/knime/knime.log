@@ -411,3 +411,52 @@ Caused by: java.lang.IllegalArgumentException: Missing value encountered
 2021-12-26 18:55:57,380 : WARN  : main :  : Node : Numeric Scorer : 0:39 : No columns selected for reference
 2021-12-26 19:01:56,907 : WARN  : main :  : Node : LinearRegression (3.7) : 0:41 : No target column specified. Target column was set to LandAverageTemperature(next month)
 2021-12-26 19:09:01,430 : WARN  : main :  : Node : LinearRegression (3.6) : 0:41 : No target column specified. Target column was set to LandAverageTemperature(next month)
+2021-12-27 17:01:57,003 : ERROR : main :  : MAEFileUtils :  :  : Schrodinger Knime plugins: Neither SCHRODINGER environment nor preference is set. You can set SCHRODINGER installation location in the Schrodinger Preferences.
+2021-12-27 17:01:57,007 : WARN  : main :  : SchrodFileUtils :  :  : SCHRODINGER is not set properly.
+2021-12-27 17:01:57,008 : WARN  : Thread-6 :  : PythonService :  :  : PythonService is not initilized
+2021-12-27 17:01:57,018 : WARN  : Thread-6 :  : PythonService :  :  : Failed to start python service.
+2021-12-27 17:02:56,080 : WARN  : ForkJoinPool.commonPool-worker-7 :  : MoePreferencePage :  :  : Path to MOE not set in Preferences. Please check!
+2021-12-27 17:09:49,277 : WARN  : main :  : Node : Numeric Scorer : 0:44 : No columns selected for reference
+2021-12-27 17:42:22,498 : ERROR : KNIME Sync Exec Dispatcher-1 :  : SyncExecQueueDispatcher :  :  : Uncaught exception while queuing events into main thread
+org.eclipse.swt.SWTException: Invalid thread access
+	at org.eclipse.swt.SWT.error(SWT.java:4889)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.SWT.error(SWT.java:4775)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1100)
+	at org.eclipse.swt.widgets.Display.createDisplay(Display.java:851)
+	at org.eclipse.swt.widgets.Display.create(Display.java:835)
+	at org.eclipse.swt.graphics.Device.<init>(Device.java:130)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:734)
+	at org.eclipse.swt.widgets.Display.<init>(Display.java:725)
+	at org.eclipse.swt.widgets.Display.getDefault(Display.java:1434)
+	at org.knime.workbench.ui.SyncExecQueueDispatcher$2.run(SyncExecQueueDispatcher.java:120)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2021-12-29 11:43:29,266 : ERROR : main :  : MAEFileUtils :  :  : Schrodinger Knime plugins: Neither SCHRODINGER environment nor preference is set. You can set SCHRODINGER installation location in the Schrodinger Preferences.
+2021-12-29 11:43:29,269 : WARN  : main :  : SchrodFileUtils :  :  : SCHRODINGER is not set properly.
+2021-12-29 11:43:29,269 : WARN  : Thread-6 :  : PythonService :  :  : PythonService is not initilized
+2021-12-29 11:43:29,272 : WARN  : Thread-6 :  : PythonService :  :  : Failed to start python service.
+2021-12-29 11:44:09,630 : WARN  : ForkJoinPool.commonPool-worker-3 :  : MoePreferencePage :  :  : Path to MOE not set in Preferences. Please check!
+2021-12-29 11:47:05,976 : WARN  : main :  : Node : Math Formula : 0:46 : No configuration available
+2021-12-29 11:48:10,204 : WARN  : KNIME-Worker-3-Column Filter 0:45 :  : Node : Math Formula : 0:46 : No configuration available
+2021-12-29 11:48:55,773 : WARN  : main :  : Node : Scatter Plot (local) : 0:36 : Some columns are ignored: bounds missing.
+2021-12-29 11:49:01,204 : WARN  : KNIME-Worker-4-Math Formula 0:34 :  : Node : Interactive Histogram (local) : 0:37 : Column Residual contains no valid domain an will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2021-12-29 11:49:01,204 : WARN  : KNIME-Worker-4-Math Formula 0:34 :  : Node : Scatter Plot (local) : 0:36 : Some columns are ignored: bounds missing.
+2021-12-29 11:49:53,828 : WARN  : main :  : Node : Normalizer : 0:47 : Auto-configure: [0, 1] normalization on all numeric columns: "LandAverageTemperature(next month)", "Prediction (LandAverageTemperature(next month))", "Residuals"
+2021-12-29 12:03:56,390 : WARN  : main :  : Node : Numeric Scorer : 0:50 : No columns selected for reference
+2021-12-29 12:07:50,845 : WARN  : main :  : Node : Math Formula : 0:54 : No configuration available
+2021-12-29 12:08:15,594 : WARN  : main :  : Node : Normalizer : 0:55 : Auto-configure: [0, 1] normalization on all numeric columns: "LandAverageTemperature(next month)", "Prediction", "new column"
+2021-12-29 12:10:52,684 : WARN  : main :  : Node : Numeric Scorer : 0:50 : No such column in input table: Prediction
+2021-12-29 12:10:52,685 : WARN  : main :  : Node : Math Formula : 0:54 : No such column: Prediction
+2021-12-29 12:10:57,509 : WARN  : KNIME-Worker-13-Regression Predictor 0:49 :  : Node : Numeric Scorer : 0:50 : No such column in input table: Prediction
+2021-12-29 12:10:57,511 : WARN  : KNIME-Worker-13-Regression Predictor 0:49 :  : Node : Math Formula : 0:54 : No such column: Prediction
+2021-12-29 12:10:57,517 : WARN  : KNIME-Worker-12-Column Filter 0:53 :  : Node : Math Formula : 0:54 : No such column: Prediction
+2021-12-29 12:18:10,622 : WARN  : main :  : Node : Simple Regression Tree Learner : 0:57 : No configuration available
+2021-12-29 12:20:21,439 : WARN  : main :  : Node : Numeric Scorer : 0:59 : No columns selected for reference
+2021-12-29 12:29:53,711 : WARN  : main :  : Node : Random Forest Learner (Regression) : 0:61 : No configuration available
+2021-12-29 12:31:00,895 : WARN  : main :  : Node : Numeric Scorer : 0:63 : No columns selected for reference
+2021-12-29 12:32:48,502 : WARN  : main :  : Node : Tree Ensemble Learner (Regression) : 0:64 : No configuration available
+2021-12-29 12:33:13,493 : WARN  : main :  : Node : Numeric Scorer : 0:66 : No columns selected for reference
+2021-12-29 12:33:20,763 : WARN  : main :  : Node : Numeric Scorer : 0:66 : No columns selected for reference
+2021-12-29 12:33:31,935 : WARN  : KNIME-Worker-40-Tree Ensemble Predictor (Regression) 0:65 :  : Node : Numeric Scorer : 0:66 : No columns selected for reference

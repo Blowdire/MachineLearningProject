@@ -7,7 +7,7 @@
     </config>
     <config key="model">
         <entry key="append_column" type="xboolean" value="false"/>
-        <entry key="replaced_column" type="xstring" value="residual"/>
+        <entry key="replaced_column" type="xstring" value="Residual"/>
         <entry key="expression" type="xstring" value="$LandAverageTemperature(next month)$-$Prediction (LandAverageTemperature(next month))$"/>
         <entry key="convert_to_int" type="xboolean" value="false"/>
     </config>
@@ -38,6 +38,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="9e3bed6c-6bcf-4778-8b8e-fb5453912a4e"/>
+        <entry key="file_store_id" type="xstring" value="0e1e4290-0a3b-47d9-9299-ca1a86340398"/>
     </config>
 </config>
