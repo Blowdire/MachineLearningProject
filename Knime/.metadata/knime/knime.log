@@ -460,3 +460,150 @@ org.eclipse.swt.SWTException: Invalid thread access
 2021-12-29 12:33:13,493 : WARN  : main :  : Node : Numeric Scorer : 0:66 : No columns selected for reference
 2021-12-29 12:33:20,763 : WARN  : main :  : Node : Numeric Scorer : 0:66 : No columns selected for reference
 2021-12-29 12:33:31,935 : WARN  : KNIME-Worker-40-Tree Ensemble Predictor (Regression) 0:65 :  : Node : Numeric Scorer : 0:66 : No columns selected for reference
+2021-12-29 14:53:10,974 : ERROR : main :  : MAEFileUtils :  :  : Schrodinger Knime plugins: Neither SCHRODINGER environment nor preference is set. You can set SCHRODINGER installation location in the Schrodinger Preferences.
+2021-12-29 14:53:10,978 : WARN  : main :  : SchrodFileUtils :  :  : SCHRODINGER is not set properly.
+2021-12-29 14:53:10,979 : WARN  : Thread-6 :  : PythonService :  :  : PythonService is not initilized
+2021-12-29 14:53:10,982 : WARN  : Thread-6 :  : PythonService :  :  : Failed to start python service.
+2021-12-29 14:53:39,376 : WARN  : ForkJoinPool.commonPool-worker-7 :  : MoePreferencePage :  :  : Path to MOE not set in Preferences. Please check!
+2021-12-29 14:53:43,096 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Errors during load: Status: DataLoadError: Knime_Machine_Learning 1 0 loaded with error during data load
+2021-12-29 14:53:43,097 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: DataLoadError: Knime_Machine_Learning 1 0
+2021-12-29 14:53:43,104 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Interactive Histogram (local) 0:37
+2021-12-29 14:53:43,104 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Loading model internals failed: Binning column not found
+2021-12-29 15:26:53,315 : WARN  : ModalContext :  : Node : XLS Reader (deprecated) : 3:6 : The file '/Volumes/INTENSO/KNIME 4.4.2.app/Contents/MacOS/D:\Personal\LECTURES\MOOC\Datasets\classification\churn\Churn_yn.xls' can't be accessed anymore!
+2021-12-29 15:26:53,324 : WARN  : ModalContext :  : Node : XLS Reader (deprecated) : 3:6 : Specified file doesn't exist (/Volumes/INTENSO/KNIME 4.4.2.app/Contents/MacOS/D:\Personal\LECTURES\MOOC\Datasets\classification\churn\Churn_yn.xls)
+2021-12-29 15:26:54,188 : WARN  : ModalContext :  : BoxPlotNodeModel : Box Plot (local) : 3:138 : java.io.FileNotFoundException: /private/var/folders/ls/l___lsd10md8zv03pmzdd34w0000gn/T/knime_temp_space_macbookair_18500/Classification-4.knwf18503/Users/macbookair/Downloads/Classification-4.knwf/Box Plot (#138)/internal/boxPlotInternals (No such file or directory)
+2021-12-29 15:26:54,190 : WARN  : ModalContext :  : BoxPlotNodeModel : Box Plot (local) : 3:139 : java.io.FileNotFoundException: /private/var/folders/ls/l___lsd10md8zv03pmzdd34w0000gn/T/knime_temp_space_macbookair_18500/Classification-4.knwf18503/Users/macbookair/Downloads/Classification-4.knwf/Box Plot (#139)/internal/boxPlotInternals (No such file or directory)
+2021-12-29 15:26:54,190 : WARN  : ModalContext :  : BoxPlotNodeModel : Box Plot (local) : 3:145 : java.io.FileNotFoundException: /private/var/folders/ls/l___lsd10md8zv03pmzdd34w0000gn/T/knime_temp_space_macbookair_18500/Classification-4.knwf18503/Users/macbookair/Downloads/Classification-4.knwf/Box Plot (#145)/internal/boxPlotInternals (No such file or directory)
+2021-12-29 15:26:54,191 : WARN  : ModalContext :  : BoxPlotNodeModel : Box Plot (local) : 3:144 : java.io.FileNotFoundException: /private/var/folders/ls/l___lsd10md8zv03pmzdd34w0000gn/T/knime_temp_space_macbookair_18500/Classification-4.knwf18503/Users/macbookair/Downloads/Classification-4.knwf/Box Plot (#144)/internal/boxPlotInternals (No such file or directory)
+2021-12-29 15:26:54,191 : WARN  : ModalContext :  : BoxPlotNodeModel : Box Plot (local) : 3:140 : java.io.FileNotFoundException: /private/var/folders/ls/l___lsd10md8zv03pmzdd34w0000gn/T/knime_temp_space_macbookair_18500/Classification-4.knwf18503/Users/macbookair/Downloads/Classification-4.knwf/Box Plot (#140)/internal/boxPlotInternals (No such file or directory)
+2021-12-29 15:32:03,887 : WARN  : main :  : Node : Decision Tree Learner : 0:0:16 : Class column "class" not found or incompatible
+2021-12-29 15:32:54,771 : WARN  : main :  : Node : XGBoost Linear Ensemble Learner (Regression) : 0:0:17 : No possible values available for column 'dt (String)'.
+2021-12-29 15:33:11,451 : WARN  : main :  : Node : XGBoost Linear Ensemble Learner (Regression) : 0:0:17 : No possible values available for column 'dt (String)'.
+2021-12-29 15:34:10,731 : WARN  : KNIME-Worker-9-X-Partitioner 0:0:2 :  : Node : XGBoost Linear Ensemble Learner (Regression) : 0:0:17 : No possible values available for column 'dt (String)'.
+2021-12-29 15:34:19,721 : WARN  : main :  : Node : X-Aggregator : 0:0:1 : No such column: class
+2021-12-29 15:34:23,385 : WARN  : KNIME-Worker-11-XGBoost Predictor (Regression) 0:0:18 :  : Node : X-Aggregator : 0:0:1 : No such column: class
+2021-12-29 15:38:12,910 : WARN  : main :  : Node : Numeric Scorer : 0:0:19 : No columns selected for reference
+2021-12-29 15:40:05,681 : WARN  : main :  : Node : Numeric Scorer : 0:0:19 : No columns selected for reference
+2021-12-29 15:40:05,683 : WARN  : main :  : Node : Numeric Scorer : 0:0:19 : No columns selected for reference
+2021-12-29 15:40:21,010 : WARN  : KNIME-Worker-14-XGBoost Predictor (Regression) 0:0:18 :  : Node : Numeric Scorer : 0:0:19 : No columns selected for reference
+2021-12-29 15:40:21,038 : WARN  : KNIME-Worker-13-X-Partitioner 0:0:2 :  : Node : Numeric Scorer : 0:0:19 : No columns selected for reference
+2021-12-29 15:40:21,539 : WARN  : KNIME-Worker-12-X-Aggregator 0:0:1 :  : Node : Numeric Scorer : 0:0:19 : No columns selected for reference
+2021-12-29 15:55:27,657 : ERROR : main :  : MAEFileUtils :  :  : Schrodinger Knime plugins: Neither SCHRODINGER environment nor preference is set. You can set SCHRODINGER installation location in the Schrodinger Preferences.
+2021-12-29 15:55:27,661 : WARN  : main :  : SchrodFileUtils :  :  : SCHRODINGER is not set properly.
+2021-12-29 15:55:27,663 : WARN  : Thread-6 :  : PythonService :  :  : PythonService is not initilized
+2021-12-29 15:55:27,683 : WARN  : Thread-6 :  : PythonService :  :  : Failed to start python service.
+2021-12-29 15:56:24,455 : WARN  : ForkJoinPool.commonPool-worker-7 :  : MoePreferencePage :  :  : Path to MOE not set in Preferences. Please check!
+2021-12-29 15:56:30,077 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Errors during load: Status: DataLoadError: Knime_Machine_Learning 1 0 loaded with error during data load
+2021-12-29 15:56:30,084 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: DataLoadError: Knime_Machine_Learning 1 0
+2021-12-29 15:56:30,087 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Interactive Histogram (local) 0:37
+2021-12-29 15:56:30,089 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Loading model internals failed: Binning column not found
+2021-12-29 16:01:10,482 : WARN  : main :  : Node : Scatter Plot (local) : 0:43 : Some columns are ignored: bounds missing.
+2021-12-29 16:01:10,485 : WARN  : main :  : Node : Scatter Plot (local) : 0:33 : Some columns are ignored: bounds missing.
+2021-12-29 16:01:10,508 : WARN  : main :  : Node : Scatter Plot (local) : 0:36 : Some columns are ignored: bounds missing.
+2021-12-29 16:01:10,531 : WARN  : main :  : Node : Scatter Plot (local) : 0:43 : Some columns are ignored: bounds missing.
+2021-12-29 16:01:10,532 : WARN  : main :  : Node : Scatter Plot (local) : 0:33 : Some columns are ignored: bounds missing.
+2021-12-29 16:01:10,533 : WARN  : main :  : Node : Interactive Histogram (local) : 0:37 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2021-12-29 16:01:10,533 : WARN  : main :  : Node : Scatter Plot (local) : 0:36 : Some columns are ignored: bounds missing.
+2021-12-29 16:01:45,798 : ERROR : main :  : MAEFileUtils :  :  : Schrodinger Knime plugins: Neither SCHRODINGER environment nor preference is set. You can set SCHRODINGER installation location in the Schrodinger Preferences.
+2021-12-29 16:01:45,801 : WARN  : main :  : SchrodFileUtils :  :  : SCHRODINGER is not set properly.
+2021-12-29 16:01:45,802 : WARN  : Thread-6 :  : PythonService :  :  : PythonService is not initilized
+2021-12-29 16:01:45,806 : WARN  : Thread-6 :  : PythonService :  :  : Failed to start python service.
+2021-12-29 16:02:29,490 : WARN  : ForkJoinPool.commonPool-worker-5 :  : MoePreferencePage :  :  : Path to MOE not set in Preferences. Please check!
+2021-12-29 16:02:34,471 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Errors during load: Status: DataLoadError: Knime_Machine_Learning 1 0 loaded with error during data load
+2021-12-29 16:02:34,476 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: DataLoadError: Knime_Machine_Learning 1 0
+2021-12-29 16:02:34,478 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Interactive Histogram (local) 0:37
+2021-12-29 16:02:34,478 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Loading model internals failed: Binning column not found
+2021-12-29 16:03:39,658 : ERROR : main :  : MAEFileUtils :  :  : Schrodinger Knime plugins: Neither SCHRODINGER environment nor preference is set. You can set SCHRODINGER installation location in the Schrodinger Preferences.
+2021-12-29 16:03:39,663 : WARN  : main :  : SchrodFileUtils :  :  : SCHRODINGER is not set properly.
+2021-12-29 16:03:39,664 : WARN  : Thread-6 :  : PythonService :  :  : PythonService is not initilized
+2021-12-29 16:03:39,682 : WARN  : Thread-6 :  : PythonService :  :  : Failed to start python service.
+2021-12-29 16:04:21,581 : WARN  : ForkJoinPool.commonPool-worker-3 :  : MoePreferencePage :  :  : Path to MOE not set in Preferences. Please check!
+2021-12-29 16:04:25,849 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Errors during load: Status: DataLoadError: Knime_Machine_Learning 1 0 loaded with error during data load
+2021-12-29 16:04:25,855 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: DataLoadError: Knime_Machine_Learning 1 0
+2021-12-29 16:04:25,856 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Interactive Histogram (local) 0:37
+2021-12-29 16:04:25,856 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Loading model internals failed: Binning column not found
+2021-12-29 16:22:22,704 : ERROR : main :  : Node : XGBoost Linear Ensemble Learner (Regression) : 0:67:3 : Could not save model
+java.lang.NullPointerException
+	at org.knime.xgboost.base.nodes.learner.XGBLearnerNodeModel.saveSettingsTo(XGBLearnerNodeModel.java:268)
+	at org.knime.core.node.Node.saveModelSettingsTo(Node.java:2361)
+	at org.knime.core.node.workflow.NativeNodeContainer.performSaveModelSettingsTo(NativeNodeContainer.java:1094)
+	at org.knime.core.node.workflow.SingleNodeContainer.saveSNCSettings(SingleNodeContainer.java:887)
+	at org.knime.core.node.workflow.SingleNodeContainer.saveSettings(SingleNodeContainer.java:853)
+	at org.knime.core.node.workflow.NativeNodeContainer.getDialogPaneWithSettings(NativeNodeContainer.java:1298)
+	at org.knime.core.node.workflow.NodeContainer.getDialogPaneWithSettings(NodeContainer.java:1036)
+	at org.knime.core.ui.wrapper.NodeContainerWrapper.getDialogPaneWithSettings(NodeContainerWrapper.java:130)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.lambda$0(WrappedNodeDialog.java:156)
+	at org.knime.workbench.ui.async.AsyncUtil.ncAsyncSwitchRethrow(AsyncUtil.java:247)
+	at org.knime.workbench.ui.wrapper.WrappedNodeDialog.<init>(WrappedNodeDialog.java:156)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openDialog(NodeContainerEditPart.java:933)
+	at org.knime.workbench.editor2.editparts.NodeContainerEditPart.openNodeDialog(NodeContainerEditPart.java:843)
+	at org.knime.workbench.editor2.actions.OpenDialogAction.runOnNodes(OpenDialogAction.java:129)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.runInSWT(AbstractNodeAction.java:174)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction$1.run(AbstractNodeAction.java:160)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5048)
+	at org.knime.workbench.editor2.actions.AbstractNodeAction.run(AbstractNodeAction.java:157)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4441)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1512)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1535)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1520)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1324)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4227)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3837)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:184)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+2021-12-29 16:22:22,710 : ERROR : main :  : GenericNodeDialog : XGBoost Linear Ensemble Learner (Regression) : 0:67:3 : Error loading model settings
+java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 0
+	at org.knime.core.data.DataTableSpec.getColumnSpec(DataTableSpec.java:771)
+	at org.knime.xgboost.base.nodes.learner.DataSettings.loadFrom(DataSettings.java:151)
+	at org.knime.xgboost.base.nodes.dialog.AbstractDialogContent.loadFrom(AbstractDialogContent.java:73)
+	at org.knime.xgboost.base.nodes.dialog.Tab.loadSettingsFrom(Tab.java:120)
+	at org.knime.xgboost.base.nodes.dialog.GenericNodeDialog.loadSettingsFrom(GenericNodeDialog.java:96)
+	at org.knime.core.node.NodeDialogPane.callDerivedLoadSettingsFrom(NodeDialogPane.java:513)
+	at org.knime.core.node.NodeDialogPane$3.run(NodeDialogPane.java:466)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2021-12-29 16:22:26,881 : WARN  : main :  : Node : XGBoost Linear Ensemble Learner (Regression) : 0:67:3 : No possible values available for column 'dt (String)'.
+2021-12-29 16:22:30,414 : WARN  : KNIME-Worker-8-X-Partitioner 0:67:2 :  : Node : XGBoost Linear Ensemble Learner (Regression) : 0:67:3 : No possible values available for column 'dt (String)'.
+2021-12-29 16:22:43,142 : WARN  : main :  : Node : X-Aggregator : 0:67:1 : No such column: class
+2021-12-29 16:22:49,752 : WARN  : KNIME-Worker-10-XGBoost Predictor (Regression) 0:67:4 :  : Node : X-Aggregator : 0:67:1 : No such column: class
+2021-12-29 16:23:00,871 : WARN  : main :  : Node : Numeric Scorer : 0:67:5 : No columns selected for reference
+2021-12-29 16:23:05,019 : WARN  : KNIME-Worker-9-X-Partitioner 0:67:2 :  : Node : Numeric Scorer : 0:67:5 : No columns selected for reference
+2021-12-29 16:23:05,589 : WARN  : KNIME-Worker-8-X-Aggregator 0:67:1 :  : Node : Numeric Scorer : 0:67:5 : No columns selected for reference
