@@ -1,3 +1,4 @@
+F:\universita\DataScience\Machine learning\Progetto\MachineLearningProject\Data\GlobalTemperatures.csv
 /Users/macbookair/Documents/GitHub/MachineLearningProject/Data/GlobalTemperatures.csv
 /Users/macbookair/Documents/GitHub/MachineLearningProject/Data/GlobalLandTemperaturesByState.csv
 F:\universita\DataScience\Machine learning\Progetto\MachineLearningProject\Data\kag_risk_factors_cervical_cancer.csv

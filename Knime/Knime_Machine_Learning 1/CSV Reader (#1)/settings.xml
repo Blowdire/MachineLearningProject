@@ -24,7 +24,7 @@
                 <config key="path">
                     <entry key="location_present" type="xboolean" value="true"/>
                     <entry key="file_system_type" type="xstring" value="LOCAL"/>
-                    <entry key="path" type="xstring" value="/Users/macbookair/Documents/GitHub/MachineLearningProject/Data/GlobalTemperatures.csv"/>
+                    <entry key="path" type="xstring" value="F:\universita\DataScience\Machine learning\Progetto\MachineLearningProject\Data\GlobalTemperatures.csv"/>
                 </config>
                 <config key="filter_mode_Internals">
                     <entry key="SettingsModelID" type="xstring" value="SMID_FilterMode"/>
@@ -68,7 +68,7 @@
         <config key="table_spec_config_Internals">
             <entry key="version" type="xstring" value="V4_4"/>
             <config key="individual_specs">
-                <config key="/Users/macbookair/Documents/GitHub/MachineLearningProject/Data/GlobalTemperatures.csv">
+                <config key="F:\universita\DataScience\Machine learning\Progetto\MachineLearningProject\Data\GlobalTemperatures.csv">
                     <entry key="num_columns" type="xint" value="9"/>
                     <config key="0">
                         <entry key="name" type="xstring" value="dt"/>
@@ -376,7 +376,7 @@
                     <entry key="force_type" type="xboolean" value="false"/>
                 </config>
             </config>
-            <entry key="source_group_id" type="xstring" value="/Users/macbookair/Documents/GitHub/MachineLearningProject/Data/GlobalTemperatures.csv"/>
+            <entry key="source_group_id" type="xstring" value="F:\universita\DataScience\Machine learning\Progetto\MachineLearningProject\Data\GlobalTemperatures.csv"/>
             <config key="config_id">
                 <config key="multi_table_read">
                     <config key="settings">
@@ -467,6 +467,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="a31a68c2-967c-45db-8c68-2380d851fa7f"/>
+        <entry key="file_store_id" type="xstring" value="e4fe133d-09a7-4340-b1da-f4b4ed781273"/>
     </config>
 </config>

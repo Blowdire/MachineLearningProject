@@ -1482,3 +1482,198 @@ KeyError: 'Prediction (LandAverageTemperature(next month))'
 2022-01-04 16:45:02,907 : WARN  : KNIME-Worker-55-Math Formula 3:74:46 :  : Node : Scatter Plot (local) : 3:80 : Some columns are ignored: bounds missing.
 2022-01-04 16:45:02,913 : WARN  : KNIME-Worker-50-X-Partitioner 3:74:2 :  : Node : Scatter Plot (local) : 3:80 : Some columns are ignored: bounds missing.
 2022-01-04 16:45:03,185 : WARN  : KNIME-Worker-59-Math Formula 3:74:46 :  : Node : Scatter Plot (local) : 3:80 : Some columns are ignored: bounds missing.
+2022-01-04 16:54:47,331 : WARN  : KNIME-Worker-2-Shapiro-Wilk Test 0:84 :  : NodeContainer : Shapiro-Wilk Test : 0:84 : Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+	at org.knime.core.node.workflow.WorkflowManager.doBeforeExecution(WorkflowManager.java:3182)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteStart(NodeContainer.java:607)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:171)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-04 16:54:58,442 : WARN  : KNIME-Worker-1-Shapiro-Wilk Test 0:84 :  : NodeContainer : Shapiro-Wilk Test : 0:84 : Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+	at org.knime.core.node.workflow.WorkflowManager.doBeforeExecution(WorkflowManager.java:3182)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteStart(NodeContainer.java:607)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:171)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-04 16:55:11,114 : WARN  : KNIME-Worker-0-Shapiro-Wilk Test 0:84 :  : NodeContainer : Shapiro-Wilk Test : 0:84 : Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+	at org.knime.core.node.workflow.WorkflowManager.doBeforeExecution(WorkflowManager.java:3182)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteStart(NodeContainer.java:607)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:171)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-04 16:57:09,714 : WARN  : KNIME-Worker-3-Shapiro-Wilk Test 0:84 :  : NodeContainer : Shapiro-Wilk Test : 0:84 : Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+	at org.knime.core.node.workflow.WorkflowManager.doBeforeExecution(WorkflowManager.java:3182)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteStart(NodeContainer.java:607)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:171)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-04 16:57:20,586 : WARN  : KNIME-Worker-4-Shapiro-Wilk Test 0:84 :  : NodeContainer : Shapiro-Wilk Test : 0:84 : Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+	at org.knime.core.node.workflow.WorkflowManager.doBeforeExecution(WorkflowManager.java:3182)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteStart(NodeContainer.java:607)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:171)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-04 16:58:05,670 : WARN  : KNIME-Worker-5-Shapiro-Wilk Test 0:84 :  : NodeContainer : Shapiro-Wilk Test : 0:84 : Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+	at org.knime.core.node.workflow.WorkflowManager.doBeforeExecution(WorkflowManager.java:3182)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteStart(NodeContainer.java:607)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:171)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-04 16:58:05,671 : WARN  : KNIME-Worker-10-Scatter Plot (local) 0:79 :  : NodeContainer : Scatter Plot (local) : 0:79 : Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+	at org.knime.core.node.workflow.WorkflowManager.doBeforeExecution(WorkflowManager.java:3182)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteStart(NodeContainer.java:607)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:171)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-04 16:58:05,671 : WARN  : KNIME-Worker-9-Scatter Plot (local) 0:80 :  : NodeContainer : Scatter Plot (local) : 0:80 : Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+	at org.knime.core.node.workflow.WorkflowManager.doBeforeExecution(WorkflowManager.java:3182)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteStart(NodeContainer.java:607)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:171)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-04 16:58:05,671 : WARN  : KNIME-Worker-13-Scatter Plot (local) 0:76 :  : NodeContainer : Scatter Plot (local) : 0:76 : Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+	at org.knime.core.node.workflow.WorkflowManager.doBeforeExecution(WorkflowManager.java:3182)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteStart(NodeContainer.java:607)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:171)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-04 16:58:05,671 : WARN  : KNIME-Worker-11-Scatter Plot (local) 0:77 :  : NodeContainer : Scatter Plot (local) : 0:77 : Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+	at org.knime.core.node.workflow.WorkflowManager.doBeforeExecution(WorkflowManager.java:3182)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteStart(NodeContainer.java:607)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:171)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-04 16:58:05,672 : WARN  : KNIME-Worker-12-Scatter Plot (local) 0:78 :  : NodeContainer : Scatter Plot (local) : 0:78 : Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+	at org.knime.core.node.workflow.WorkflowManager.doBeforeExecution(WorkflowManager.java:3182)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteStart(NodeContainer.java:607)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:171)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-04 16:58:19,873 : WARN  : KNIME-Worker-4-Shapiro-Wilk Test 0:84 :  : NodeContainer : Shapiro-Wilk Test : 0:84 : Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+	at org.knime.core.node.workflow.WorkflowManager.doBeforeExecution(WorkflowManager.java:3182)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteStart(NodeContainer.java:607)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:171)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-04 16:58:50,074 : WARN  : KNIME-Worker-0-Shapiro-Wilk Test 0:84 :  : NodeContainer : Shapiro-Wilk Test : 0:84 : Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+	at org.knime.core.node.workflow.WorkflowManager.doBeforeExecution(WorkflowManager.java:3182)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteStart(NodeContainer.java:607)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:171)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-04 16:59:10,930 : ERROR : KNIME-Worker-2-CSV Reader 0:1 :  : Node : CSV Reader : 0:1 : Execute failed: The specified file \Users\macbookair\Documents\GitHub\MachineLearningProject\Data\GlobalTemperatures.csv does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file \Users\macbookair\Documents\GitHub\MachineLearningProject\Data\GlobalTemperatures.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:269)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:219)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:295)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:202)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-04 16:59:48,292 : WARN  : KNIME-Worker-0-Missing Value 0:21 :  : Node : Missing Value : 0:21 : The current settings use missing value handling methods that cannot be represented in PMML 4.2
+2022-01-04 16:59:48,577 : WARN  : KNIME-Worker-2-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-04 16:59:48,579 : WARN  : KNIME-Worker-2-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-04 16:59:48,579 : WARN  : KNIME-Worker-2-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-04 16:59:48,580 : WARN  : KNIME-Worker-2-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-04 16:59:48,580 : WARN  : KNIME-Worker-2-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-04 16:59:48,595 : WARN  : KNIME-Worker-1-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-04 16:59:48,597 : WARN  : KNIME-Worker-1-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-04 16:59:48,597 : WARN  : KNIME-Worker-1-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-04 16:59:48,597 : WARN  : KNIME-Worker-1-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-04 16:59:48,597 : WARN  : KNIME-Worker-1-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-04 16:59:48,610 : WARN  : KNIME-Worker-0-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-04 16:59:48,761 : WARN  : KNIME-Worker-6-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-04 16:59:48,776 : WARN  : KNIME-Worker-16-Shapiro-Wilk Test 0:84 :  : Node : Shapiro-Wilk Test : 0:84 : The test might be inaccurate for data sets with more than 50 data points.
+2022-01-04 17:01:06,740 : WARN  : KNIME-Worker-2-Shapiro-Wilk Test 0:84 :  : Node : Shapiro-Wilk Test : 0:84 : The test might be inaccurate for data sets with more than 50 data points.
+2022-01-04 17:01:43,663 : WARN  : main :  : Node : Row Sampling : 0:85 : No sampling method selected
+2022-01-04 17:02:52,552 : WARN  : KNIME-Worker-23-Shapiro-Wilk Test 0:84 :  : Node : Shapiro-Wilk Test : 0:84 : The test might be inaccurate for data sets with more than 50 data points.
