@@ -302,9 +302,9 @@
             },
             {
                 "id": "org.knime.base.node.preproc.rename.RenameNodeFactory#Column Rename",
-                "nrexecs": 13,
+                "nrexecs": 14,
                 "nrfails": 0,
-                "exectime": 47,
+                "exectime": 51,
                 "nrcreated": 2,
                 "successor": "org.knime.base.node.preproc.append.row.AppendedRowsNodeFactory#Concatenate"
             },
@@ -622,7 +622,7 @@
         "wrappedNodes": {
         }
     },
-    "uptime": 2002066,
+    "uptime": 2045009,
     "workflowsOpened": 10,
     "remoteWorkflowsOpened": 0,
     "columnarStorageWorkflowsOpened": 0,
@@ -630,7 +630,7 @@
     "workflowsExported": 0,
     "launches": 21,
     "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
-    "timeSinceLastStart": 438289,
+    "timeSinceLastStart": 1340090,
     "crashes": 3,
     "properlyShutDown": false
 }

@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
     <entry key="node_file" type="xstring" value="settings.xml"/>
-    <config key="flow_stack"/>
+    <config key="flow_stack">
+        <config key="Variable_0">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="shapiro-p-value"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="1.0494626279111685E-9"/>
+        </config>
+        <config key="Variable_1">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="shapiro-statistic"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="0.9089686195777787"/>
+        </config>
+        <config key="Variable_2">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="shapiro-p-value"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="1.1158590718096661E-9"/>
+        </config>
+        <config key="Variable_3">
+            <entry key="type" type="xstring" value="variable"/>
+            <entry key="name" type="xstring" value="shapiro-statistic"/>
+            <entry key="class" type="xstring" value="DOUBLE"/>
+            <entry key="value" type="xdouble" value="0.9093630346552569"/>
+        </config>
+    </config>
     <config key="internal_node_subsettings">
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
@@ -48,7 +73,11 @@
         <entry key="shapFrancia" type="xboolean" value="true"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
+    <config key="nodecontainer_message">
+        <entry key="type" type="xstring" value="WARNING"/>
+        <entry key="message" type="xstring" value="The test might be inaccurate for data sets with more than 50 data points."/>
+    </config>
     <entry key="factory" type="xstring" value="org.knime.base.node.stats.shapirowilk2.ShapiroWilk2NodeFactory"/>
     <entry key="node-name" type="xstring" value="Shapiro-Wilk Test"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Statistic Nodes (Labs)"/>
@@ -61,12 +90,15 @@
     <entry key="node-feature-version" type="xstring" value="4.5.0.v202111230748"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Shapiro-Wilk Test"/>
-    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports">
         <config key="port_1">
             <entry key="index" type="xint" value="1"/>
-            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 2, Cols: 3"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
