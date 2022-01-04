@@ -1720,3 +1720,219 @@ org.knime.core.node.InvalidSettingsException: The specified file \Users\macbooka
 2022-01-04 17:47:28,623 : WARN  : ModalContext :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
 2022-01-04 17:47:28,628 : WARN  : ModalContext :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
 2022-01-04 17:47:40,203 : WARN  : ModalContext :  : Node : Scatter Plot (local) : 3:43 : Some columns are ignored: bounds missing.
+2022-01-04 18:09:41,973 : WARN  : KNIME-Worker-5-Linear Correlation 0:15 :  : Node : Random Forest Learner (Regression) : 0:75:61 : Target column "LandAverageTemperature(next month)" does not exist or is not of the correct type
+2022-01-04 18:09:41,977 : WARN  : KNIME-Worker-5-Linear Correlation 0:15 :  : Node : Tree Ensemble Learner (Regression) : 0:74:64 : Target column "LandAverageTemperature(next month)" does not exist or is not of the correct type
+2022-01-04 18:09:41,980 : WARN  : KNIME-Worker-5-Linear Correlation 0:15 :  : Node : Polynomial Regression Learner : 0:73:48 : Target column 'LandAverageTemperature(next month)' does not exist.
+2022-01-04 18:09:41,981 : WARN  : KNIME-Worker-5-Linear Correlation 0:15 :  : Node : XGBoost Linear Ensemble Learner (Regression) : 0:67:3 : The specified target is not contained in the input table. Please select a valid target in the dialog.
+2022-01-04 18:09:41,983 : WARN  : KNIME-Worker-5-Linear Correlation 0:15 :  : Node : Linear Regression Learner : 0:69:29 : The target is not in the input.
+2022-01-04 18:09:42,003 : WARN  : KNIME-Worker-3-Correlation Filter 0:11 :  : Node : Random Forest Learner (Regression) : 0:75:61 : Target column "LandAverageTemperature(next month)" does not exist or is not of the correct type
+2022-01-04 18:09:42,005 : WARN  : KNIME-Worker-3-Correlation Filter 0:11 :  : Node : Tree Ensemble Learner (Regression) : 0:74:64 : Target column "LandAverageTemperature(next month)" does not exist or is not of the correct type
+2022-01-04 18:09:42,019 : WARN  : KNIME-Worker-3-Correlation Filter 0:11 :  : Node : Polynomial Regression Learner : 0:73:48 : Target column 'LandAverageTemperature(next month)' does not exist.
+2022-01-04 18:09:42,023 : WARN  : KNIME-Worker-3-Correlation Filter 0:11 :  : Node : XGBoost Linear Ensemble Learner (Regression) : 0:67:3 : The specified target is not contained in the input table. Please select a valid target in the dialog.
+2022-01-04 18:09:42,029 : WARN  : KNIME-Worker-3-Correlation Filter 0:11 :  : Node : Linear Regression Learner : 0:69:29 : The target is not in the input.
+2022-01-04 18:09:42,279 : WARN  : KNIME-Worker-5-X-Partitioner 0:74:2 :  : Node : Tree Ensemble Learner (Regression) : 0:74:64 : Target column "LandAverageTemperature(next month)" does not exist or is not of the correct type
+2022-01-04 18:09:42,321 : WARN  : KNIME-Worker-7-X-Partitioner 0:67:2 :  : Node : XGBoost Linear Ensemble Learner (Regression) : 0:67:3 : The specified target is not contained in the input table. Please select a valid target in the dialog.
+2022-01-04 18:09:42,326 : WARN  : KNIME-Worker-6-X-Partitioner 0:73:2 :  : Node : Polynomial Regression Learner : 0:73:48 : Target column 'LandAverageTemperature(next month)' does not exist.
+2022-01-04 18:09:42,330 : WARN  : KNIME-Worker-4-X-Partitioner 0:75:2 :  : Node : Random Forest Learner (Regression) : 0:75:61 : Target column "LandAverageTemperature(next month)" does not exist or is not of the correct type
+2022-01-04 18:09:42,333 : WARN  : KNIME-Worker-8-X-Partitioner 0:69:2 :  : Node : Linear Regression Learner : 0:69:29 : The target is not in the input.
+2022-01-04 18:10:46,245 : WARN  : KNIME-Worker-5-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:46,250 : WARN  : KNIME-Worker-5-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:46,251 : WARN  : KNIME-Worker-5-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:46,252 : WARN  : KNIME-Worker-5-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:46,253 : WARN  : KNIME-Worker-5-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:46,296 : WARN  : KNIME-Worker-7-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:46,300 : WARN  : KNIME-Worker-7-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:46,300 : WARN  : KNIME-Worker-7-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:46,301 : WARN  : KNIME-Worker-7-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:46,301 : WARN  : KNIME-Worker-7-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:46,372 : WARN  : KNIME-Worker-4-X-Partitioner 0:74:2 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:46,385 : WARN  : KNIME-Worker-6-X-Partitioner 0:75:2 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:46,498 : WARN  : KNIME-Worker-5-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:46,539 : WARN  : KNIME-Worker-3-X-Partitioner 0:67:2 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:46,659 : WARN  : KNIME-Worker-8-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:48,956 : WARN  : KNIME-Worker-8-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:49,155 : WARN  : KNIME-Worker-3-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:49,222 : WARN  : KNIME-Worker-3-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:49,287 : WARN  : KNIME-Worker-11-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:49,342 : WARN  : KNIME-Worker-3-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:49,619 : WARN  : KNIME-Worker-8-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:49,770 : WARN  : KNIME-Worker-5-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:50,072 : WARN  : KNIME-Worker-8-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:50,163 : WARN  : KNIME-Worker-5-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:50,256 : WARN  : KNIME-Worker-12-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:50,497 : WARN  : KNIME-Worker-6-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:50,618 : WARN  : KNIME-Worker-8-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:50,710 : WARN  : KNIME-Worker-13-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:50,733 : WARN  : KNIME-Worker-13-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:50,742 : WARN  : KNIME-Worker-9-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:50,767 : WARN  : KNIME-Worker-6-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:50,852 : WARN  : KNIME-Worker-3-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:50,876 : WARN  : KNIME-Worker-5-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:50,928 : WARN  : KNIME-Worker-5-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:50,986 : WARN  : KNIME-Worker-6-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:51,003 : WARN  : KNIME-Worker-11-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:51,042 : WARN  : KNIME-Worker-3-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:51,094 : WARN  : KNIME-Worker-11-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:51,116 : WARN  : KNIME-Worker-8-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:51,171 : WARN  : KNIME-Worker-5-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:51,194 : WARN  : KNIME-Worker-13-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:51,264 : WARN  : KNIME-Worker-9-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:51,284 : WARN  : KNIME-Worker-6-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:51,305 : WARN  : KNIME-Worker-6-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:51,471 : WARN  : KNIME-Worker-9-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:51,611 : WARN  : KNIME-Worker-5-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:51,796 : WARN  : KNIME-Worker-12-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:51,983 : WARN  : KNIME-Worker-9-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:52,320 : ERROR : KNIME-Worker-13-Python Script 0:73:40 :  : Node : Python Script : 0:73:40 : Execute failed: Could not start Python. There are problems with your Python environment:
+Could not start Python executable at the given location (C:\Users\Ruben\.conda\envs\py3_knime\python.exe): Cannot run program "C:\Users\Ruben\.conda\envs\py3_knime\python.exe": CreateProcess error=2, The system cannot find the file specified
+org.knime.python2.kernel.PythonInstallationTestException: Could not start Python. There are problems with your Python environment:
+Could not start Python executable at the given location (C:\Users\Ruben\.conda\envs\py3_knime\python.exe): Cannot run program "C:\Users\Ruben\.conda\envs\py3_knime\python.exe": CreateProcess error=2, The system cannot find the file specified
+	at org.knime.python2.kernel.PythonKernel.testInstallation(PythonKernel.java:99)
+	at org.knime.python2.kernel.Python2KernelBackend.<init>(Python2KernelBackend.java:327)
+	at org.knime.python2.kernel.Python2KernelBackendFactory.createBackend(Python2KernelBackendFactory.java:66)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.createKernel(PythonKernelQueue.java:397)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.populateHolder(PythonKernelQueue.java:386)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.makeObject(PythonKernelQueue.java:369)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.makeObject(PythonKernelQueue.java:1)
+	at org.apache.commons.pool2.impl.GenericKeyedObjectPool.create(GenericKeyedObjectPool.java:1051)
+	at org.apache.commons.pool2.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:347)
+	at org.apache.commons.pool2.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:270)
+	at org.knime.python2.kernel.PythonKernelQueue.dequeueHolder(PythonKernelQueue.java:286)
+	at org.knime.python2.kernel.PythonKernelQueue.getNextKernelInternal(PythonKernelQueue.java:270)
+	at org.knime.python2.kernel.PythonKernelQueue.getNextKernel(PythonKernelQueue.java:185)
+	at org.knime.python2.kernel.PythonKernelQueue.getNextKernel(PythonKernelQueue.java:143)
+	at org.knime.python2.nodes.PythonNodeModel.getNextKernelFromQueue(PythonNodeModel.java:156)
+	at org.knime.python2.nodes.PythonNodeModel.getNextKernelFromQueue(PythonNodeModel.java:146)
+	at org.knime.python2.nodes.script2.PythonScriptNodeModel2.execute(PythonScriptNodeModel2.java:112)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-04 18:10:52,521 : WARN  : KNIME-Worker-13-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:52,671 : WARN  : KNIME-Worker-8-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:53,111 : WARN  : KNIME-Worker-9-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:53,113 : WARN  : KNIME-Worker-8-Math Formula 0:74:46 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:53,150 : WARN  : KNIME-Worker-3-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:53,298 : WARN  : KNIME-Worker-11-Math Formula 0:75:46 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:53,336 : WARN  : KNIME-Worker-11-X-Partitioner 0:75:2 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:53,734 : WARN  : KNIME-Worker-3-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:53,814 : WARN  : KNIME-Worker-13-Shapiro-Wilk Test 0:84 :  : Node : Shapiro-Wilk Test : 0:84 : The test might be inaccurate for data sets with more than 50 data points.
+2022-01-04 18:10:53,835 : ERROR : KNIME-Worker-9-Python Script 0:69:40 :  : Node : Python Script : 0:69:40 : Execute failed: Could not start Python. There are problems with your Python environment:
+Could not start Python executable at the given location (C:\Users\Ruben\.conda\envs\py3_knime\python.exe): Cannot run program "C:\Users\Ruben\.conda\envs\py3_knime\python.exe": CreateProcess error=2, The system cannot find the file specified
+org.knime.python2.kernel.PythonInstallationTestException: Could not start Python. There are problems with your Python environment:
+Could not start Python executable at the given location (C:\Users\Ruben\.conda\envs\py3_knime\python.exe): Cannot run program "C:\Users\Ruben\.conda\envs\py3_knime\python.exe": CreateProcess error=2, The system cannot find the file specified
+	at org.knime.python2.kernel.PythonKernel.testInstallation(PythonKernel.java:99)
+	at org.knime.python2.kernel.Python2KernelBackend.<init>(Python2KernelBackend.java:327)
+	at org.knime.python2.kernel.Python2KernelBackendFactory.createBackend(Python2KernelBackendFactory.java:66)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.createKernel(PythonKernelQueue.java:397)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.populateHolder(PythonKernelQueue.java:386)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.passivateObject(PythonKernelQueue.java:379)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.passivateObject(PythonKernelQueue.java:1)
+	at org.apache.commons.pool2.impl.GenericKeyedObjectPool.returnObject(GenericKeyedObjectPool.java:483)
+	at org.knime.python2.kernel.PythonKernelQueue.lambda$0(PythonKernelQueue.java:306)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-01-04 18:10:54,668 : WARN  : KNIME-Worker-13-Math Formula 0:67:46 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:54,714 : WARN  : KNIME-Worker-9-X-Partitioner 0:67:2 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:55,742 : WARN  : KNIME-Worker-8-X-Partitioner 0:74:2 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:56,428 : WARN  : KNIME-Worker-9-Math Formula 0:75:46 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:56,482 : WARN  : KNIME-Worker-8-X-Partitioner 0:75:2 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:57,361 : WARN  : KNIME-Worker-4-Math Formula 0:67:46 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:57,399 : WARN  : KNIME-Worker-9-X-Partitioner 0:67:2 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:58,358 : WARN  : KNIME-Worker-3-Math Formula 0:75:46 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:58,414 : WARN  : KNIME-Worker-9-X-Partitioner 0:75:2 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:59,186 : WARN  : KNIME-Worker-8-Math Formula 0:74:46 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:59,260 : WARN  : KNIME-Worker-8-X-Partitioner 0:74:2 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-04 18:10:59,952 : WARN  : KNIME-Worker-11-Math Formula 0:67:46 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:00,020 : WARN  : KNIME-Worker-8-X-Partitioner 0:67:2 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:01,259 : WARN  : KNIME-Worker-12-Math Formula 0:75:46 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:01,326 : WARN  : KNIME-Worker-13-X-Partitioner 0:75:2 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:02,218 : WARN  : KNIME-Worker-12-Math Formula 0:74:46 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:02,297 : WARN  : KNIME-Worker-4-X-Partitioner 0:74:2 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:03,039 : WARN  : KNIME-Worker-13-Math Formula 0:67:46 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:03,061 : WARN  : KNIME-Worker-8-X-Partitioner 0:67:2 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:03,659 : WARN  : KNIME-Worker-6-Math Formula 0:75:46 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:03,692 : WARN  : KNIME-Worker-8-X-Partitioner 0:75:2 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:04,512 : WARN  : KNIME-Worker-6-Math Formula 0:74:46 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:04,542 : WARN  : KNIME-Worker-8-X-Partitioner 0:74:2 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:05,355 : WARN  : KNIME-Worker-13-Math Formula 0:67:46 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:05,703 : WARN  : KNIME-Worker-4-X-Partitioner 0:67:2 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:06,035 : WARN  : KNIME-Worker-11-Math Formula 0:75:46 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:06,100 : WARN  : KNIME-Worker-3-X-Partitioner 0:75:2 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:06,648 : WARN  : KNIME-Worker-3-Math Formula 0:74:46 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:06,696 : WARN  : KNIME-Worker-9-X-Partitioner 0:74:2 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:07,213 : WARN  : KNIME-Worker-4-Math Formula 0:67:46 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:07,258 : WARN  : KNIME-Worker-13-X-Partitioner 0:67:2 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:07,508 : WARN  : KNIME-Worker-8-Math Formula 0:67:46 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:07,539 : WARN  : KNIME-Worker-12-X-Partitioner 0:67:2 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:08,238 : WARN  : KNIME-Worker-12-Math Formula 0:67:46 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:08,297 : WARN  : KNIME-Worker-4-X-Partitioner 0:67:2 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:08,351 : WARN  : KNIME-Worker-9-Math Formula 0:75:46 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:08,408 : WARN  : KNIME-Worker-4-X-Partitioner 0:75:2 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:09,209 : WARN  : KNIME-Worker-5-Math Formula 0:74:46 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:09,248 : WARN  : KNIME-Worker-6-X-Partitioner 0:74:2 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:09,913 : WARN  : KNIME-Worker-13-Math Formula 0:67:46 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:09,946 : WARN  : KNIME-Worker-7-X-Partitioner 0:67:2 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:10,712 : WARN  : KNIME-Worker-6-Math Formula 0:75:46 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:10,745 : WARN  : KNIME-Worker-5-X-Partitioner 0:75:2 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:10,959 : WARN  : KNIME-Worker-4-Math Formula 0:67:46 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:11,244 : ERROR : KNIME-Worker-6-Python Script 0:67:40 :  : Node : Python Script : 0:67:40 : Execute failed: Could not start Python. There are problems with your Python environment:
+Could not start Python executable at the given location (C:\Users\Ruben\.conda\envs\py3_knime\python.exe): Cannot run program "C:\Users\Ruben\.conda\envs\py3_knime\python.exe": CreateProcess error=2, The system cannot find the file specified
+org.knime.python2.kernel.PythonInstallationTestException: Could not start Python. There are problems with your Python environment:
+Could not start Python executable at the given location (C:\Users\Ruben\.conda\envs\py3_knime\python.exe): Cannot run program "C:\Users\Ruben\.conda\envs\py3_knime\python.exe": CreateProcess error=2, The system cannot find the file specified
+	at org.knime.python2.kernel.PythonKernel.testInstallation(PythonKernel.java:99)
+	at org.knime.python2.kernel.Python2KernelBackend.<init>(Python2KernelBackend.java:327)
+	at org.knime.python2.kernel.Python2KernelBackendFactory.createBackend(Python2KernelBackendFactory.java:66)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.createKernel(PythonKernelQueue.java:397)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.populateHolder(PythonKernelQueue.java:386)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.passivateObject(PythonKernelQueue.java:379)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.passivateObject(PythonKernelQueue.java:1)
+	at org.apache.commons.pool2.impl.GenericKeyedObjectPool.returnObject(GenericKeyedObjectPool.java:483)
+	at org.knime.python2.kernel.PythonKernelQueue.lambda$0(PythonKernelQueue.java:306)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-01-04 18:11:11,648 : WARN  : KNIME-Worker-3-Math Formula 0:74:46 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:11,681 : WARN  : KNIME-Worker-9-X-Partitioner 0:74:2 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:12,904 : WARN  : KNIME-Worker-11-Math Formula 0:75:46 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:12,931 : WARN  : KNIME-Worker-7-X-Partitioner 0:75:2 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:13,467 : WARN  : KNIME-Worker-3-Math Formula 0:74:46 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:13,492 : WARN  : KNIME-Worker-12-X-Partitioner 0:74:2 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:14,778 : ERROR : KNIME-Worker-7-Python Script 0:75:40 :  : Node : Python Script : 0:75:40 : Execute failed: Could not start Python. There are problems with your Python environment:
+Could not start Python executable at the given location (C:\Users\Ruben\.conda\envs\py3_knime\python.exe): Cannot run program "C:\Users\Ruben\.conda\envs\py3_knime\python.exe": CreateProcess error=2, The system cannot find the file specified
+org.knime.python2.kernel.PythonInstallationTestException: Could not start Python. There are problems with your Python environment:
+Could not start Python executable at the given location (C:\Users\Ruben\.conda\envs\py3_knime\python.exe): Cannot run program "C:\Users\Ruben\.conda\envs\py3_knime\python.exe": CreateProcess error=2, The system cannot find the file specified
+	at org.knime.python2.kernel.PythonKernel.testInstallation(PythonKernel.java:99)
+	at org.knime.python2.kernel.Python2KernelBackend.<init>(Python2KernelBackend.java:327)
+	at org.knime.python2.kernel.Python2KernelBackendFactory.createBackend(Python2KernelBackendFactory.java:66)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.createKernel(PythonKernelQueue.java:397)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.populateHolder(PythonKernelQueue.java:386)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.passivateObject(PythonKernelQueue.java:379)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.passivateObject(PythonKernelQueue.java:1)
+	at org.apache.commons.pool2.impl.GenericKeyedObjectPool.returnObject(GenericKeyedObjectPool.java:483)
+	at org.knime.python2.kernel.PythonKernelQueue.lambda$0(PythonKernelQueue.java:306)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-01-04 18:11:14,778 : WARN  : KNIME-Worker-12-Math Formula 0:75:46 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:14,884 : WARN  : KNIME-Worker-4-Math Formula 0:74:46 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:14,911 : WARN  : KNIME-Worker-12-X-Partitioner 0:74:2 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:15,976 : WARN  : KNIME-Worker-10-Math Formula 0:74:46 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-04 18:11:16,082 : ERROR : KNIME-Worker-11-Python Script 0:74:40 :  : Node : Python Script : 0:74:40 : Execute failed: Could not start Python. There are problems with your Python environment:
+Could not start Python executable at the given location (C:\Users\Ruben\.conda\envs\py3_knime\python.exe): Cannot run program "C:\Users\Ruben\.conda\envs\py3_knime\python.exe": CreateProcess error=2, The system cannot find the file specified
+org.knime.python2.kernel.PythonInstallationTestException: Could not start Python. There are problems with your Python environment:
+Could not start Python executable at the given location (C:\Users\Ruben\.conda\envs\py3_knime\python.exe): Cannot run program "C:\Users\Ruben\.conda\envs\py3_knime\python.exe": CreateProcess error=2, The system cannot find the file specified
+	at org.knime.python2.kernel.PythonKernel.testInstallation(PythonKernel.java:99)
+	at org.knime.python2.kernel.Python2KernelBackend.<init>(Python2KernelBackend.java:327)
+	at org.knime.python2.kernel.Python2KernelBackendFactory.createBackend(Python2KernelBackendFactory.java:66)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.createKernel(PythonKernelQueue.java:397)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.populateHolder(PythonKernelQueue.java:386)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.passivateObject(PythonKernelQueue.java:379)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.passivateObject(PythonKernelQueue.java:1)
+	at org.apache.commons.pool2.impl.GenericKeyedObjectPool.returnObject(GenericKeyedObjectPool.java:483)
+	at org.knime.python2.kernel.PythonKernelQueue.lambda$0(PythonKernelQueue.java:306)
+	at java.base/java.lang.Thread.run(Unknown Source)
