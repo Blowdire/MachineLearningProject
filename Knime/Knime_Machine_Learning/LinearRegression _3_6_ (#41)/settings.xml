@@ -10,7 +10,11 @@
         <entry key="Serialized Weka-Classifier" type="xstring" value="rO0ABXNyACt3ZWthLmNsYXNzaWZpZXJzLmZ1bmN0aW9ucy5MaW5lYXJSZWdyZXNzaW9u0U6biEOi600CAA9aAAdiX0RlYnVnSQAUbV9BdHRyaWJ1dGVTZWxlY3Rpb25JAAxtX0NsYXNzSW5kZXhEAAttX0NsYXNzTWVhbkQADW1fQ2xhc3NTdGREZXZaAB1tX0VsaW1pbmF0ZUNvbGluZWFyQXR0cmlidXRlc0QAB21fUmlkZ2VaABFtX2NoZWNrc1R1cm5lZE9mZlsADm1fQ29lZmZpY2llbnRzdAACW0RbAAdtX01lYW5zcQB+AAFMAA9tX01pc3NpbmdGaWx0ZXJ0ADpMd2VrYS9maWx0ZXJzL3Vuc3VwZXJ2aXNlZC9hdHRyaWJ1dGUvUmVwbGFjZU1pc3NpbmdWYWx1ZXM7WwAUbV9TZWxlY3RlZEF0dHJpYnV0ZXN0AAJbWlsACW1fU3RkRGV2c3EAfgABTAARbV9UcmFuc2Zvcm1GaWx0ZXJ0ADNMd2VrYS9maWx0ZXJzL3N1cGVydmlzZWQvYXR0cmlidXRlL05vbWluYWxUb0JpbmFyeTtMABFtX1RyYW5zZm9ybWVkRGF0YXQAFUx3ZWthL2NvcmUvSW5zdGFuY2VzO3hyABt3ZWthLmNsYXNzaWZpZXJzLkNsYXNzaWZpZXJaPoQhvSYjTQIAAVoAB21fRGVidWd4cAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAT5FeY7iMIw6AHBwcHBwcHA="/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="EXECUTED"/>
+    <entry key="state" type="xstring" value="IDLE"/>
+    <config key="nodecontainer_message">
+        <entry key="type" type="xstring" value="WARNING"/>
+        <entry key="message" type="xstring" value="Node can't be executed - Node &quot;LinearRegression (3.6)&quot; not available from extension &quot;KNIME Weka Data Mining Integration (3.6)&quot; (provided by &quot;KNIME AG, Zurich, Switzerland&quot;; plugin &quot;org.knime.ext.weka_3.6&quot; is not installed)%%00010Status: DataLoadError: MISSING LinearRegression (3.6) 0:41%%00010  Status: DataLoadError: Unable to load port content for node &quot;MISSING LinearRegression (3.6)&quot;: Invalid spec class &quot;org.knime.ext.weka366.ports.WekaClassifierModelPortObjectSpec&quot;%%00010  Status: DataLoadError: State has changed from EXECUTED to IDLE"/>
+    </config>
     <entry key="factory" type="xstring" value="org.knime.ext.weka366.classifier.WekaClassifierNodeFactory"/>
     <entry key="node-name" type="xstring" value="LinearRegression (3.6)"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME WEKA nodes"/>
@@ -25,22 +29,17 @@
         <entry key="weka-class" type="xstring" value="weka.classifiers.functions.LinearRegression"/>
         <entry key="weka-version" type="xstring" value="3.6"/>
     </config>
-    <entry key="name" type="xstring" value="LinearRegression (3.6)"/>
-    <entry key="hasContent" type="xboolean" value="true"/>
+    <entry key="name" type="xstring" value="MISSING LinearRegression (3.6)"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports">
         <config key="port_1">
             <entry key="index" type="xint" value="1"/>
-            <entry key="port_spec_class" type="xstring" value="org.knime.ext.weka366.ports.WekaClassifierModelPortObjectSpec"/>
-            <entry key="port_object_class" type="xstring" value="org.knime.ext.weka366.ports.WekaClassifierModelPortObject"/>
-            <entry key="port_object_summary" type="xstring" value="LinearRegression"/>
-            <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
-            <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
-            <entry key="port_dir_location" type="xstring" value="port_1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="d4dff403-4baf-487e-8324-4458cc10ac10"/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
     </config>
 </config>

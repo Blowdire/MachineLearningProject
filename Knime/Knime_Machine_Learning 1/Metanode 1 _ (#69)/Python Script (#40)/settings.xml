@@ -6,7 +6,7 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
-        <entry key="sourceCode" type="xstring" value="# Copy input to output%%00010output_table_1 = input_table_1.copy()%%00010"/>
+        <entry key="sourceCode" type="xstring" value="# Copy input to output%%00010import numpy as np%%00010import pandas as pd%%00010results = []%%00010%%00010for i in range(0, 10):%%00010%%00009data = input_table_1.loc[input_table_1[&quot;fold #&quot;] == i]%%00010%%00009correlation_matrix = np.corrcoef(data['LandAverageTemperature(next month)'], data['Prediction (LandAverageTemperature(next month))'])%%00010%%00010%%00009correlation_xy = correlation_matrix[0,1]%%00010%%00009%%00010%%00009r_squared = correlation_xy**2%%00010%%00009results.append([&quot;fold_&quot;+str(i), r_squared])%%00010output_table_1 = pd.DataFrame(results, columns=[&quot;Fold&quot;, &quot;R_Squared&quot;])"/>
         <entry key="rowLimit" type="xint" value="1000"/>
         <entry key="convertMissingToPython" type="xboolean" value="false"/>
         <entry key="convertMissingFromPython" type="xboolean" value="false"/>
@@ -18,7 +18,7 @@
         <entry key="python3Command" type="xstring" value=""/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
     <entry key="factory" type="xstring" value="org.knime.python2.nodes.script2.Python2ScriptNodeFactory2"/>
     <entry key="node-name" type="xstring" value="Python Script"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Python nodes"/>
@@ -46,16 +46,19 @@
         <config key="Output object (pickled)"/>
     </config>
     <entry key="name" type="xstring" value="Python Script"/>
-    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports">
         <config key="port_1">
             <entry key="index" type="xint" value="1"/>
-            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 10, Cols: 2"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="3dcb5102-17f7-4ecb-b82c-2d5137d40a4a"/>
     </config>
 </config>

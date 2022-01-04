@@ -122,7 +122,7 @@
                 "nrfails": 0,
                 "exectime": 2665,
                 "nrcreated": 2,
-                "successor": "org.knime.base.node.preproc.colautotypecast.ColumnAutoTypeCasterNodeFactory#Column Auto Type Cast"
+                "successor": "NodeContainer"
             },
             {
                 "id": "org.knime.ext.jep.multicolumn.MultiColumnJEPNodeFactory#Math Formula (Multi Column)",
@@ -606,14 +606,14 @@
         "wrappedNodes": {
         }
     },
-    "uptime": 2635243,
-    "workflowsOpened": 3,
+    "uptime": 2361156,
+    "workflowsOpened": 5,
     "remoteWorkflowsOpened": 0,
     "workflowsImported": 0,
     "workflowsExported": 0,
-    "launches": 15,
+    "launches": 17,
     "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
-    "timeSinceLastStart": 4173598,
-    "crashes": 2,
+    "timeSinceLastStart": 581348,
+    "crashes": 3,
     "properlyShutDown": false
 }

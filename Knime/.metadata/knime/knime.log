@@ -1114,3 +1114,371 @@ org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loo
 2022-01-04 16:21:56,856 : WARN  : KNIME-Worker-92-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
 2022-01-04 16:21:56,909 : WARN  : KNIME-Worker-87-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
 2022-01-04 16:21:57,002 : WARN  : KNIME-Worker-84-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-04 16:30:39,051 : WARN  : ModalContext :  : FileNodePersistor : MISSING LinearRegression (3.6) : 0:41 : Unable to load port content for node "MISSING LinearRegression (3.6)": Invalid spec class "org.knime.ext.weka366.ports.WekaClassifierModelPortObjectSpec"
+java.io.IOException: Invalid spec class "org.knime.ext.weka366.ports.WekaClassifierModelPortObjectSpec"
+	at org.knime.core.node.FileNodePersistor.lambda$0(FileNodePersistor.java:421)
+	at java.base/java.util.Optional.orElseThrow(Unknown Source)
+	at org.knime.core.node.FileNodePersistor.loadPortObject(FileNodePersistor.java:421)
+	at org.knime.core.node.FileNodePersistor.loadPort(FileNodePersistor.java:373)
+	at org.knime.core.node.FileNodePersistor.loadPorts(FileNodePersistor.java:330)
+	at org.knime.core.node.FileNodePersistor.load(FileNodePersistor.java:995)
+	at org.knime.core.node.workflow.FileNativeNodeContainerPersistor.loadNCAndWashModelSettings(FileNativeNodeContainerPersistor.java:254)
+	at org.knime.core.node.workflow.FileSingleNodeContainerPersistor.loadNodeContainer(FileSingleNodeContainerPersistor.java:268)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8507)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8408)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8523)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8408)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8362)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8283)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8256)
+	at org.knime.core.node.workflow.WorkflowManager.loadProject(WorkflowManager.java:8101)
+	at org.knime.workbench.editor2.LoadWorkflowRunnable.run(LoadWorkflowRunnable.java:184)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+2022-01-04 16:30:39,056 : WARN  : ModalContext :  : Node : MISSING LinearRegression (3.6) : 0:41 : Node can't be executed - Node "LinearRegression (3.6)" not available from extension "KNIME Weka Data Mining Integration (3.6)" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.weka_3.6" is not installed)
+2022-01-04 16:30:39,126 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Errors during load: Status: DataLoadError: Knime_Machine_Learning 0 loaded with error during data load
+2022-01-04 16:30:39,126 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: DataLoadError: Knime_Machine_Learning 0
+2022-01-04 16:30:39,126 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Node "LinearRegression (3.6)" not available from extension "KNIME Weka Data Mining Integration (3.6)" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.weka_3.6" is not installed)
+2022-01-04 16:30:39,127 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Node "Weka Predictor (3.6)" not available from extension "KNIME Weka Data Mining Integration (3.6)" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.ext.weka_3.6" is not installed)
+2022-01-04 16:30:39,127 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: MISSING LinearRegression (3.6) 0:41
+2022-01-04 16:30:39,127 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Unable to load port content for node "MISSING LinearRegression (3.6)": Invalid spec class "org.knime.ext.weka366.ports.WekaClassifierModelPortObjectSpec"
+2022-01-04 16:30:39,127 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: State has changed from EXECUTED to IDLE
+2022-01-04 16:30:39,127 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: State has changed from EXECUTED to IDLE
+2022-01-04 16:31:30,601 : WARN  : ModalContext :  : Node : Scatter Plot (local) : 0:43 : Some columns are ignored: bounds missing.
+2022-01-04 16:31:30,666 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  : Warnings during load: Status: Warning: Knime_Machine_Learning 0 loaded with warnings
+2022-01-04 16:31:30,666 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: Warning: Knime_Machine_Learning 0
+2022-01-04 16:31:30,666 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: LinearRegression (3.6) 0:41
+2022-01-04 16:31:30,666 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: State has changed from IDLE to CONFIGURED
+2022-01-04 16:31:30,666 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: Weka Predictor (3.6) 0:42
+2022-01-04 16:31:30,666 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: State has changed from IDLE to CONFIGURED
+2022-01-04 16:31:30,666 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: Scatter Plot (local) 0:43
+2022-01-04 16:31:30,667 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: State has changed from IDLE to CONFIGURED
+2022-01-04 16:31:30,667 : WARN  : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: State has changed from IDLE to CONFIGURED
+2022-01-04 16:40:32,950 : WARN  : Thread-22 :  : PythonKernel : Python Script : 3:69:40 : F:\programmi\KNIME\plugins\org.knime.python2_4.4.1.v202108191134\py\PythonKernelBase.py:268: UserWarning: An error occurred while autocompleting.
+2022-01-04 16:41:39,073 : WARN  : Thread-33 :  : PythonKernel : Python Script : 3:69:40 : C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\numpy\lib\function_base.py:392: RuntimeWarning: Mean of empty slice.
+2022-01-04 16:41:39,080 : WARN  : Thread-33 :  : PythonKernel : Python Script : 3:69:40 : C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\numpy\core\_methods.py:78: RuntimeWarning: invalid value encountered in true_divide
+2022-01-04 16:41:39,081 : WARN  : Thread-33 :  : PythonKernel : Python Script : 3:69:40 : C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\numpy\lib\function_base.py:2522: RuntimeWarning: Degrees of freedom <= 0 for slice
+2022-01-04 16:41:39,081 : WARN  : Thread-33 :  : PythonKernel : Python Script : 3:69:40 : C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\numpy\lib\function_base.py:2451: RuntimeWarning: divide by zero encountered in true_divide
+2022-01-04 16:41:39,081 : WARN  : Thread-33 :  : PythonKernel : Python Script : 3:69:40 : C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\numpy\lib\function_base.py:2451: RuntimeWarning: invalid value encountered in multiply
+2022-01-04 16:42:13,237 : ERROR : KNIME-Worker-11-Python Script 3:75:40 :  : Node : Python Script : 3:75:40 : Execute failed: 'fold #'
+Traceback (most recent call last):
+File "<string>", line 7, in <module>
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\frame.py", line 2688, in __getitem__
+    return self._getitem_column(key)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\frame.py", line 2695, in _getitem_column
+    return self._get_item_cache(key)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\generic.py", line 2489, in _get_item_cache
+    values = self._data.get(item)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\internals.py", line 4115, in get
+    loc = self.items.get_loc(item)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\indexes\base.py", line 3080, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 140, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 162, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1492, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1500, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'fold #'
+
+org.knime.python2.kernel.PythonIOException: 'fold #'
+Traceback (most recent call last):
+File "<string>", line 7, in <module>
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\frame.py", line 2688, in __getitem__
+    return self._getitem_column(key)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\frame.py", line 2695, in _getitem_column
+    return self._get_item_cache(key)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\generic.py", line 2489, in _get_item_cache
+    values = self._data.get(item)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\internals.py", line 4115, in get
+    loc = self.items.get_loc(item)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\indexes\base.py", line 3080, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 140, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 162, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1492, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1500, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'fold #'
+
+	at org.knime.python2.util.PythonUtils$Misc.executeCancelableUnwrapExecutionException(PythonUtils.java:310)
+	at org.knime.python2.util.PythonUtils$Misc.executeCancelable(PythonUtils.java:283)
+	at org.knime.python2.kernel.PythonKernel.executeCommandCancelable(PythonKernel.java:1482)
+	at org.knime.python2.kernel.PythonKernel.execute(PythonKernel.java:1413)
+	at org.knime.python2.nodes.script2.PythonScriptNodeModel2.execute(PythonScriptNodeModel2.java:139)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: org.knime.python2.kernel.PythonIOException: 'fold #'
+Traceback (most recent call last):
+File "<string>", line 7, in <module>
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\frame.py", line 2688, in __getitem__
+    return self._getitem_column(key)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\frame.py", line 2695, in _getitem_column
+    return self._get_item_cache(key)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\generic.py", line 2489, in _get_item_cache
+    values = self._data.get(item)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\internals.py", line 4115, in get
+    loc = self.items.get_loc(item)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\indexes\base.py", line 3080, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 140, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 162, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1492, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1500, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'fold #'
+
+	at org.knime.python2.kernel.PythonKernel.executeCommand(PythonKernel.java:1471)
+	at org.knime.python2.kernel.PythonKernel.execute(PythonKernel.java:1397)
+	at org.knime.python2.kernel.PythonKernel.lambda$8(PythonKernel.java:1413)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: Traceback (most recent call last):
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\indexes\base.py", line 3078, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 140, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 162, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1492, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1500, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'fold #'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\programmi\KNIME\plugins\org.knime.python2_4.4.1.v202108191134\py\messaging\RequestHandlers.py", line 96, in _handle_custom_message
+    response = self._respond(message, response_message_id, workspace)
+  File "F:\programmi\KNIME\plugins\org.knime.python2_4.4.1.v202108191134\py\messaging\RequestHandlers.py", line 376, in _respond
+    output, error = workspace.execute(source_code, request.id)
+  File "F:\programmi\KNIME\plugins\org.knime.python2_4.4.1.v202108191134\py\PythonKernelBase.py", line 289, in execute
+    exec(source_code, self._exec_env, self._exec_env)
+  File "<string>", line 7, in <module>
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\frame.py", line 2688, in __getitem__
+    return self._getitem_column(key)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\frame.py", line 2695, in _getitem_column
+    return self._get_item_cache(key)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\generic.py", line 2489, in _get_item_cache
+    values = self._data.get(item)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\internals.py", line 4115, in get
+    loc = self.items.get_loc(item)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\indexes\base.py", line 3080, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 140, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 162, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1492, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1500, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'fold #'
+
+2022-01-04 16:42:26,377 : WARN  : main :  : Node : Scatter Plot (local) : 3:77 : Some columns are ignored: bounds missing.
+2022-01-04 16:42:29,572 : WARN  : KNIME-Worker-14-X-Partitioner 3:75:2 :  : Node : Scatter Plot (local) : 3:77 : Some columns are ignored: bounds missing.
+2022-01-04 16:42:30,384 : WARN  : KNIME-Worker-36-Math Formula 3:75:46 :  : Node : Scatter Plot (local) : 3:77 : Some columns are ignored: bounds missing.
+2022-01-04 16:42:30,430 : WARN  : KNIME-Worker-21-X-Partitioner 3:75:2 :  : Node : Scatter Plot (local) : 3:77 : Some columns are ignored: bounds missing.
+2022-01-04 16:42:30,766 : WARN  : KNIME-Worker-20-Math Formula 3:75:46 :  : Node : Scatter Plot (local) : 3:77 : Some columns are ignored: bounds missing.
+2022-01-04 16:42:30,780 : WARN  : KNIME-Worker-23-X-Partitioner 3:75:2 :  : Node : Scatter Plot (local) : 3:77 : Some columns are ignored: bounds missing.
+2022-01-04 16:42:31,095 : WARN  : KNIME-Worker-33-Math Formula 3:75:46 :  : Node : Scatter Plot (local) : 3:77 : Some columns are ignored: bounds missing.
+2022-01-04 16:42:31,108 : WARN  : KNIME-Worker-29-X-Partitioner 3:75:2 :  : Node : Scatter Plot (local) : 3:77 : Some columns are ignored: bounds missing.
+2022-01-04 16:42:31,385 : WARN  : KNIME-Worker-21-Math Formula 3:75:46 :  : Node : Scatter Plot (local) : 3:77 : Some columns are ignored: bounds missing.
+2022-01-04 16:42:31,397 : WARN  : KNIME-Worker-33-X-Partitioner 3:75:2 :  : Node : Scatter Plot (local) : 3:77 : Some columns are ignored: bounds missing.
+2022-01-04 16:42:31,702 : WARN  : KNIME-Worker-34-Math Formula 3:75:46 :  : Node : Scatter Plot (local) : 3:77 : Some columns are ignored: bounds missing.
+2022-01-04 16:42:31,712 : WARN  : KNIME-Worker-15-X-Partitioner 3:75:2 :  : Node : Scatter Plot (local) : 3:77 : Some columns are ignored: bounds missing.
+2022-01-04 16:42:31,980 : WARN  : KNIME-Worker-28-Math Formula 3:75:46 :  : Node : Scatter Plot (local) : 3:77 : Some columns are ignored: bounds missing.
+2022-01-04 16:42:31,989 : WARN  : KNIME-Worker-19-X-Partitioner 3:75:2 :  : Node : Scatter Plot (local) : 3:77 : Some columns are ignored: bounds missing.
+2022-01-04 16:42:32,300 : WARN  : KNIME-Worker-28-Math Formula 3:75:46 :  : Node : Scatter Plot (local) : 3:77 : Some columns are ignored: bounds missing.
+2022-01-04 16:42:32,309 : WARN  : KNIME-Worker-23-X-Partitioner 3:75:2 :  : Node : Scatter Plot (local) : 3:77 : Some columns are ignored: bounds missing.
+2022-01-04 16:42:32,581 : WARN  : KNIME-Worker-35-Math Formula 3:75:46 :  : Node : Scatter Plot (local) : 3:77 : Some columns are ignored: bounds missing.
+2022-01-04 16:42:32,589 : WARN  : KNIME-Worker-19-X-Partitioner 3:75:2 :  : Node : Scatter Plot (local) : 3:77 : Some columns are ignored: bounds missing.
+2022-01-04 16:42:32,903 : WARN  : KNIME-Worker-11-Math Formula 3:75:46 :  : Node : Scatter Plot (local) : 3:77 : Some columns are ignored: bounds missing.
+2022-01-04 16:42:32,912 : WARN  : KNIME-Worker-20-X-Partitioner 3:75:2 :  : Node : Scatter Plot (local) : 3:77 : Some columns are ignored: bounds missing.
+2022-01-04 16:42:33,232 : WARN  : KNIME-Worker-32-Math Formula 3:75:46 :  : Node : Scatter Plot (local) : 3:77 : Some columns are ignored: bounds missing.
+2022-01-04 16:43:06,654 : WARN  : main :  : Node : Scatter Plot (local) : 3:78 : Some columns are ignored: bounds missing.
+2022-01-04 16:43:08,229 : WARN  : KNIME-Worker-25-X-Partitioner 3:73:2 :  : Node : Scatter Plot (local) : 3:78 : Some columns are ignored: bounds missing.
+2022-01-04 16:43:08,548 : WARN  : KNIME-Worker-26-Math Formula 3:73:54 :  : Node : Scatter Plot (local) : 3:78 : Some columns are ignored: bounds missing.
+2022-01-04 16:43:08,554 : WARN  : KNIME-Worker-35-X-Partitioner 3:73:2 :  : Node : Scatter Plot (local) : 3:78 : Some columns are ignored: bounds missing.
+2022-01-04 16:43:08,600 : WARN  : KNIME-Worker-23-Math Formula 3:73:54 :  : Node : Scatter Plot (local) : 3:78 : Some columns are ignored: bounds missing.
+2022-01-04 16:43:08,607 : WARN  : KNIME-Worker-37-X-Partitioner 3:73:2 :  : Node : Scatter Plot (local) : 3:78 : Some columns are ignored: bounds missing.
+2022-01-04 16:43:08,631 : WARN  : KNIME-Worker-34-Math Formula 3:73:54 :  : Node : Scatter Plot (local) : 3:78 : Some columns are ignored: bounds missing.
+2022-01-04 16:43:08,638 : WARN  : KNIME-Worker-36-X-Partitioner 3:73:2 :  : Node : Scatter Plot (local) : 3:78 : Some columns are ignored: bounds missing.
+2022-01-04 16:43:08,664 : WARN  : KNIME-Worker-14-Math Formula 3:73:54 :  : Node : Scatter Plot (local) : 3:78 : Some columns are ignored: bounds missing.
+2022-01-04 16:43:08,671 : WARN  : KNIME-Worker-30-X-Partitioner 3:73:2 :  : Node : Scatter Plot (local) : 3:78 : Some columns are ignored: bounds missing.
+2022-01-04 16:43:08,694 : WARN  : KNIME-Worker-29-Math Formula 3:73:54 :  : Node : Scatter Plot (local) : 3:78 : Some columns are ignored: bounds missing.
+2022-01-04 16:43:08,701 : WARN  : KNIME-Worker-21-X-Partitioner 3:73:2 :  : Node : Scatter Plot (local) : 3:78 : Some columns are ignored: bounds missing.
+2022-01-04 16:43:08,728 : WARN  : KNIME-Worker-15-Math Formula 3:73:54 :  : Node : Scatter Plot (local) : 3:78 : Some columns are ignored: bounds missing.
+2022-01-04 16:43:08,733 : WARN  : KNIME-Worker-28-X-Partitioner 3:73:2 :  : Node : Scatter Plot (local) : 3:78 : Some columns are ignored: bounds missing.
+2022-01-04 16:43:08,756 : WARN  : KNIME-Worker-33-Math Formula 3:73:54 :  : Node : Scatter Plot (local) : 3:78 : Some columns are ignored: bounds missing.
+2022-01-04 16:43:08,764 : WARN  : KNIME-Worker-25-X-Partitioner 3:73:2 :  : Node : Scatter Plot (local) : 3:78 : Some columns are ignored: bounds missing.
+2022-01-04 16:43:08,788 : WARN  : KNIME-Worker-20-Math Formula 3:73:54 :  : Node : Scatter Plot (local) : 3:78 : Some columns are ignored: bounds missing.
+2022-01-04 16:43:08,794 : WARN  : KNIME-Worker-35-X-Partitioner 3:73:2 :  : Node : Scatter Plot (local) : 3:78 : Some columns are ignored: bounds missing.
+2022-01-04 16:43:08,817 : WARN  : KNIME-Worker-27-Math Formula 3:73:54 :  : Node : Scatter Plot (local) : 3:78 : Some columns are ignored: bounds missing.
+2022-01-04 16:43:08,823 : WARN  : KNIME-Worker-37-X-Partitioner 3:73:2 :  : Node : Scatter Plot (local) : 3:78 : Some columns are ignored: bounds missing.
+2022-01-04 16:43:08,847 : WARN  : KNIME-Worker-24-Math Formula 3:73:54 :  : Node : Scatter Plot (local) : 3:78 : Some columns are ignored: bounds missing.
+2022-01-04 16:43:08,951 : ERROR : KNIME-Worker-34-Python Script 3:73:40 :  : Node : Python Script : 3:73:40 : Execute failed: 'Prediction (LandAverageTemperature(next month))'
+Traceback (most recent call last):
+File "<string>", line 8, in <module>
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\frame.py", line 2688, in __getitem__
+    return self._getitem_column(key)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\frame.py", line 2695, in _getitem_column
+    return self._get_item_cache(key)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\generic.py", line 2489, in _get_item_cache
+    values = self._data.get(item)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\internals.py", line 4115, in get
+    loc = self.items.get_loc(item)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\indexes\base.py", line 3080, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 140, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 162, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1492, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1500, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Prediction (LandAverageTemperature(next month))'
+
+org.knime.python2.kernel.PythonIOException: 'Prediction (LandAverageTemperature(next month))'
+Traceback (most recent call last):
+File "<string>", line 8, in <module>
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\frame.py", line 2688, in __getitem__
+    return self._getitem_column(key)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\frame.py", line 2695, in _getitem_column
+    return self._get_item_cache(key)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\generic.py", line 2489, in _get_item_cache
+    values = self._data.get(item)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\internals.py", line 4115, in get
+    loc = self.items.get_loc(item)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\indexes\base.py", line 3080, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 140, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 162, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1492, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1500, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Prediction (LandAverageTemperature(next month))'
+
+	at org.knime.python2.util.PythonUtils$Misc.executeCancelableUnwrapExecutionException(PythonUtils.java:310)
+	at org.knime.python2.util.PythonUtils$Misc.executeCancelable(PythonUtils.java:283)
+	at org.knime.python2.kernel.PythonKernel.executeCommandCancelable(PythonKernel.java:1482)
+	at org.knime.python2.kernel.PythonKernel.execute(PythonKernel.java:1413)
+	at org.knime.python2.nodes.script2.PythonScriptNodeModel2.execute(PythonScriptNodeModel2.java:139)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: org.knime.python2.kernel.PythonIOException: 'Prediction (LandAverageTemperature(next month))'
+Traceback (most recent call last):
+File "<string>", line 8, in <module>
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\frame.py", line 2688, in __getitem__
+    return self._getitem_column(key)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\frame.py", line 2695, in _getitem_column
+    return self._get_item_cache(key)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\generic.py", line 2489, in _get_item_cache
+    values = self._data.get(item)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\internals.py", line 4115, in get
+    loc = self.items.get_loc(item)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\indexes\base.py", line 3080, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 140, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 162, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1492, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1500, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Prediction (LandAverageTemperature(next month))'
+
+	at org.knime.python2.kernel.PythonKernel.executeCommand(PythonKernel.java:1471)
+	at org.knime.python2.kernel.PythonKernel.execute(PythonKernel.java:1397)
+	at org.knime.python2.kernel.PythonKernel.lambda$8(PythonKernel.java:1413)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: Traceback (most recent call last):
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\indexes\base.py", line 3078, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas\_libs\index.pyx", line 140, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 162, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1492, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1500, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Prediction (LandAverageTemperature(next month))'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\programmi\KNIME\plugins\org.knime.python2_4.4.1.v202108191134\py\messaging\RequestHandlers.py", line 96, in _handle_custom_message
+    response = self._respond(message, response_message_id, workspace)
+  File "F:\programmi\KNIME\plugins\org.knime.python2_4.4.1.v202108191134\py\messaging\RequestHandlers.py", line 376, in _respond
+    output, error = workspace.execute(source_code, request.id)
+  File "F:\programmi\KNIME\plugins\org.knime.python2_4.4.1.v202108191134\py\PythonKernelBase.py", line 289, in execute
+    exec(source_code, self._exec_env, self._exec_env)
+  File "<string>", line 8, in <module>
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\frame.py", line 2688, in __getitem__
+    return self._getitem_column(key)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\frame.py", line 2695, in _getitem_column
+    return self._get_item_cache(key)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\generic.py", line 2489, in _get_item_cache
+    values = self._data.get(item)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\internals.py", line 4115, in get
+    loc = self.items.get_loc(item)
+  File "C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\pandas\core\indexes\base.py", line 3080, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas\_libs\index.pyx", line 140, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 162, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1492, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1500, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Prediction (LandAverageTemperature(next month))'
+
+2022-01-04 16:44:17,567 : WARN  : Thread-58 :  : PythonKernel : Python Script : 3:73:40 : C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\numpy\lib\function_base.py:392: RuntimeWarning: Mean of empty slice.
+2022-01-04 16:44:17,568 : WARN  : Thread-58 :  : PythonKernel : Python Script : 3:73:40 : C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\numpy\core\_methods.py:78: RuntimeWarning: invalid value encountered in true_divide
+2022-01-04 16:44:17,568 : WARN  : Thread-58 :  : PythonKernel : Python Script : 3:73:40 : C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\numpy\lib\function_base.py:2522: RuntimeWarning: Degrees of freedom <= 0 for slice
+2022-01-04 16:44:17,568 : WARN  : Thread-58 :  : PythonKernel : Python Script : 3:73:40 : C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\numpy\lib\function_base.py:2451: RuntimeWarning: divide by zero encountered in true_divide
+2022-01-04 16:44:17,568 : WARN  : Thread-58 :  : PythonKernel : Python Script : 3:73:40 : C:\Users\Ruben\.conda\envs\py3_knime\lib\site-packages\numpy\lib\function_base.py:2451: RuntimeWarning: invalid value encountered in multiply
+2022-01-04 16:44:36,728 : WARN  : main :  : Node : Scatter Plot (local) : 3:79 : Some columns are ignored: bounds missing.
+2022-01-04 16:44:38,537 : WARN  : KNIME-Worker-25-X-Partitioner 3:67:2 :  : Node : Scatter Plot (local) : 3:79 : Some columns are ignored: bounds missing.
+2022-01-04 16:44:38,949 : WARN  : KNIME-Worker-45-Math Formula 3:67:46 :  : Node : Scatter Plot (local) : 3:79 : Some columns are ignored: bounds missing.
+2022-01-04 16:44:38,958 : WARN  : KNIME-Worker-47-X-Partitioner 3:67:2 :  : Node : Scatter Plot (local) : 3:79 : Some columns are ignored: bounds missing.
+2022-01-04 16:44:39,045 : WARN  : KNIME-Worker-52-Math Formula 3:67:46 :  : Node : Scatter Plot (local) : 3:79 : Some columns are ignored: bounds missing.
+2022-01-04 16:44:39,068 : WARN  : KNIME-Worker-54-X-Partitioner 3:67:2 :  : Node : Scatter Plot (local) : 3:79 : Some columns are ignored: bounds missing.
+2022-01-04 16:44:39,132 : WARN  : KNIME-Worker-59-Math Formula 3:67:46 :  : Node : Scatter Plot (local) : 3:79 : Some columns are ignored: bounds missing.
+2022-01-04 16:44:39,161 : WARN  : KNIME-Worker-61-X-Partitioner 3:67:2 :  : Node : Scatter Plot (local) : 3:79 : Some columns are ignored: bounds missing.
+2022-01-04 16:44:39,227 : WARN  : KNIME-Worker-18-Math Formula 3:67:46 :  : Node : Scatter Plot (local) : 3:79 : Some columns are ignored: bounds missing.
+2022-01-04 16:44:39,237 : WARN  : KNIME-Worker-43-X-Partitioner 3:67:2 :  : Node : Scatter Plot (local) : 3:79 : Some columns are ignored: bounds missing.
+2022-01-04 16:44:39,304 : WARN  : KNIME-Worker-48-Math Formula 3:67:46 :  : Node : Scatter Plot (local) : 3:79 : Some columns are ignored: bounds missing.
+2022-01-04 16:44:39,311 : WARN  : KNIME-Worker-51-X-Partitioner 3:67:2 :  : Node : Scatter Plot (local) : 3:79 : Some columns are ignored: bounds missing.
+2022-01-04 16:44:39,375 : WARN  : KNIME-Worker-55-Math Formula 3:67:46 :  : Node : Scatter Plot (local) : 3:79 : Some columns are ignored: bounds missing.
+2022-01-04 16:44:39,385 : WARN  : KNIME-Worker-58-X-Partitioner 3:67:2 :  : Node : Scatter Plot (local) : 3:79 : Some columns are ignored: bounds missing.
+2022-01-04 16:44:39,469 : WARN  : KNIME-Worker-32-Math Formula 3:67:46 :  : Node : Scatter Plot (local) : 3:79 : Some columns are ignored: bounds missing.
+2022-01-04 16:44:39,476 : WARN  : KNIME-Worker-25-X-Partitioner 3:67:2 :  : Node : Scatter Plot (local) : 3:79 : Some columns are ignored: bounds missing.
+2022-01-04 16:44:39,567 : WARN  : KNIME-Worker-44-Math Formula 3:67:46 :  : Node : Scatter Plot (local) : 3:79 : Some columns are ignored: bounds missing.
+2022-01-04 16:44:39,574 : WARN  : KNIME-Worker-46-X-Partitioner 3:67:2 :  : Node : Scatter Plot (local) : 3:79 : Some columns are ignored: bounds missing.
+2022-01-04 16:44:39,677 : WARN  : KNIME-Worker-50-Math Formula 3:67:46 :  : Node : Scatter Plot (local) : 3:79 : Some columns are ignored: bounds missing.
+2022-01-04 16:44:39,684 : WARN  : KNIME-Worker-54-X-Partitioner 3:67:2 :  : Node : Scatter Plot (local) : 3:79 : Some columns are ignored: bounds missing.
+2022-01-04 16:44:39,742 : WARN  : KNIME-Worker-57-Math Formula 3:67:46 :  : Node : Scatter Plot (local) : 3:79 : Some columns are ignored: bounds missing.
+2022-01-04 16:44:58,810 : WARN  : main :  : Node : Scatter Plot (local) : 3:80 : Some columns are ignored: bounds missing.
+2022-01-04 16:45:00,410 : WARN  : KNIME-Worker-32-X-Partitioner 3:74:2 :  : Node : Scatter Plot (local) : 3:80 : Some columns are ignored: bounds missing.
+2022-01-04 16:45:00,702 : WARN  : KNIME-Worker-42-Math Formula 3:74:46 :  : Node : Scatter Plot (local) : 3:80 : Some columns are ignored: bounds missing.
+2022-01-04 16:45:00,709 : WARN  : KNIME-Worker-43-X-Partitioner 3:74:2 :  : Node : Scatter Plot (local) : 3:80 : Some columns are ignored: bounds missing.
+2022-01-04 16:45:00,987 : WARN  : KNIME-Worker-53-Math Formula 3:74:46 :  : Node : Scatter Plot (local) : 3:80 : Some columns are ignored: bounds missing.
+2022-01-04 16:45:00,994 : WARN  : KNIME-Worker-58-X-Partitioner 3:74:2 :  : Node : Scatter Plot (local) : 3:80 : Some columns are ignored: bounds missing.
+2022-01-04 16:45:01,299 : WARN  : KNIME-Worker-42-Math Formula 3:74:46 :  : Node : Scatter Plot (local) : 3:80 : Some columns are ignored: bounds missing.
+2022-01-04 16:45:01,307 : WARN  : KNIME-Worker-48-X-Partitioner 3:74:2 :  : Node : Scatter Plot (local) : 3:80 : Some columns are ignored: bounds missing.
+2022-01-04 16:45:01,573 : WARN  : KNIME-Worker-60-Math Formula 3:74:46 :  : Node : Scatter Plot (local) : 3:80 : Some columns are ignored: bounds missing.
+2022-01-04 16:45:01,580 : WARN  : KNIME-Worker-42-X-Partitioner 3:74:2 :  : Node : Scatter Plot (local) : 3:80 : Some columns are ignored: bounds missing.
+2022-01-04 16:45:01,838 : WARN  : KNIME-Worker-54-Math Formula 3:74:46 :  : Node : Scatter Plot (local) : 3:80 : Some columns are ignored: bounds missing.
+2022-01-04 16:45:01,845 : WARN  : KNIME-Worker-49-X-Partitioner 3:74:2 :  : Node : Scatter Plot (local) : 3:80 : Some columns are ignored: bounds missing.
+2022-01-04 16:45:02,111 : WARN  : KNIME-Worker-38-Math Formula 3:74:46 :  : Node : Scatter Plot (local) : 3:80 : Some columns are ignored: bounds missing.
+2022-01-04 16:45:02,118 : WARN  : KNIME-Worker-18-X-Partitioner 3:74:2 :  : Node : Scatter Plot (local) : 3:80 : Some columns are ignored: bounds missing.
+2022-01-04 16:45:02,376 : WARN  : KNIME-Worker-58-Math Formula 3:74:46 :  : Node : Scatter Plot (local) : 3:80 : Some columns are ignored: bounds missing.
+2022-01-04 16:45:02,383 : WARN  : KNIME-Worker-25-X-Partitioner 3:74:2 :  : Node : Scatter Plot (local) : 3:80 : Some columns are ignored: bounds missing.
+2022-01-04 16:45:02,650 : WARN  : KNIME-Worker-48-Math Formula 3:74:46 :  : Node : Scatter Plot (local) : 3:80 : Some columns are ignored: bounds missing.
+2022-01-04 16:45:02,656 : WARN  : KNIME-Worker-25-X-Partitioner 3:74:2 :  : Node : Scatter Plot (local) : 3:80 : Some columns are ignored: bounds missing.
+2022-01-04 16:45:02,907 : WARN  : KNIME-Worker-55-Math Formula 3:74:46 :  : Node : Scatter Plot (local) : 3:80 : Some columns are ignored: bounds missing.
+2022-01-04 16:45:02,913 : WARN  : KNIME-Worker-50-X-Partitioner 3:74:2 :  : Node : Scatter Plot (local) : 3:80 : Some columns are ignored: bounds missing.
+2022-01-04 16:45:03,185 : WARN  : KNIME-Worker-59-Math Formula 3:74:46 :  : Node : Scatter Plot (local) : 3:80 : Some columns are ignored: bounds missing.
