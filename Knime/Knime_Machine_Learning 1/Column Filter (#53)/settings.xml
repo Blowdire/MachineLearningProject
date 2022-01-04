@@ -11,7 +11,7 @@
             <config key="included_names">
                 <entry key="array-size" type="xint" value="2"/>
                 <entry key="0" type="xstring" value="LandAverageTemperature(next month)"/>
-                <entry key="1" type="xstring" value="Prediction"/>
+                <entry key="1" type="xstring" value="Prediction(LandAverageTemperature(next month)"/>
             </config>
             <config key="excluded_names">
                 <entry key="array-size" type="xint" value="5"/>

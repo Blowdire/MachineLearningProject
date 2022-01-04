@@ -607,3 +607,132 @@ java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 0
 2021-12-29 16:23:00,871 : WARN  : main :  : Node : Numeric Scorer : 0:67:5 : No columns selected for reference
 2021-12-29 16:23:05,019 : WARN  : KNIME-Worker-9-X-Partitioner 0:67:2 :  : Node : Numeric Scorer : 0:67:5 : No columns selected for reference
 2021-12-29 16:23:05,589 : WARN  : KNIME-Worker-8-X-Aggregator 0:67:1 :  : Node : Numeric Scorer : 0:67:5 : No columns selected for reference
+2022-01-04 12:22:48,955 : ERROR : main :  : MAEFileUtils :  :  : Schrodinger Knime plugins: Neither SCHRODINGER environment nor preference is set. You can set SCHRODINGER installation location in the Schrodinger Preferences.
+2022-01-04 12:22:48,958 : WARN  : main :  : SchrodFileUtils :  :  : SCHRODINGER is not set properly.
+2022-01-04 12:22:48,959 : WARN  : Thread-6 :  : PythonService :  :  : PythonService is not initilized
+2022-01-04 12:22:48,967 : WARN  : Thread-6 :  : PythonService :  :  : Failed to start python service.
+2022-01-04 12:23:28,409 : WARN  : ForkJoinPool.commonPool-worker-5 :  : MoePreferencePage :  :  : Path to MOE not set in Preferences. Please check!
+2022-01-04 12:24:07,934 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Errors during load: Status: DataLoadError: Knime_Machine_Learning 1 0 loaded with error during data load
+2022-01-04 12:24:07,936 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: DataLoadError: Knime_Machine_Learning 1 0
+2022-01-04 12:24:07,936 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Interactive Histogram (local) 0:37
+2022-01-04 12:24:07,936 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Loading model internals failed: Binning column not found
+2022-01-04 12:31:38,961 : ERROR : main :  : MAEFileUtils :  :  : Schrodinger Knime plugins: Neither SCHRODINGER environment nor preference is set. You can set SCHRODINGER installation location in the Schrodinger Preferences.
+2022-01-04 12:31:38,964 : WARN  : main :  : SchrodFileUtils :  :  : SCHRODINGER is not set properly.
+2022-01-04 12:31:38,965 : WARN  : Thread-5 :  : PythonService :  :  : PythonService is not initilized
+2022-01-04 12:31:38,969 : WARN  : Thread-5 :  : PythonService :  :  : Failed to start python service.
+2022-01-04 12:32:08,089 : WARN  : ForkJoinPool.commonPool-worker-3 :  : MoePreferencePage :  :  : Path to MOE not set in Preferences. Please check!
+2022-01-04 12:32:11,378 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Errors during load: Status: DataLoadError: Knime_Machine_Learning 1 0 loaded with error during data load
+2022-01-04 12:32:11,382 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: DataLoadError: Knime_Machine_Learning 1 0
+2022-01-04 12:32:11,382 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: DataLoadError: Interactive Histogram (local) 0:37
+2022-01-04 12:32:11,382 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: DataLoadError: Loading model internals failed: Binning column not found
+2022-01-04 12:34:30,089 : WARN  : main :  : Node : Math Formula : 0:69:46 : No such column: LandAverageTemperature(next month)
+2022-01-04 12:36:13,099 : WARN  : main :  : Node : Math Formula : 0:69:46 : No such column: LandAverageTemperature(next month)
+2022-01-04 12:36:16,727 : WARN  : KNIME-Worker-5-Column Filter 0:69:45 :  : Node : Math Formula : 0:69:46 : No such column: LandAverageTemperature(next month)
+2022-01-04 12:36:31,923 : WARN  : main :  : WrappedNodeDialog : Math Formula : 0:69:46 : failed to apply settings: No such column: LandAverageTemperature(next month)
+org.knime.core.node.InvalidSettingsException: No such column: LandAverageTemperature(next month)
+	at org.knime.ext.jep.ExpressionParser.handleColumn(ExpressionParser.java:348)
+	at org.knime.ext.jep.ExpressionParser.dollarFound(ExpressionParser.java:264)
+	at org.knime.ext.jep.ExpressionParser.parse(ExpressionParser.java:171)
+	at org.knime.ext.jep.ExpressionParser.<init>(ExpressionParser.java:146)
+	at org.knime.ext.jep.JEPNodeDialogPane.saveSettingsTo(JEPNodeDialogPane.java:354)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:532)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:766)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-01-04 12:38:26,511 : WARN  : main :  : Node : Math Formula : 0:69:46 : No such column: LandAverageTemperature(next month)
+2022-01-04 12:43:06,010 : WARN  : KNIME-Worker-10-Column Filter 0:67:45 :  : NodeContainer : Column Filter : 0:67:45 : Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+	at org.knime.core.node.workflow.WorkflowManager.doBeforeExecution(WorkflowManager.java:3182)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteStart(NodeContainer.java:607)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:171)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-04 12:43:45,304 : WARN  : KNIME-Worker-11-Column Filter 0:67:45 :  : NodeContainer : Column Filter : 0:67:45 : Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+	at org.knime.core.node.workflow.WorkflowManager.doBeforeExecution(WorkflowManager.java:3182)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteStart(NodeContainer.java:607)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:171)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-04 12:44:00,476 : WARN  : KNIME-Worker-12-Column Filter 0:67:45 :  : NodeContainer : Column Filter : 0:67:45 : Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+	at org.knime.core.node.workflow.WorkflowManager.doBeforeExecution(WorkflowManager.java:3182)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteStart(NodeContainer.java:607)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:171)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-04 13:06:38,587 : WARN  : main :  : Node : X-Aggregator : 0:73:1 : No such column: Prediction (LandAverageTemperature(next month))
+2022-01-04 13:14:33,279 : WARN  : main :  : Node : Math Formula : 0:73:54 : No such column: LandAverageTemperature(next month)
+2022-01-04 13:14:38,877 : WARN  : KNIME-Worker-58-Column Filter 0:73:53 :  : Node : Math Formula : 0:73:54 : No such column: LandAverageTemperature(next month)
+2022-01-04 13:14:48,935 : WARN  : main :  : Node : Math Formula : 0:73:54 : No such column: LandAverageTemperature(next month)
+2022-01-04 13:14:51,732 : WARN  : KNIME-Worker-59-Column Filter 0:73:53 :  : Node : Math Formula : 0:73:54 : No such column: LandAverageTemperature(next month)
+2022-01-04 13:15:04,557 : WARN  : main :  : WrappedNodeDialog : Math Formula : 0:73:54 : failed to apply settings: No such column: LandAverageTemperature(next month)
+org.knime.core.node.InvalidSettingsException: No such column: LandAverageTemperature(next month)
+	at org.knime.ext.jep.ExpressionParser.handleColumn(ExpressionParser.java:348)
+	at org.knime.ext.jep.ExpressionParser.dollarFound(ExpressionParser.java:264)
+	at org.knime.ext.jep.ExpressionParser.parse(ExpressionParser.java:171)
+	at org.knime.ext.jep.ExpressionParser.<init>(ExpressionParser.java:146)
+	at org.knime.ext.jep.JEPNodeDialogPane.saveSettingsTo(JEPNodeDialogPane.java:354)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:532)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:766)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2022-01-04 13:16:16,296 : WARN  : main :  : Node : Math Formula : 0:73:54 : No such column: LandAverageTemperature(next month)
+2022-01-04 13:21:05,547 : ERROR : KNIME-Worker-68-LinearRegression (3.6) 0:74:41 :  : Node : LinearRegression (3.6) : 0:74:41 : Execute failed: Weka classifier cannot work with given data. Reason: weka.classifiers.functions.LinearRegression: Cannot handle string attributes!
+java.lang.Exception: Weka classifier cannot work with given data. Reason: weka.classifiers.functions.LinearRegression: Cannot handle string attributes!
+	at org.knime.ext.weka366.classifier.WekaClassifierNodeModel.execute(WekaClassifierNodeModel.java:200)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-04 13:32:24,528 : WARN  : main :  : Node : Math Formula : 0:75:46 : No such column: LandAverageTemperature(next month)

@@ -6,6 +6,13 @@
         <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
     </config>
     <config key="model">
+        <config key="linearSettings">
+            <entry key="lambda" type="xdouble" value="0.0"/>
+            <entry key="alpha" type="xdouble" value="0.0"/>
+            <entry key="updater" type="xstring" value="Shotgun"/>
+            <entry key="featureSelector" type="xstring" value="Cyclic"/>
+            <entry key="topK" type="xint" value="0"/>
+        </config>
         <config key="dataSettings">
             <config key="featureFilter">
                 <entry key="filter-type" type="xstring" value="STANDARD"/>
@@ -39,21 +46,14 @@
             </config>
             <entry key="targetColumn" type="xstring" value="LandAverageTemperature(next month)"/>
         </config>
+        <config key="objective">
+            <entry key="identifier" type="xstring" value="reg:linear"/>
+        </config>
         <entry key="boostingRounds" type="xint" value="100"/>
         <entry key="useStaticSeed" type="xboolean" value="false"/>
         <entry key="staticSeed" type="xint" value="0"/>
         <entry key="numThreads" type="xint" value="2"/>
         <entry key="manualNumThreads" type="xboolean" value="false"/>
-        <config key="objective">
-            <entry key="identifier" type="xstring" value="reg:linear"/>
-        </config>
-        <config key="linearSettings">
-            <entry key="lambda" type="xdouble" value="0.0"/>
-            <entry key="alpha" type="xdouble" value="0.0"/>
-            <entry key="updater" type="xstring" value="Shotgun"/>
-            <entry key="featureSelector" type="xstring" value="Cyclic"/>
-            <entry key="topK" type="xint" value="0"/>
-        </config>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="EXECUTED"/>
