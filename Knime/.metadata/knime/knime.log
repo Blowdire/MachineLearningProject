@@ -1677,3 +1677,46 @@ org.knime.core.node.InvalidSettingsException: The specified file \Users\macbooka
 2022-01-04 17:01:06,740 : WARN  : KNIME-Worker-2-Shapiro-Wilk Test 0:84 :  : Node : Shapiro-Wilk Test : 0:84 : The test might be inaccurate for data sets with more than 50 data points.
 2022-01-04 17:01:43,663 : WARN  : main :  : Node : Row Sampling : 0:85 : No sampling method selected
 2022-01-04 17:02:52,552 : WARN  : KNIME-Worker-23-Shapiro-Wilk Test 0:84 :  : Node : Shapiro-Wilk Test : 0:84 : The test might be inaccurate for data sets with more than 50 data points.
+2022-01-04 17:45:44,238 : WARN  : ModalContext :  : Node : MISSING Python Script : 0:75:40 : Node can't be executed - Node "Python Script" not available from extension "KNIME Python Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.python2.nodes" is not installed)
+2022-01-04 17:45:44,556 : WARN  : ModalContext :  : Node : MISSING Python Script : 0:74:40 : Node can't be executed - Node "Python Script" not available from extension "KNIME Python Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.python2.nodes" is not installed)
+2022-01-04 17:45:44,688 : WARN  : ModalContext :  : Node : MISSING Python Script : 0:73:40 : Node can't be executed - Node "Python Script" not available from extension "KNIME Python Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.python2.nodes" is not installed)
+2022-01-04 17:45:44,954 : WARN  : ModalContext :  : Node : MISSING Python Script : 0:67:40 : Node can't be executed - Node "Python Script" not available from extension "KNIME Python Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.python2.nodes" is not installed)
+2022-01-04 17:45:45,716 : WARN  : ModalContext :  : Node : MISSING Python Script : 0:69:40 : Node can't be executed - Node "Python Script" not available from extension "KNIME Python Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.python2.nodes" is not installed)
+2022-01-04 17:45:45,842 : WARN  : ModalContext :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-04 17:45:46,018 : WARN  : ModalContext :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-04 17:45:46,019 : WARN  : ModalContext :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-04 17:45:46,021 : WARN  : ModalContext :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-04 17:45:46,059 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  : Errors during load: Status: Error: Knime_Machine_Learning 1 0 loaded with errors
+2022-01-04 17:45:46,060 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :   Status: Error: Knime_Machine_Learning 1 0
+2022-01-04 17:45:46,060 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Node "Shapiro-Wilk Test" not available from extension "KNIME Statistics Nodes (Labs)" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.stats2" is not installed)
+2022-01-04 17:45:46,061 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Random Forest 0:75
+2022-01-04 17:45:46,061 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Python Script" not available from extension "KNIME Python Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.python2.nodes" is not installed)
+2022-01-04 17:45:46,061 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: MISSING Python Script 0:75:40
+2022-01-04 17:45:46,062 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Warning: State has changed from CONFIGURED to IDLE
+2022-01-04 17:45:46,062 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: State has changed from CONFIGURED to IDLE
+2022-01-04 17:45:46,062 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Tree ensemble 0:74
+2022-01-04 17:45:46,063 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Python Script" not available from extension "KNIME Python Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.python2.nodes" is not installed)
+2022-01-04 17:45:46,063 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: MISSING Python Script 0:74:40
+2022-01-04 17:45:46,063 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Warning: State has changed from CONFIGURED to IDLE
+2022-01-04 17:45:46,063 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: State has changed from CONFIGURED to IDLE
+2022-01-04 17:45:46,064 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Polynomial Regression 0:73
+2022-01-04 17:45:46,064 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Python Script" not available from extension "KNIME Python Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.python2.nodes" is not installed)
+2022-01-04 17:45:46,064 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: MISSING Python Script 0:73:40
+2022-01-04 17:45:46,065 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Warning: State has changed from CONFIGURED to IDLE
+2022-01-04 17:45:46,065 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: State has changed from CONFIGURED to IDLE
+2022-01-04 17:45:46,065 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: XGBoost 0:67
+2022-01-04 17:45:46,065 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Python Script" not available from extension "KNIME Python Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.python2.nodes" is not installed)
+2022-01-04 17:45:46,066 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: MISSING Python Script 0:67:40
+2022-01-04 17:45:46,066 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Warning: State has changed from CONFIGURED to IDLE
+2022-01-04 17:45:46,066 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: State has changed from CONFIGURED to IDLE
+2022-01-04 17:45:46,066 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Error: Linear Regression 0:69
+2022-01-04 17:45:46,067 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Error: Node "Python Script" not available from extension "KNIME Python Integration" (provided by "KNIME AG, Zurich, Switzerland"; plugin "org.knime.python2.nodes" is not installed)
+2022-01-04 17:45:46,067 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: MISSING Python Script 0:69:40
+2022-01-04 17:45:46,067 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :         Status: Warning: State has changed from CONFIGURED to IDLE
+2022-01-04 17:45:46,068 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :       Status: Warning: State has changed from CONFIGURED to IDLE
+2022-01-04 17:45:46,068 : ERROR : ModalContext :  : LoadWorkflowRunnable :  :  :     Status: Warning: State has changed from CONFIGURED to IDLE
+2022-01-04 17:47:28,474 : WARN  : ModalContext :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-04 17:47:28,621 : WARN  : ModalContext :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-04 17:47:28,623 : WARN  : ModalContext :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-04 17:47:28,628 : WARN  : ModalContext :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-04 17:47:40,203 : WARN  : ModalContext :  : Node : Scatter Plot (local) : 3:43 : Some columns are ignored: bounds missing.
