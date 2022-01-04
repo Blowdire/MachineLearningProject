@@ -8,10 +8,10 @@
         <entry key="authored-by" type="xstring" value="Ruben"/>
         <entry key="authored-when" type="xstring" value="2021-12-19 16:01:30 +0100"/>
         <entry key="lastEdited-by" type="xstring" value="Ruben"/>
-        <entry key="lastEdited-when" type="xstring" value="2022-01-04 16:31:08 +0100"/>
+        <entry key="lastEdited-when" type="xstring" value="2022-01-04 16:48:21 +0100"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
     <config key="workflow_credentials"/>
     <config key="nodes">
         <config key="node_1">
@@ -393,7 +393,7 @@
                     <entry key="array-size" type="xint" value="4"/>
                     <entry key="0" type="xint" value="1024"/>
                     <entry key="1" type="xint" value="-43"/>
-                    <entry key="2" type="xint" value="141"/>
+                    <entry key="2" type="xint" value="111"/>
                     <entry key="3" type="xint" value="93"/>
                 </config>
             </config>
@@ -409,7 +409,7 @@
                     <entry key="array-size" type="xint" value="4"/>
                     <entry key="0" type="xint" value="1164"/>
                     <entry key="1" type="xint" value="-3"/>
-                    <entry key="2" type="xint" value="92"/>
+                    <entry key="2" type="xint" value="97"/>
                     <entry key="3" type="xint" value="93"/>
                 </config>
             </config>
