@@ -202,14 +202,14 @@
     <sharedElements xsi:type="basic:Part" xmi:id="_Y2dcU21yEeyUO_Z9e07vEQ" elementId="org.knime.workbench.helpview" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Description" iconURI="platform:/plugin/org.knime.workbench.editor/icons/node_description.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.knime.workbench.descriptionview.DescriptionView"/>
       <persistedState key="originalCompatibilityViewBundle" value="org.knime.workbench.editor"/>
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view/>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:KNIME Views</tags>
       <menus xmi:id="_Y2dcVG1yEeyUO_Z9e07vEQ" elementId="org.knime.workbench.helpview">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_Y2dcVW1yEeyUO_Z9e07vEQ" elementId="org.knime.workbench.helpview" visible="false"/>
+      <toolbar xmi:id="_Y2dcVW1yEeyUO_Z9e07vEQ" elementId="org.knime.workbench.helpview"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_Y2dcVm1yEeyUO_Z9e07vEQ" elementId="org.knime.workbench.workflowcoach.view" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Workflow Coach" iconURI="platform:/plugin/org.knime.workbench.workflowcoach/icons/workflow-coach.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.knime.workbench.workflowcoach.ui.WorkflowCoachView"/>
@@ -232,8 +232,14 @@
     <sharedElements xsi:type="basic:Part" xmi:id="_Y2dcW21yEeyUO_Z9e07vEQ" elementId="com.knime.workbench.hubview" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="KNIME Hub" iconURI="platform:/plugin/com.knime.workbench.hubview/icons/knime.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="com.knime.workbench.hubview.HubView"/>
       <persistedState key="originalCompatibilityViewBundle" value="com.knime.workbench.hubview"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:KNIME Views</tags>
+      <menus xmi:id="_HdL5wG5EEeyzRbgRnHMXWQ" elementId="com.knime.workbench.hubview">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_HdL5wW5EEeyzRbgRnHMXWQ" elementId="com.knime.workbench.hubview" visible="false"/>
     </sharedElements>
     <trimBars xmi:id="_Y2dcXG1yEeyUO_Z9e07vEQ" elementId="org.eclipse.ui.main.toolbar" contributorURI="platform:/plugin/org.eclipse.ui.workbench">
       <children xsi:type="menu:ToolBar" xmi:id="_Y2dcXW1yEeyUO_Z9e07vEQ" elementId="main">

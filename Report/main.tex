@@ -58,24 +58,25 @@
 %----------------------------------------------------------------------------------------
 
 \section{Introduzione}
-Il cambiamento climatico è la più grande minaccia del nostro tempo.
-Nell'ultimo secolo la temperatura globale è sempre più aumentata.%citare magari una ricerca
-Lo scopo del progetto consiste nel realizzare e analizzare vari modelli di regressione per prevedere la temperatura media globale del mese successivo, sulla base dei dati rilevati durante la mensilità precedente.La scelta di questo progetto è stata influenzata dalle tematiche riguardanti il cambiamento climatico, un tema in costante ascesa di interesse e di importanza sempre più rilevante.
-Per effettuare questa previsione abbiamo usato un dataset contenente varie misure di temperatura media, rilevate ogni mese a partire dal Gennaio 1750 al Novembre 2015.
+Il cambiamento climatico è da molti definito come 'la più grande minaccia del nostro tempo'.
+L'ultimo secolo si è reso protagonista di un aumento graduale e preoccupante della temperatura globale, ed oggi questo tema ha assunto rilevanza cruciale in numerosi dibattiti politici relativi al futuro del pianeta.%citare magari una ricerca
+Scopo di questo progetto è di realizzare modelli di machine learning con il fine di prevedere le future temperature medie globali. Precisamente, saranno utilizzati modelli di regressione per prevedere la temperatura del mese successivo a quello preso in considerazione.
+(Lo scopo di questo lavoro consiste nel realizzare e successivamente analizzare vari modelli di regressione con il fine di prevedere la temperatura media globale del mese successivo, sulla base dei dati rilevati durante la mensilità precedente.
+Come specificato in apertura di sezione, la scelta di questo progetto è stata influenzata dal crescente interesse verso le tematiche riguardanti il cambiamento climatico, sia da un punto di vista personale che, appunto, globale.
+I dati utilizzati per realizzare questo progetto sono scaricabili dalla piattaforma Kaggle al seguente indirizzo () e contengono diverse misure di temperature medie, rilevate ogni mese a partire dal Gennaio 1750 al Novembre 2015.
 
 
 %------------------------------------------------
 
 \section{Dataset}
 
-Il Dataset utilizzato è "Climate Change: Earth Surface Temperature Data".%citazione
-Il Dataset è stato ottenuto da Kaggle, che è una versione ripulita del Dataset formito dalla "Berkley Earth", un'organizzazione non-profit indipendente specializatta in "Environmental Data Science".
+Il dataset utilizzato è intitolato "Climate Change: Earth Surface Temperature Data".%citazione
+Come precisato poco sopra, il dataset è stato ottenuto tramite la piattaforma Kaggle, sulla quale è stata resa disponibile una versione ripulita del dataset fornito dalla "Berkeley Earth", un'organizzazione non-profit indipendente specializatta in temi di 'environmental data science'.
+L'organizzazione Berkeley Earth definisce il problema del global warming come 'la sfida definitiva del nostro tempo' e pone l'accento sulla necessità di ottenere con urgenza dati di qualità e informazioni scientifiche di valore sul tema.
+Il progetto è stato svolto principalmente tramite l'utilizzo della piattaforma Knime e, in particolari casi, del linguaggio di programmazione Python.
 
-Fra i vari Dataset forniti su Kaggle è stato scelto quello riguardante le temperature globali.
-
-\subsection{Descrizione del Dataset}
-Il Dataset è composto da 3192 righe e da 9 colonne.
-Le colonne sono le seguenti:
+\subsection{Descrizione del dataset}
+Il dataset è composto da 3192 record e dai seguenti 9 attributi:
 \begin{itemize}
 	\item dt: Data di rilevamento dei dati
 	\item landAverageTemperature: temperatura media globale del terreno espressa in gradi Celsius.
@@ -88,7 +89,7 @@ Le colonne sono le seguenti:
 	\item LandAndOceanAverageTemperatureUncertainty: Intervallo di confidenza al $95 \%$ intorno alla media della temperatura media terrestre e oceanica globale.
 \end{itemize}
 \subsection{Esplorazione dei dati}
-Per la fase di esplorazione dei dati è stata utilizzata la piattaforma Knime, in particolare è stato usato il nodo Statistics, attraverso il quale sono stati rilevati i seguenti indici e numero di missing values.
+Per la fase di esplorazione dei dati è stato utilizzato principalmente il nodo Statistics, presente all'interno della piattaforma Knime, attraverso il quale sono stati rilevati alcuni indici di posizione, variabilità e il numero di missing values, dei quali ne elencheremo i principali di seguito:
 %\begin{tabular}{| m{5em} | m{1cm}| m{1cm} | m{1cm} |}
 %\hline Colonna & Minimo & Massimo & Media & Deviazione Standard
 %
@@ -119,17 +120,17 @@ Per la fase di esplorazione dei dati è stata utilizzata la piattaforma Knime, i
 La fase di esplorazione ha permesso di identificare la variabile target che ci interessa prevedere, ovvero \textit{landAverageTemperature} del mese successivo, e le colonne restanti che fungono da attributi esplicativi.
 La variabile target selezionata è di tipo numerico, continua e assume valori fra $[-2.080, 19.021]$ con 3 cifre decimali.
 
-\section{Pre-Processing}
-Durante la fase di data exploration si è potuto osservare che quasi tutte le colonne hanno 1200 valori mancanti, in quanto le osservazioni effettuate prima del Gennaio 1850 non sono stati rilevati tali dati. 
-\subsection{Missing Values}
-Per risolvere questa problematica si è deciso di rimuovere le righe che presentano missing values, eliminando quindi 1200 righe e riducendo l'intervallo di tempo dei valori che ora partono dal Gennaio 1850 invece che dal Gennaio 1750. Per eliminare le righe che presentano missing values è stato utilizzato il nodo di Knime chiamato \textit{<<Missing Values>>}
+\section{Pre-processing}
+Durante la fase di data exploration si è potuto osservare che molte colonne presentavano un numero di valori mancanti pari a 1200. Ciò è dovuto al fatto che per le osservazioni effettuate prima del Gennaio 1850 non sono stati rilevati tali dati di interesse. 
+\subsection{Missing values}
+Per risolvere questa problematica si è deciso di rimuovere i record che presentano missing values, eliminando quindi 1200 righe e riducendo l'intervallo di tempo dei valori che, a questo punto, partono dal Gennaio 1850 invece che dal Gennaio 1750. Per eliminare le righe che presentano missing values è stato utilizzato il nodo di Knime chiamato \textit{<<Missing Values>>}
 
-\subsection{Data Augmentation}
-Per poter allenare i vari classificatori ci serve il dato relativo alla temperatura media terrestre del mese successivo. Per fare questo abbiamo ordinato decrescente i dati in base alla colonna della data utilizzando il nodo \textit{<<Sorter>>} e in seguito abbiamo utilizzato il nodo \textit{<<Lag Column>>} per creare una nuova colonna contenente la temperatura media del mese successivo.
+\subsection{Data augmentation}
+Per essere in grado di allenare i vari classificatori è necessario il dato relativo alla temperatura media terrestre del mese successivo. Per fare questo abbiamo ordinato in modo decrescente i dati in base alla colonna contenente la data utilizzando il nodo \textit{<<Sorter>>} e in seguito abbiamo utilizzato il nodo \textit{<<Lag Column>>} per creare una nuova colonna contenente la temperatura media del mese successivo.
 
-\subsection{Selezione delle Variabili}
-Per selezionare le variabili da utilizzare per l'apprendimento dei classificatori è stato utilizzato un filtro di correlazione in modo da eliminare attributi ridondanti. Il valore soglia di correlazione scelto è di 0.9. Alla fine del processo si feature selection sono state tenute 6 colonne su 10. Per effettuare questa operazione sono stati utilizzati i nodi \textit{<<Linear Correlation>>} e \textit{<<Correlation Filter>>}
-\section{Modelli di Regressione}
+\subsection{Selezione delle variabili}
+Per selezionare le variabili da utilizzare per l'apprendimento dei classificatori è stato utilizzato un filtro di correlazione in modo da eliminare attributi ridondanti. Il valore soglia di correlazione scelto è di 0.9. Alla fine del processo di feature selection sono state tenute 6 colonne su 10. Per effettuare questa operazione sono stati utilizzati i nodi \textit{<<Linear Correlation>>} e \textit{<<Correlation Filter>>}
+\section{Modelli}
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
