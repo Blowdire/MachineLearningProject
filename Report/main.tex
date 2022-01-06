@@ -80,7 +80,7 @@ Il dataset è composto da 3192 record e dai seguenti 9 attributi:
 \begin{itemize}
 	\item dt: Data di rilevamento dei dati
 	\item landAverageTemperature: temperatura media globale del terreno espressa in gradi Celsius.
-	\item LandAverageTemperatureUncertainity: Intervallo di confidenza al $95 \%$ intorno alla media della temperatura globale
+	\item LandAverageTemperatureUncertainty: Intervallo di confidenza al $95 \%$ intorno alla media della temperatura globale
 	\item LandMaxTemperature: media della temperatura massima globale del terreno espressa in gradi Celsius
 	\item LandMaxTemperatureUncertainty:  Intervallo di confidenza al $95 \%$ intorno alla media della temperatura massima globale
 	\item LandMinTemperature: media della temperatura minima globale del terreno espressa in gradi Celsius
@@ -99,21 +99,21 @@ Per la fase di esplorazione dei dati è stato utilizzato principalmente il nodo 
  \hline
  Colonna  & Media & STD & Missing V. \\ [0.5ex] 
  \hline\hline
-	landAvgTemp &   8.3747 & 4.3813 & 12 \\
+	Col. 1 &   8.3747 & 4.3813 & 12 \\
 \hline\hline
-	LandAvgTempUnc &   0.9385& 1.0964 & 12 \\
+	Col. 2 &   0.9385& 1.0964 & 12 \\
 	\hline\hline
-	LandMaxTemp & 14.3506 & 4.3096 & 1200 \\
+	Col. 3 & 14.3506 & 4.3096 & 1200 \\
 	\hline\hline
-	LandMaxTempUnc & 0.4798 & 0.5832 & 1200 \\
+	Col. 4 & 0.4798 & 0.5832 & 1200 \\
 	\hline\hline
-	LandMinTemp &2.7436 & 4.1558 & 1200 \\
+	Col. 5 &2.7436 & 4.1558 & 1200 \\
 	\hline\hline
-	LandMinTempUnc & 0.4318 & 0.4458 & 1200 \\
+	Col. 6 & 0.4318 & 0.4458 & 1200 \\
 	\hline\hline
-	LndOcnAvgTemp & 15.2126 & 1.2741 & 1200 \\
+	Col. 7 & 15.2126 & 1.2741 & 1200 \\
 	\hline\hline
-	LndOcnAvgTempUnc & 0.1285 & 0.0736 & 1200 \\[0.5ex] \hline 
+	Col. 8 & 0.1285 & 0.0736 & 1200 \\[0.5ex] \hline 
 \end{tabular}
 \end{center}
 
@@ -126,11 +126,45 @@ Durante la fase di data exploration si è potuto osservare che molte colonne pre
 Per risolvere questa problematica si è deciso di rimuovere i record che presentano missing values, eliminando quindi 1200 righe e riducendo l'intervallo di tempo dei valori che, a questo punto, partono dal Gennaio 1850 invece che dal Gennaio 1750. Per eliminare le righe che presentano missing values è stato utilizzato il nodo di Knime chiamato \textit{<<Missing Values>>}
 
 \subsection{Data augmentation}
-Per essere in grado di allenare i vari classificatori è necessario il dato relativo alla temperatura media terrestre del mese successivo. Per fare questo abbiamo ordinato in modo decrescente i dati in base alla colonna contenente la data utilizzando il nodo \textit{<<Sorter>>} e in seguito abbiamo utilizzato il nodo \textit{<<Lag Column>>} per creare una nuova colonna contenente la temperatura media del mese successivo.
+Per essere in grado di allenare i vari regressori è necessario il dato relativo alla temperatura media terrestre del mese successivo. Per fare questo abbiamo ordinato in modo decrescente i dati in base alla colonna contenente la data utilizzando il nodo \textit{<<Sorter>>} e in seguito abbiamo utilizzato il nodo \textit{<<Lag Column>>} per creare una nuova colonna contenente la temperatura media del mese successivo.
 
 \subsection{Selezione delle variabili}
-Per selezionare le variabili da utilizzare per l'apprendimento dei classificatori è stato utilizzato un filtro di correlazione in modo da eliminare attributi ridondanti. Il valore soglia di correlazione scelto è di 0.9. Alla fine del processo di feature selection sono state tenute 6 colonne su 10. Per effettuare questa operazione sono stati utilizzati i nodi \textit{<<Linear Correlation>>} e \textit{<<Correlation Filter>>}
+Per selezionare le variabili da utilizzare per l'apprendimento dei regressori è stato utilizzato un filtro di correlazione in modo da eliminare attributi ridondanti. Il valore soglia di correlazione scelto è di 0.9. Alla fine del processo di feature selection sono state tenute 6 colonne su 10. Per effettuare questa operazione sono stati utilizzati i nodi \textit{<<Linear Correlation>>} e \textit{<<Correlation Filter>>}. Alla fine del processo di \textit{Feature Selection} le variabili utilizzate per allenare i vari regressori sono: 
+\begin{itemize}
+	\item LandAverageTemperature
+	\item LandAverageTemperatureUncertainity
+	\item LandMaxTemperatureUncertainity
+	\item LandMinTemperatureUncertainity
+\end{itemize}
 \section{Modelli}
+Per effettuare la previsione della temperatura media terrestre globale del mese successivo, sono stati usati vari modelli di regressione:
+\begin{itemize}
+	\item Regressione Lineare
+	\item Regressione Polinomiale
+	\item XgBoost
+	\item Tree Ensemble
+	\item Random Forest
+\end{itemize}
+\subsection{Regressione Lineare}
+Il modello di regressione lineare consiste in una funzione lineare, che prende in ingresso le variabili esplicative, la cui risposta è il valore previsto della variabile target. Nel nostro caso utilizziamo le variabili esplicative selezionate tramite feature selection per predire la variabile \textit{LandAverageTemperature}
+\subsection{Regressione Polinomiale}
+Il modello di regressione polinomiale, a differenza di quello lineare, prevede il valore della variabile target tramite una funzione polinomiale, in cui si può specificare il grado della funzione. Nel nostro caso è stato scelta un polinomio di quarto grado.
+\subsection{XgBoost}
+XgBoost è un implementazione di alberi di decisione con gradient boosting. Gli alberi di decisione sono aggiunti uno alla volta all'insieme di alberi, e configurati in modo da correggere gli errori di previsione degli alberi precedenti. I vantaggi di XgBoost consistono nel fatto che l'apprendimento del modello è parallelizzabile, e quindi molto veloce; gestisce autonomamente eventuali missing values e inoltre previene l'overfitting del modello tramite \textit{Regularization}
+\subsection{Tree Ensemble}
+Il modello di regressione Tree Ensemble allena un insieme di alberi di regressione. Tipicamente ogni albero è allenato utilizzando un diverso set di righe e/o colonne del dataset. Il valore di un nodo foglia di un albero di decisione consiste nella media della variabile target dei record del dataset contenuti nel percorso del nodo foglia. Detto questo l'output di un modello di regressione Tree Ensemble è la media delle previsioni ottenute dai vari alberi di regressione.
+\subsection{Random Forest}
+Il modello di regression Random Forest è un tipo particolare di modello Tree Ensemble. In particolare il Random Forest, a differenza del modello Tree Ensemble, seleziona le variabili esplicative, usate per l'allenamto dei singoli alberi, in modo casuale.
+
+\section{Training}
+Per la fase di training dei modelli di regressione è stato utilizzato l'approccio della \textit{Cross Validation}.
+\subsection{Cross Validation}
+La Cross Validation consiste nel dividere i dati di training in \textit{K} "Fogli". Per ogni foglio $k \in \lbrace1,..., K\rbrace$, eseguiamo l'allenamento del modello con utilizzando $K-1$ fogli, ed eseguiamo il test sul foglio rimanente; inoltre viene eseguita questa operazione a rotazione, con numero di ripetizioni uguale al numero di fogli, in modo da eseguire il training e il testing utilizzando tutti i sottoinsiemi. Infine si calcola l'errore facendo una media fra gli errori riscontrati durante ogni ciclo di training-testing. %citare libro
+L'approccio della cross validation è molto utile in quanto permette di allenare e testare i vari regressori con tutti i dati presenti nel dataset.
+Nel nostro caso abbiamo utilizzato 10 fogli, i vari record sono scelti tramite random sampling.
+
+\section{Valutazione}
+
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------

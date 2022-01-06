@@ -5,16 +5,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}Dataset}{1}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1}Descrizione del Dataset}{1}{}%
+\contentsline {subsection}{\numberline {2.1}Descrizione del dataset}{1}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2}Esplorazione dei dati}{1}{}%
+\contentsline {subsection}{\numberline {2.2}Esplorazione dei dati}{2}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Pre-Processing}{2}{}%
+\contentsline {section}{\numberline {3}Pre-processing}{2}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Missing Values}{2}{}%
+\contentsline {subsection}{\numberline {3.1}Missing values}{2}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Data Augmentation}{2}{}%
+\contentsline {subsection}{\numberline {3.2}Data augmentation}{2}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Selezione delle Variabili}{2}{}%
+\contentsline {subsection}{\numberline {3.3}Selezione delle variabili}{2}{}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Modelli di Regressione}{2}{}%
+\contentsline {section}{\numberline {4}Modelli}{2}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Regressione Lineare}{2}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Regressione Polinomiale}{3}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3}XgBoost}{3}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4}Tree Ensemble}{3}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5}Random Forest}{3}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Training}{3}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1}Cross Validation}{3}{}%

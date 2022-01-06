@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.4)  5 JAN 2022 18:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.4)  6 JAN 2022 12:00
 entering extended mode
 **./main.tex
 (main.tex
@@ -1260,17 +1260,22 @@ Package lettrine.sty Info: Targeted height = 28.94pt
 (lettrine.sty)             Lettrine height = 28.93987pt (\color {DarkGoldenrod}
 {I});
 (lettrine.sty)             reported on input line 53.
-LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 76.
-LaTeX Font Info:    Trying to load font information for TS1+XCharter-TLF on inp
-ut line 80.
 
+Underfull \hbox (badness 1448) in paragraph at lines 73--77
+\T1/XCharter-TLF/m/n/10 (+20) Earth Sur-face Tem-per-a-ture Data".Come pre-cisa
+to
+ []
+
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 78.
+LaTeX Font Info:    Trying to load font information for TS1+XCharter-TLF on inp
+ut line 81.
 (C:\Users\Ruben\AppData\Roaming\MiKTeX\tex/latex/xcharter\ts1xcharter-tlf.fd
 File: TS1XCharter-TLF.fd 2020/05/25 (msharpe) Font definitions for TS1/XCharter
 -TLF.
 )
 LaTeX Font Info:    Font shape `TS1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 80.
+(Font)              scaled to size 10.0pt on input line 81.
 Package microtype Info: Character `textbardbl ' is missing
 (microtype)             in font `TS1/XCharter-TLF/m/n/10'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -1278,55 +1283,59 @@ Package microtype Info: Character `textcelsius ' is missing
 (microtype)             in font `TS1/XCharter-TLF/m/n/10'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Underfull \hbox (badness 4341) in paragraph at lines 87--88
-[]\T1/XCharter-TLF/m/n/10 (+20) LandAndOceanAverageTemperature: Tem-per-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
-[]\T1/XCharter-TLF/m/n/10 (+7) LandAndOceanAverageTemperatureUncertainty:
- []
-
 [1{C:/Users/Ruben/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 
 ]
-Overfull \hbox (21.99986pt too wide) in paragraph at lines 97--117
- [] 
+Underfull \hbox (badness 4341) in paragraph at lines 88--89
+[]\T1/XCharter-TLF/m/n/10 (+20) LandAndOceanAverageTemperature: Tem-per-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+[]\T1/XCharter-TLF/m/n/10 (+7) LandAndOceanAverageTemperatureUncertainty:
  []
 
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 119.
+(Font)              scaled to size 10.0pt on input line 120.
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+Underfull \hbox (badness 10000) in paragraph at lines 132--134
 \T1/XCharter-TLF/m/n/10 (+20) Per se-lezionare le vari-abili da uti-liz-zare pe
 r
  []
 
 
-Underfull \hbox (badness 5203) in paragraph at lines 131--132
-\T1/XCharter-TLF/m/n/10 (+20) l'apprendimento dei clas-si-fi-ca-tori è stato ut
-i-liz-
+Underfull \hbox (badness 2277) in paragraph at lines 132--134
+\T1/XCharter-TLF/m/n/10 (+20) l'apprendimento dei re-gres-sori è stato uti-liz-
+zato
  []
 
 
-LaTeX Warning: Empty bibliography on input line 137.
+Underfull \hbox (badness 1189) in paragraph at lines 132--134
+\T1/XCharter-TLF/m/it/10 (+20) Cor-re-la-tion>> \T1/XCharter-TLF/m/n/10 (+20) e
+ \T1/XCharter-TLF/m/it/10 (+20) <<Cor-re-la-tion Fil-ter>>\T1/XCharter-TLF/m/n/
+10 (+20) . Alla fine del
+ []
+
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 152.
+[2]
+
+LaTeX Warning: Empty bibliography on input line 169.
 
 
 AED: lastpage setting LastPage
-LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 141.
-[2] (main.aux)
+[3] (main.aux)
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18154 strings out of 479321
- 317020 string characters out of 2866502
- 1057822 words of memory out of 3000000
+ 18199 strings out of 479321
+ 318174 string characters out of 2866502
+ 1067824 words of memory out of 3000000
  35175 multiletter control sequences out of 15000+600000
- 494856 words of font info for 138 fonts, out of 8000000 for 9000
+ 499847 words of font info for 168 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,11n,78p,1905b,1805s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/Ruben/AppData/Roaming/MiKTeX/fonts/enc/dvips/xcharter/xch_rydp4l.en
@@ -1339,9 +1348,9 @@ ppData/Roaming/MiKTeX/fonts/type1/public/xcharter/XCharter-Italic.pfb><C:/Users
 les/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fo
 nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/ur
 w/helvetic/uhvb8a.pfb>
-Output written on main.pdf (2 pages, 206590 bytes).
+Output written on main.pdf (3 pages, 215778 bytes).
 PDF statistics:
- 42 PDF objects out of 1000 (max. 8388607)
+ 45 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41985 words of extra memory for PDF output out of 42996 (max. 10000000)
 
