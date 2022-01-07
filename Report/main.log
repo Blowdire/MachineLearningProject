@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.4)  6 JAN 2022 12:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.4)  7 JAN 2022 17:29
 entering extended mode
 **./main.tex
 (main.tex
@@ -6,8 +6,8 @@ LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18>
 (C:\Program Files\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
-(C:\Program Files\MiKTeX\tex/latex/base\size10.clo
-File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+(C:\Program Files\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
 \c@part=\count179
 \c@section=\count180
@@ -21,6 +21,9 @@ File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
 )
+(C:\Users\Ruben\AppData\Roaming\MiKTeX\tex/latex/setspace\setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
 (C:\Users\Ruben\AppData\Roaming\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip49
@@ -28,19 +31,27 @@ Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@dima=\skip50
 \bigstrutjot=\dimen139
 )
+(C:\Users\Ruben\AppData\Roaming\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count188
+\float@exts=\toks15
+\float@box=\box47
+\@float@everytoks=\toks16
+\@floatcapt=\box48
+)
 (structure.tex (C:\Program Files\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2021/04/26 3.58 The Babel package
 
 (C:\Program Files\MiKTeX\tex/generic/babel\babel.def
 File: babel.def 2021/04/26 3.58 Babel common definitions
-\babel@savecnt=\count188
+\babel@savecnt=\count189
 \U@D=\dimen140
 \l@unhyphenated=\language79
 
 (C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
 )
-\bbl@dirlevel=\count189
+\bbl@dirlevel=\count190
 
 *************************************
 * Local config file bblopts.cfg used
@@ -63,14 +74,14 @@ Package: microtype 2021/03/14 v2.8c Micro-typographical refinements (RS)
 
 (C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks15
+\KV@toks@=\toks17
 )
-\MT@toks=\toks16
-\MT@count=\count190
+\MT@toks=\toks18
+\MT@count=\count191
 LaTeX Info: Redefining \textls on input line 790.
 \MT@outer@kern=\dimen141
 LaTeX Info: Redefining \textmicrotypecontext on input line 1374.
-\MT@listname@count=\count191
+\MT@listname@count=\count192
 
 (C:\Users\Ruben\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype-pdftex.def
 File: microtype-pdftex.def 2021/03/14 v2.8c Definitions specific to pdftex (RS)
@@ -93,7 +104,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks17
+\@emptytoks=\toks19
 \ex@=\dimen142
 ))
 (C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty
@@ -103,41 +114,41 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count192
+\inf@bad=\count193
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count193
-\leftroot@=\count194
+\uproot@=\count194
+\leftroot@=\count195
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count195
-\DOTSCASE@=\count196
+\classnum@=\count196
+\DOTSCASE@=\count197
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box47
-\strutbox@=\box48
+\Mathstrutbox@=\box49
+\strutbox@=\box50
 \big@size=\dimen144
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count197
-\c@MaxMatrixCols=\count198
+\macc@depth=\count198
+\c@MaxMatrixCols=\count199
 \dotsspace@=\muskip16
-\c@parentequation=\count199
-\dspbrk@lvl=\count266
-\tag@help=\toks18
-\row@=\count267
-\column@=\count268
-\maxfields@=\count269
-\andhelp@=\toks19
+\c@parentequation=\count266
+\dspbrk@lvl=\count267
+\tag@help=\toks20
+\row@=\count268
+\column@=\count269
+\maxfields@=\count270
+\andhelp@=\toks21
 \eqnshift@=\dimen145
 \alignsep@=\dimen146
 \tagshift@=\dimen147
 \tagwidth@=\dimen148
 \totwidth@=\dimen149
 \lineht@=\dimen150
-\@envbody=\toks20
+\@envbody=\toks22
 \multlinegap=\skip53
 \multlinetaggap=\skip54
-\mathdisplay@stack=\toks21
+\mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
 )
@@ -151,15 +162,15 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 )
 (C:\Users\Ruben\AppData\Roaming\MiKTeX\tex/latex/amscls\amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks22
-\thm@bodyfont=\toks23
-\thm@headfont=\toks24
-\thm@notefont=\toks25
-\thm@headpunct=\toks26
+\thm@style=\toks24
+\thm@bodyfont=\toks25
+\thm@headfont=\toks26
+\thm@notefont=\toks27
+\thm@headpunct=\toks28
 \thm@preskip=\skip55
 \thm@postskip=\skip56
 \thm@headsep=\skip57
-\dth@everypar=\toks27
+\dth@everypar=\toks29
 )
 (C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
@@ -199,8 +210,9 @@ Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
 \caption@hangindent=\dimen157
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count270
-\c@continuedfloat=\count271
+\c@caption@flags=\count271
+\c@continuedfloat=\count272
+Package caption Info: float package is loaded.
 )
 (C:\Users\Ruben\AppData\Roaming\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
@@ -214,12 +226,12 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen165
 \cmidrulekern=\dimen166
 \defaultaddspace=\dimen167
-\@cmidla=\count272
-\@cmidlb=\count273
+\@cmidla=\count273
+\@cmidlb=\count274
 \@aboverulesep=\dimen168
 \@belowrulesep=\dimen169
-\@thisruleclass=\count274
-\@lastruleclass=\count275
+\@thisruleclass=\count275
+\@lastruleclass=\count276
 \@thisrulewidth=\dimen170
 )
 (C:\Users\Ruben\AppData\Roaming\MiKTeX\tex/latex/lastpage\lastpage.sty
@@ -246,10 +258,10 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip58
 \enit@outerparindent=\dimen173
-\enit@toks=\toks28
-\enit@inbox=\box49
-\enit@count@id=\count276
-\enitdp@description=\count277
+\enit@toks=\toks30
+\enit@inbox=\box51
+\enit@count@id=\count277
+\enitdp@description=\count278
 )
 (C:\Users\Ruben\AppData\Roaming\MiKTeX\tex/latex/sectsty\sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
@@ -272,9 +284,9 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 (C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-\Gm@cnth=\count278
-\Gm@cntv=\count279
-\c@Gm@tempcnt=\count280
+\Gm@cnth=\count279
+\Gm@cntv=\count280
+\c@Gm@tempcnt=\count281
 \Gm@bindingoffset=\dimen174
 \Gm@wd@mp=\dimen175
 \Gm@odd@mp=\dimen176
@@ -283,7 +295,7 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layoutheight=\dimen179
 \Gm@layouthoffset=\dimen180
 \Gm@layoutvoffset=\dimen181
-\Gm@dimlist=\toks29
+\Gm@dimlist=\toks31
 
 (C:\Users\Ruben\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.cfg))
 (C:\Program Files\MiKTeX\tex/latex/base\fontenc.sty
@@ -291,8 +303,8 @@ Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
 )
 (C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2020/08/01 v1.3d Input encoding file
-\inpenc@prehook=\toks30
-\inpenc@posthook=\toks31
+\inpenc@prehook=\toks32
+\inpenc@posthook=\toks33
 )
 (C:\Users\Ruben\AppData\Roaming\MiKTeX\tex/latex/xcharter\XCharter.sty
 Package: XCharter 2021/09/01 v1.222
@@ -653,12 +665,12 @@ LaTeX Font Info:    Changing XCharter-TOsF sub-encoding to TS1/0 on input line
 
 (C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count281
+\etb@tempcnta=\count282
 )
 (C:\Users\Ruben\AppData\Roaming\MiKTeX\tex/latex/xstring\xstring.sty
 (C:\Users\Ruben\AppData\Roaming\MiKTeX\tex/generic/xstring\xstring.tex
-\integerpart=\count282
-\decimalpart=\count283
+\integerpart=\count283
+\decimalpart=\count284
 )
 Package: xstring 2021/07/21 v1.84 String manipulations (CT)
 )
@@ -683,10 +695,10 @@ Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 
 (C:\Program Files\MiKTeX\tex/generic/xkeyval\xkeyval.tex
 (C:\Program Files\MiKTeX\tex/generic/xkeyval\xkvutils.tex
-\XKV@toks=\toks32
-\XKV@tempa@toks=\toks33
+\XKV@toks=\toks34
+\XKV@tempa@toks=\toks35
 )
-\XKV@depth=\count284
+\XKV@depth=\count285
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )))
 (C:\Users\Ruben\AppData\Roaming\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
@@ -714,18 +726,18 @@ File: lettrine.sty 2020-03-14 v2.23 (Daniel Flipo)
 (C:\Users\Ruben\AppData\Roaming\MiKTeX\tex/generic/minifp\minifp.sty
 Package: minifp 2013/12/30 v0.96. Macros for real number operations and a stack
 -based programing language.
-\MFP@loopctr=\count285
+\MFP@loopctr=\count286
 )
-\c@DefaultLines=\count286
-\c@DefaultDepth=\count287
+\c@DefaultLines=\count287
+\c@DefaultDepth=\count288
 \DefaultFindent=\dimen182
 \DefaultNindent=\dimen183
 \DefaultSlope=\dimen184
 \DiscardVskip=\dimen185
-\L@lbox=\box50
-\L@tbox=\box51
-\c@L@lines=\count288
-\c@L@depth=\count289
+\L@lbox=\box52
+\L@tbox=\box53
+\c@L@lines=\count289
+\c@L@depth=\count290
 \L@Pindent=\dimen186
 \L@Findent=\dimen187
 \L@Nindent=\dimen188
@@ -741,7 +753,7 @@ Package: minifp 2013/12/30 v0.96. Macros for real number operations and a stack
 \LettrineWidth=\dimen198
 \LettrineHeight=\dimen199
 \LettrineDepth=\dimen256
-\Llist@everypar=\toks34
+\Llist@everypar=\toks36
 
 Loading lettrine.cfg
 (C:\Users\Ruben\AppData\Roaming\MiKTeX\tex/latex/lettrine\lettrine.cfg))
@@ -777,7 +789,7 @@ Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 ))
 (C:\Users\Ruben\AppData\Roaming\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count290
+\lrq@indent=\count291
 
 (C:\Users\Ruben\AppData\Roaming\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -786,48 +798,48 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count291
-\c@listtotal=\count292
-\c@listcount=\count293
-\c@liststart=\count294
-\c@liststop=\count295
-\c@citecount=\count296
-\c@citetotal=\count297
-\c@multicitecount=\count298
-\c@multicitetotal=\count299
-\c@instcount=\count300
-\c@maxnames=\count301
-\c@minnames=\count302
-\c@maxitems=\count303
-\c@minitems=\count304
-\c@citecounter=\count305
-\c@maxcitecounter=\count306
-\c@savedcitecounter=\count307
-\c@uniquelist=\count308
-\c@uniquename=\count309
-\c@refsection=\count310
-\c@refsegment=\count311
-\c@maxextratitle=\count312
-\c@maxextratitleyear=\count313
-\c@maxextraname=\count314
-\c@maxextradate=\count315
-\c@maxextraalpha=\count316
-\c@abbrvpenalty=\count317
-\c@highnamepenalty=\count318
-\c@lownamepenalty=\count319
-\c@maxparens=\count320
-\c@parenlevel=\count321
-\blx@tempcnta=\count322
-\blx@tempcntb=\count323
-\blx@tempcntc=\count324
-\blx@maxsection=\count325
-\blx@maxsegment@0=\count326
-\blx@notetype=\count327
-\blx@parenlevel@text=\count328
-\blx@parenlevel@foot=\count329
-\blx@sectionciteorder@0=\count330
-\blx@entrysetcounter=\count331
-\blx@biblioinstance=\count332
+\c@tabx@nest=\count292
+\c@listtotal=\count293
+\c@listcount=\count294
+\c@liststart=\count295
+\c@liststop=\count296
+\c@citecount=\count297
+\c@citetotal=\count298
+\c@multicitecount=\count299
+\c@multicitetotal=\count300
+\c@instcount=\count301
+\c@maxnames=\count302
+\c@minnames=\count303
+\c@maxitems=\count304
+\c@minitems=\count305
+\c@citecounter=\count306
+\c@maxcitecounter=\count307
+\c@savedcitecounter=\count308
+\c@uniquelist=\count309
+\c@uniquename=\count310
+\c@refsection=\count311
+\c@refsegment=\count312
+\c@maxextratitle=\count313
+\c@maxextratitleyear=\count314
+\c@maxextraname=\count315
+\c@maxextradate=\count316
+\c@maxextraalpha=\count317
+\c@abbrvpenalty=\count318
+\c@highnamepenalty=\count319
+\c@lownamepenalty=\count320
+\c@maxparens=\count321
+\c@parenlevel=\count322
+\blx@tempcnta=\count323
+\blx@tempcntb=\count324
+\blx@tempcntc=\count325
+\blx@maxsection=\count326
+\blx@maxsegment@0=\count327
+\blx@notetype=\count328
+\blx@parenlevel@text=\count329
+\blx@parenlevel@foot=\count330
+\blx@sectionciteorder@0=\count331
+\blx@entrysetcounter=\count332
+\blx@biblioinstance=\count333
 \labelnumberwidth=\skip71
 \labelalphawidth=\skip72
 \biblabelsep=\skip73
@@ -839,9 +851,9 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \blx@bcfin=\read3
 \blx@bcfout=\write3
 \blx@langwohyphens=\language80
-\c@mincomprange=\count333
-\c@maxcomprange=\count334
-\c@mincompwidth=\count335
+\c@mincomprange=\count334
+\c@maxcomprange=\count335
+\c@mincompwidth=\count336
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -852,74 +864,74 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'authoryear.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count336
-\c@savedafterword=\count337
-\c@annotator=\count338
-\c@savedannotator=\count339
-\c@author=\count340
-\c@savedauthor=\count341
-\c@bookauthor=\count342
-\c@savedbookauthor=\count343
-\c@commentator=\count344
-\c@savedcommentator=\count345
-\c@editor=\count346
-\c@savededitor=\count347
-\c@editora=\count348
-\c@savededitora=\count349
-\c@editorb=\count350
-\c@savededitorb=\count351
-\c@editorc=\count352
-\c@savededitorc=\count353
-\c@foreword=\count354
-\c@savedforeword=\count355
-\c@holder=\count356
-\c@savedholder=\count357
-\c@introduction=\count358
-\c@savedintroduction=\count359
-\c@namea=\count360
-\c@savednamea=\count361
-\c@nameb=\count362
-\c@savednameb=\count363
-\c@namec=\count364
-\c@savednamec=\count365
-\c@translator=\count366
-\c@savedtranslator=\count367
-\c@shortauthor=\count368
-\c@savedshortauthor=\count369
-\c@shorteditor=\count370
-\c@savedshorteditor=\count371
-\c@labelname=\count372
-\c@savedlabelname=\count373
-\c@institution=\count374
-\c@savedinstitution=\count375
-\c@lista=\count376
-\c@savedlista=\count377
-\c@listb=\count378
-\c@savedlistb=\count379
-\c@listc=\count380
-\c@savedlistc=\count381
-\c@listd=\count382
-\c@savedlistd=\count383
-\c@liste=\count384
-\c@savedliste=\count385
-\c@listf=\count386
-\c@savedlistf=\count387
-\c@location=\count388
-\c@savedlocation=\count389
-\c@organization=\count390
-\c@savedorganization=\count391
-\c@origlocation=\count392
-\c@savedoriglocation=\count393
-\c@origpublisher=\count394
-\c@savedorigpublisher=\count395
-\c@publisher=\count396
-\c@savedpublisher=\count397
-\c@language=\count398
-\c@savedlanguage=\count399
-\c@origlanguage=\count400
-\c@savedoriglanguage=\count401
-\c@pageref=\count402
-\c@savedpageref=\count403
+\c@afterword=\count337
+\c@savedafterword=\count338
+\c@annotator=\count339
+\c@savedannotator=\count340
+\c@author=\count341
+\c@savedauthor=\count342
+\c@bookauthor=\count343
+\c@savedbookauthor=\count344
+\c@commentator=\count345
+\c@savedcommentator=\count346
+\c@editor=\count347
+\c@savededitor=\count348
+\c@editora=\count349
+\c@savededitora=\count350
+\c@editorb=\count351
+\c@savededitorb=\count352
+\c@editorc=\count353
+\c@savededitorc=\count354
+\c@foreword=\count355
+\c@savedforeword=\count356
+\c@holder=\count357
+\c@savedholder=\count358
+\c@introduction=\count359
+\c@savedintroduction=\count360
+\c@namea=\count361
+\c@savednamea=\count362
+\c@nameb=\count363
+\c@savednameb=\count364
+\c@namec=\count365
+\c@savednamec=\count366
+\c@translator=\count367
+\c@savedtranslator=\count368
+\c@shortauthor=\count369
+\c@savedshortauthor=\count370
+\c@shorteditor=\count371
+\c@savedshorteditor=\count372
+\c@labelname=\count373
+\c@savedlabelname=\count374
+\c@institution=\count375
+\c@savedinstitution=\count376
+\c@lista=\count377
+\c@savedlista=\count378
+\c@listb=\count379
+\c@savedlistb=\count380
+\c@listc=\count381
+\c@savedlistc=\count382
+\c@listd=\count383
+\c@savedlistd=\count384
+\c@liste=\count385
+\c@savedliste=\count386
+\c@listf=\count387
+\c@savedlistf=\count388
+\c@location=\count389
+\c@savedlocation=\count390
+\c@organization=\count391
+\c@savedorganization=\count392
+\c@origlocation=\count393
+\c@savedoriglocation=\count394
+\c@origpublisher=\count395
+\c@savedorigpublisher=\count396
+\c@publisher=\count397
+\c@savedpublisher=\count398
+\c@language=\count399
+\c@savedlanguage=\count400
+\c@origlanguage=\count401
+\c@savedoriglanguage=\count402
+\c@pageref=\count403
+\c@savedpageref=\count404
 \shorthandwidth=\skip79
 \shortjournalwidth=\skip80
 \shortserieswidth=\skip81
@@ -955,19 +967,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (C:\Program Files\MiKTeX\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
-\c@textcitecount=\count404
-\c@textcitetotal=\count405
-\c@textcitemaxnames=\count406
-\c@biburlbigbreakpenalty=\count407
-\c@biburlbreakpenalty=\count408
-\c@biburlnumpenalty=\count409
-\c@biburlucpenalty=\count410
-\c@biburllcpenalty=\count411
+\c@textcitecount=\count405
+\c@textcitetotal=\count406
+\c@textcitemaxnames=\count407
+\c@biburlbigbreakpenalty=\count408
+\c@biburlbreakpenalty=\count409
+\c@biburlnumpenalty=\count410
+\c@biburlucpenalty=\count411
+\c@biburllcpenalty=\count412
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count412
+\c@smartand=\count413
 )
 Package biblatex Info: Trying to load natbib compatibility...
 Package biblatex Info: ... file 'blx-natbib.def' found.
@@ -987,8 +999,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (C:\Program Files\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
 File: standard.bbx 2020/12/31 v3.16 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count413
-\c@bbx:relatedtotal=\count414
+\c@bbx:relatedcount=\count414
+\c@bbx:relatedtotal=\count415
 ))
 Package biblatex Info: Trying to load citation style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.cbx' found.
@@ -1011,13 +1023,13 @@ File: biblatex.cfg
 )))
 (C:\Users\Ruben\AppData\Roaming\MiKTeX\tex/latex/csquotes\csquotes.sty
 Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
-\csq@reset=\count415
-\csq@gtype=\count416
-\csq@glevel=\count417
-\csq@qlevel=\count418
-\csq@maxlvl=\count419
-\csq@tshold=\count420
-\csq@ltx@everypar=\toks35
+\csq@reset=\count416
+\csq@gtype=\count417
+\csq@glevel=\count418
+\csq@qlevel=\count419
+\csq@maxlvl=\count420
+\csq@tshold=\count421
+\csq@ltx@everypar=\toks37
 
 (C:\Users\Ruben\AppData\Roaming\MiKTeX\tex/latex/csquotes\csquotes.def
 File: csquotes.def 2021-02-22 v5.2l csquotes generic definitions (JAW)
@@ -1031,62 +1043,62 @@ File: csquotes.cfg
 Package csquotes Info: Enabling multilingual quotes.
 )
 LaTeX Font Info:    Trying to load font information for T1+XCharter-TLF on inpu
-t line 43.
+t line 45.
 
 (C:\Users\Ruben\AppData\Roaming\MiKTeX\tex/latex/xcharter\t1xcharter-tlf.fd
 File: T1XCharter-TLF.fd 2017/06/25 (autoinst) Font definitions for T1/XCharter-
 TLF.
 )
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 43.
+(Font)              scaled to size 12.0pt on input line 45.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
 (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count421
-\l__pdf_internal_box=\box52
+\l__color_backend_stack_int=\count422
+\l__pdf_internal_box=\box54
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 45.
 LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 4
-3.
+5.
 
 (C:\Users\Ruben\AppData\Roaming\MiKTeX\tex/latex/cyrillic\t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 45.
 LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 4
-3.
+5.
 
 (C:\Users\Ruben\AppData\Roaming\MiKTeX\tex/latex/ly1\ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Info: Redefining \microtypecontext on input line 43.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Info: Redefining \microtypecontext on input line 45.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 43.
+LaTeX Info: Redefining \showhyphens on input line 45.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1097,17 +1109,17 @@ File: mt-bch.cfg 2007/03/03 v1.5 microtype config. file: Bitstream Charter (RS)
 )
 (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count422
+\scratchcounter=\count423
 \scratchdimen=\dimen257
-\scratchbox=\box53
-\nofMPsegments=\count423
-\nofMParguments=\count424
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count425
+\scratchbox=\box55
+\nofMPsegments=\count424
+\nofMParguments=\count425
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count426
 \MPscratchDim=\dimen258
-\MPnumerator=\count426
-\makeMPintoPDFobject=\count427
-\everyMPtoPDFconversion=\toks37
+\MPnumerator=\count427
+\makeMPintoPDFobject=\count428
+\everyMPtoPDFconversion=\toks39
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 
@@ -1131,7 +1143,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 43.
+(lastpage)             ! on input line 45.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1152,12 +1164,12 @@ Package lastpage Info: Please have a look at the pageslts package at
 * \topmargin=-43.81725pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=10.0pt
+* \topskip=12.0pt
 * \footskip=30.0pt
 * \marginparwidth=4.0pt
 * \marginparsep=10.0pt
 * \columnsep=19.91692pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1167,8 +1179,8 @@ Package lastpage Info: Please have a look at the pageslts package at
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@mv@tabular=\count428
-\c@mv@boldtabular=\count429
+\c@mv@tabular=\count429
+\c@mv@boldtabular=\count430
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 (C:\Program Files\MiKTeX\tex/latex/biblatex/lbx\english.lbx
@@ -1202,10 +1214,10 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' not found.
 
 No file main.bbl.
-Package biblatex Info: Reference section=0 on input line 43.
-Package biblatex Info: Reference segment=0 on input line 43.
+Package biblatex Info: Reference section=0 on input line 45.
+Package biblatex Info: Reference segment=0 on input line 45.
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 4
-5.
+6.
 (C:\Users\Ruben\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
@@ -1214,14 +1226,14 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 45.
+(Font)              scaled to size 14.4pt on input line 46.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 52.
+(Font)              scaled to size 17.28pt on input line 53.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 52.
+(Font)              scaled to size 17.28pt on input line 53.
  (main.toc
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 4.
+(Font)              scaled to size 12.0pt on input line 4.
 
 (C:\Users\Ruben\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
@@ -1247,110 +1259,281 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 \openout4 = `main.toc'.
 
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 53.
+(Font)              scaled to size 12.0pt on input line 54.
 Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/XCharter-TLF/m/sc/10'.
+(microtype)             in font `T1/XCharter-TLF/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 28.94pt on input line 53.
+(Font)              scaled to size 34.928pt on input line 54.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 42.55861pt on input line 53.
-Package lettrine.sty Info: Targeted height = 28.94pt
+(Font)              scaled to size 51.36444pt on input line 54.
+Package lettrine.sty Info: Targeted height = 34.928pt
 (lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 28.93987pt (\color {DarkGoldenrod}
+(lettrine.sty)             Lettrine height = 34.92783pt (\color {DarkGoldenrod}
 {I});
-(lettrine.sty)             reported on input line 53.
-
-Underfull \hbox (badness 1448) in paragraph at lines 73--77
-\T1/XCharter-TLF/m/n/10 (+20) Earth Sur-face Tem-per-a-ture Data".Come pre-cisa
-to
- []
-
-LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 78.
-LaTeX Font Info:    Trying to load font information for TS1+XCharter-TLF on inp
-ut line 81.
-(C:\Users\Ruben\AppData\Roaming\MiKTeX\tex/latex/xcharter\ts1xcharter-tlf.fd
-File: TS1XCharter-TLF.fd 2020/05/25 (msharpe) Font definitions for TS1/XCharter
--TLF.
-)
-LaTeX Font Info:    Font shape `TS1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 81.
-Package microtype Info: Character `textbardbl ' is missing
-(microtype)             in font `TS1/XCharter-TLF/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textcelsius ' is missing
-(microtype)             in font `TS1/XCharter-TLF/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
+(lettrine.sty)             reported on input line 54.
 
 [1{C:/Users/Ruben/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 
 ]
-Underfull \hbox (badness 4341) in paragraph at lines 88--89
-[]\T1/XCharter-TLF/m/n/10 (+20) LandAndOceanAverageTemperature: Tem-per-
+Underfull \hbox (badness 1205) in paragraph at lines 74--78
+\T1/XCharter-TLF/m/n/12 (+20) Il dataset uti-liz-zato è in-ti-to-lato "Cli-mate
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--78
+\T1/XCharter-TLF/m/n/12 (+20) Change: Earth Sur-face Tem-per-a-ture
+ []
+
+
+Underfull \hbox (badness 3333) in paragraph at lines 74--78
+\T1/XCharter-TLF/m/n/12 (+20) è stato ot-tenuto tramite la pi-attaforma
+ []
+
+
+Underfull \hbox (badness 1642) in paragraph at lines 74--78
+\T1/XCharter-TLF/m/n/12 (+20) una ver-sione rip-ulita del dataset for-nito
+ []
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 74--78
+\T1/XCharter-TLF/m/n/12 (+20) dalla "Berke-ley Earth", un'organizzazione
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--78
+\T1/XCharter-TLF/m/n/12 (+20) non-profit in-dipen-dente spe-cial-izatta
+ []
+
+
+Underfull \hbox (badness 2837) in paragraph at lines 74--78
+\T1/XCharter-TLF/m/n/12 (+20) in temi di 'en-vi-ron-men-tal data sci-ence'.
+ []
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 74--78
+\T1/XCharter-TLF/m/n/12 (+20) L'organizzazione Berke-ley Earth definisce
+ []
+
+
+Underfull \hbox (badness 1817) in paragraph at lines 74--78
+\T1/XCharter-TLF/m/n/12 (+20) l'accento sulla ne-ces-sità di ot-tenere con
+ []
+
+
+Underfull \hbox (badness 4899) in paragraph at lines 74--78
+\T1/XCharter-TLF/m/n/12 (+20) ur-genza dati di qual-ità e in-for-mazioni
+ []
+
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
+(Font)              scaled to size 14.4pt on input line 79.
+LaTeX Font Info:    Trying to load font information for TS1+XCharter-TLF on inp
+ut line 82.
+(C:\Users\Ruben\AppData\Roaming\MiKTeX\tex/latex/xcharter\ts1xcharter-tlf.fd
+File: TS1XCharter-TLF.fd 2020/05/25 (msharpe) Font definitions for TS1/XCharter
+-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/XCharter-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 82.
+Package microtype Info: Character `textbardbl ' is missing
+(microtype)             in font `TS1/XCharter-TLF/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `textcelsius ' is missing
+(microtype)             in font `TS1/XCharter-TLF/m/n/12'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+[]\T1/XCharter-TLF/m/n/12 (+20) LandAverageTemperatureUncertainty:
+ []
+
+
+Underfull \hbox (badness 1221) in paragraph at lines 87--88
+\T1/XCharter-TLF/m/n/12 (+20) per-atura min-ima glob-ale del ter-reno
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 89--90
-[]\T1/XCharter-TLF/m/n/10 (+7) LandAndOceanAverageTemperatureUncertainty:
+[]\T1/XCharter-TLF/m/n/12 (+20) LandAndOceanAverageTemperature:
+ []
+
+
+Overfull \hbox (38.96365pt too wide) in paragraph at lines 90--91
+[]\T1/XCharter-TLF/m/n/12 (-20) LandAndOceanAverageTemperatureUncertainty:
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 90--91
+\T1/XCharter-TLF/m/n/12 (+20) alla me-dia della tem-per-atura me-dia
  []
 
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 120.
+(Font)              scaled to size 12.0pt on input line 121.
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--134
-\T1/XCharter-TLF/m/n/10 (+20) Per se-lezionare le vari-abili da uti-liz-zare pe
-r
- []
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
 
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-Underfull \hbox (badness 2277) in paragraph at lines 132--134
-\T1/XCharter-TLF/m/n/10 (+20) l'apprendimento dei re-gres-sori è stato uti-liz-
-zato
- []
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 128.
+[2]
 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
 
-Underfull \hbox (badness 1189) in paragraph at lines 132--134
-\T1/XCharter-TLF/m/it/10 (+20) Cor-re-la-tion>> \T1/XCharter-TLF/m/n/10 (+20) e
- \T1/XCharter-TLF/m/it/10 (+20) <<Cor-re-la-tion Fil-ter>>\T1/XCharter-TLF/m/n/
-10 (+20) . Alla fine del
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[3]
+<./Immagini/boxplot-r2.png, id=19, 477.28313pt x 341.02406pt>
+File: ./Immagini/boxplot-r2.png Graphic file (type png)
+<use ./Immagini/boxplot-r2.png>
+Package pdftex.def Info: ./Immagini/boxplot-r2.png  used on input line 172.
+(pdftex.def)             Requested size: 238.64098pt x 170.51161pt.
+
+Overfull \hbox (6.751pt too wide) in paragraph at lines 172--173
+[][] 
  []
 
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 152.
-[2]
+(Font)              scaled to size 10.95pt on input line 173.
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
+(Font)              scaled to size 10.95pt on input line 173.
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/it' will be
+(Font)              scaled to size 10.95pt on input line 173.
+<./Immagini/boxplot-mse.png, id=20, 475.02469pt x 329.73187pt>
+File: ./Immagini/boxplot-mse.png Graphic file (type png)
+<use ./Immagini/boxplot-mse.png>
+Package pdftex.def Info: ./Immagini/boxplot-mse.png  used on input line 180.
+(pdftex.def)             Requested size: 237.51175pt x 164.86552pt.
 
-LaTeX Warning: Empty bibliography on input line 169.
+Overfull \hbox (5.62178pt too wide) in paragraph at lines 180--181
+[][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[4 <./Immagini/boxplot-r2.png>]
+Underfull \hbox (badness 1038) in paragraph at lines 185--187
+\T1/XCharter-TLF/m/n/12 (+20) passo fon-da-men-tale con-siste nell'eseguire
+ []
+
+<./Immagini/hist-linear-regression.png, id=26, 620.3175pt x 332.74312pt>
+File: ./Immagini/hist-linear-regression.png Graphic file (type png)
+<use ./Immagini/hist-linear-regression.png>
+Package pdftex.def Info: ./Immagini/hist-linear-regression.png  used on input l
+ine 190.
+(pdftex.def)             Requested size: 279.14029pt x 149.73302pt.
+
+Overfull \hbox (47.25032pt too wide) in paragraph at lines 190--191
+[][] 
+ []
+
+<./Immagini/qq-plot-linear-regression.png, id=27, 1003.75pt x 702.625pt>
+File: ./Immagini/qq-plot-linear-regression.png Graphic file (type png)
+<use ./Immagini/qq-plot-linear-regression.png>
+Package pdftex.def Info: ./Immagini/qq-plot-linear-regression.png  used on inpu
+t line 195.
+(pdftex.def)             Requested size: 250.93689pt x 175.6558pt.
+
+Overfull \hbox (19.04692pt too wide) in paragraph at lines 195--196
+[][] 
+ []
+
+<./Immagini/hist-polinomial-regression.png, id=28, 621.07031pt x 340.27126pt>
+File: ./Immagini/hist-polinomial-regression.png Graphic file (type png)
+<use ./Immagini/hist-polinomial-regression.png>
+Package pdftex.def Info: ./Immagini/hist-polinomial-regression.png  used on inp
+ut line 201.
+(pdftex.def)             Requested size: 248.42372pt x 136.10608pt.
+
+Overfull \hbox (16.53375pt too wide) in paragraph at lines 201--202
+[][] 
+ []
+
+
+Underfull \vbox (badness 7576) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[5 <./Immagini/boxplot-mse.png> <./Immagini/hist-linear-regression.png> <./Imma
+gini/qq-plot-linear-regression.png (PNG copy)>]
+<./Immagini/qq-plot-polinomial-regression.png, id=32, 1003.75pt x 702.625pt>
+File: ./Immagini/qq-plot-polinomial-regression.png Graphic file (type png)
+<use ./Immagini/qq-plot-polinomial-regression.png>
+Package pdftex.def Info: ./Immagini/qq-plot-polinomial-regression.png  used on 
+input line 206.
+(pdftex.def)             Requested size: 250.93689pt x 175.6558pt.
+
+Overfull \hbox (19.04692pt too wide) in paragraph at lines 206--207
+[][] 
+ []
+
+
+LaTeX Warning: Empty bibliography on input line 214.
 
 
 AED: lastpage setting LastPage
-[3] (main.aux)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[6
+
+ <./Immagini/hist-polinomial-regression.png> <./Immagini/qq-plot-polinomial-reg
+ression.png (PNG copy)>] (main.aux)
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18199 strings out of 479321
- 318174 string characters out of 2866502
- 1067824 words of memory out of 3000000
- 35175 multiletter control sequences out of 15000+600000
- 499847 words of font info for 168 fonts, out of 8000000 for 9000
+ 18422 strings out of 479321
+ 323194 string characters out of 2866502
+ 1063747 words of memory out of 3000000
+ 35316 multiletter control sequences out of 15000+600000
+ 531291 words of font info for 226 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,11n,78p,1905b,1805s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Users/Ruben/AppData/Roaming/MiKTeX/fonts/enc/dvips/xcharter/xch_rydp4l.en
-c}{C:/Users/Ruben/AppData/Roaming/MiKTeX/fonts/enc/dvips/xcharter/xch1_co4ru4.e
+ 73i,12n,78p,1905b,1811s stack positions out of 5000i,500n,10000p,200000b,80000s
+{C:/Users/Ruben/AppData/Roaming/MiKTeX/fonts/enc/dvips/xcharter/xch1_co4ru4.e
+nc}{C:/Users/Ruben/AppData/Roaming/MiKTeX/fonts/enc/dvips/xcharter/xch_rydp4l.e
 nc}{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Ruben/AppData
 /Roaming/MiKTeX/fonts/type1/public/xcharter/XCharter-Bold.pfb><C:/Users/Ruben/A
 ppData/Roaming/MiKTeX/fonts/type1/public/xcharter/XCharter-Italic.pfb><C:/Users
 /Ruben/AppData/Roaming/MiKTeX/fonts/type1/public/xcharter/XCharter-Roman.pfb><C
 :/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fi
-les/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/ur
-w/helvetic/uhvb8a.pfb>
-Output written on main.pdf (3 pages, 215778 bytes).
+les/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb>
+Output written on main.pdf (6 pages, 314066 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
+ 68 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41985 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 53279 words of extra memory for PDF output out of 61914 (max. 10000000)
 

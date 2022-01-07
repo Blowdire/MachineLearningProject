@@ -19,8 +19,10 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[10pt, a4paper, twocolumn]{article} % 10pt font size (11 and 12 also possible), A4 paper (letterpaper for US letter) and two column layout (remove for one column)
+\documentclass[12pt, a4paper, twocolumn]{article} % 10pt font size (11 and 12 also possible), A4 paper (letterpaper for US letter) and two column layout (remove for one column)
+\usepackage{setspace}
 \usepackage{multirow}
+\usepackage{float}
 \input{structure.tex} % Specifies the document structure and loads requires packages
 
 %----------------------------------------------------------------------------------------
@@ -41,7 +43,6 @@
 %----------------------------------------------------------------------------------------
 
 \begin{document}
-
 \maketitle % Print the title
 
 \thispagestyle{firstpage} % Apply the page style for the first page (no headers and footers)
@@ -49,7 +50,7 @@
 %----------------------------------------------------------------------------------------
 %	ABSTRACT
 %----------------------------------------------------------------------------------------
-\tableofcontents
+\tableofcontents 
 \lettrineabstract{Il progetto consiste nell'analisi di vari modelli di regressione applicati ad un dataset contenente le informazioni ambientali riferite alla temperatura globale a partire dal Gennaio 1850 al Novembre 2015.}
 
 
@@ -164,6 +165,47 @@ L'approccio della cross validation è molto utile in quanto permette di allenare
 Nel nostro caso abbiamo utilizzato 10 fogli, i vari record sono scelti tramite random sampling.
 
 \section{Valutazione}
+Per la fase di valutazione dei vari modelli sono state prese in considerazione diverse metriche per ogni modello e, inoltre, è stata effettuata un analisi dei residui dove possibile.
+\subsection{Analisi r-quadro}
+Per tutti i modelli è stata eseguita una comparazione delle varie misure di $r^{2}$ intermedie ad ogni passo della cross validation, ottenendo i seguenti risultati:
+\begin{figure}[H]
+  \includegraphics[scale=0.5]{./Immagini/boxplot-r2.png}
+  \caption{Box plot relativo ai vari valori di $r^{2}$ di ogni ciclo della cross validation di ogni modello.}
+\end{figure}
+Come si può osservare dal box plot i valori migliori di $r^{2}$ sono stati ottenuti dai modelli \textit{Random Forest} e \textit{Tree Ensemble}, i quali hanno valori di $r^{2}$ compresi fra $[0,81, 0,91]$. Il fatto che questi due modelli abbiano valori simili era prevedibile, in quanto il modello \textit{Random Forest} è una variante particolare del modello \textit{Tree Ensemble}. Il valore peggiore di $r^{2}$ appartiene al modello di \textit{Regressione Polinomiale}, il quale, oltre ad avere una valore mediano pari a $0,76$, ha una grande varianza rispetto ai valori di $r^{2}$ dei vari cicli di cross validation. 
+\subsection{Analisi Mean Squared Error}
+Per tutti i modelli presi in considerazione è stato calcolato il malore di \textit{Mean Squared Error} ad ogni ciclo di cross validation.
+I risultati ottenuti sono i seguenti:
+\begin{figure}[H]
+  \includegraphics[scale=0.5]{./Immagini/boxplot-mse.png}
+  \caption{Box plot relativo ai vari valori di \textit{MSE} di ogni ciclo della cross validation di ogni modello.}
+\end{figure}
+Come si può notare dal grafico i modelli con \textit{MSE} migliore, quindi più basso, sono il \textit{Tree Ensemble} e \textit{Random Forest}, i quali hanno valori che variano nell'intervallo $[1,71, 3,38]$. I modelli \textit{Linear Regression, Polinomial Regression e XgBoost} sono quelli con \textit{MSE} peggiore, con valori che variano nell'intervallo $[4,08 , 5,44]$.
+\subsection{Analisi dei residui}
+Per l'analisi della qualità di modelli di tipo \textit{Linear Regression e Polinomial Regression}, un passo fondamentale consiste nell'eseguire l'analisi dei residui. Questa analisi consiste nell'osservare il tipo di distribuzione assunto dai residui ottenuti nella previsione della variabile target: devono avere una distribuzione di tipo normale.
+Per verificare la loro distribuzione è possibile effettuare una prima analisi visiva tramite l'utilizzo di istogrammi, e in seguito utilizzare test d'ipotesi, come ad esempio il test Shapiro-Wilk, per verificare la distribuzione.
+\subsubsection{Regressione Lineare}
+In seguito ad un analisi visiva dell'istogramma relativo ai residui del modello di Regressione Lineare è già possibile notare che i residui non sono distribuiti normalmente:
+\begin{figure}[H]
+  \includegraphics[scale=0.45]{./Immagini/hist-linear-regression.png}
+  \caption{Istogramma relativo ai residui del modello di Regressione Lineare, si può osservare visivamente la non Normalità della distribuzione dei residui.}
+\end{figure}
+Per confermare l'ipotesi visiva è stato eseguito il test d'ipotesi Shapiro-Wilk, il quale ha rigettato l'ipotesi che i campioni relativi ai residui utilizzati dal test siano distribuiti seguendo una distribuzione normale.
+\begin{figure}[H]
+  \includegraphics[scale=0.25]{./Immagini/qq-plot-linear-regression.png}
+  \caption{Q Q Plot relativo ai residui del modello di Regressione Lineare}
+\end{figure}
+\subsubsection{Regressione Polinomiale}
+In seguito ad un analisi visiva dell'istogramma dei ai residui del modello di Regressione Polinomiale si può già stabilire che i residui del modello non sono distribuiti normalmente:
+\begin{figure}[H]
+  \includegraphics[scale=0.4]{./Immagini/hist-polinomial-regression.png}
+  \caption{Istogramma relativo ai residui del modello di Regressione Polinomiale.}
+\end{figure}
+Per confermare l'ipotesi visiva è stato eseguito il test d'ipotesi Shapiro-Wilk. Il test ha rigettato l'ipotesi che i campioni relativi ai residui utilizzati siano distribuiti seguendo una distribuzione normale.
+\begin{figure}[H]
+  \includegraphics[scale=0.25]{./Immagini/qq-plot-polinomial-regression.png}
+  \caption{Q Q Plot relativo ai residui del modello di Regressione Polinomiale.}
+\end{figure}
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
