@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="workflow.knime">
-    <entry key="created_by" type="xstring" value="4.5.0.v202112011542"/>
+    <entry key="created_by" type="xstring" value="4.4.2.v202110181013"/>
     <entry key="created_by_nightly" type="xboolean" value="false"/>
     <entry key="version" type="xstring" value="4.1.0"/>
     <entry key="name" type="xstring" value="Random Forest"/>
@@ -26,10 +26,6 @@
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
     <entry key="state" type="xstring" value="CONFIGURED"/>
-    <config key="nodecontainer_message">
-        <entry key="type" type="xstring" value="ERROR"/>
-        <entry key="message" type="xstring" value="Python Script 0:75:40: Could not start Python. There are problems with your Python environment:%%00010Could not start Python executable at the given location (C:\Users\Ruben\.conda\envs\py3_knime\python.exe): Cannot run program &quot;C:\Users\Ruben\.conda\envs\py3_knime\python.exe&quot;: CreateProcess error=2, The system cannot find the file specified"/>
-    </config>
     <config key="workflow_credentials"/>
     <config key="nodes">
         <config key="node_1">

@@ -1936,3 +1936,621 @@ Could not start Python executable at the given location (C:\Users\Ruben\.conda\e
 	at org.apache.commons.pool2.impl.GenericKeyedObjectPool.returnObject(GenericKeyedObjectPool.java:483)
 	at org.knime.python2.kernel.PythonKernelQueue.lambda$0(PythonKernelQueue.java:306)
 	at java.base/java.lang.Thread.run(Unknown Source)
+2022-01-07 14:40:36,770 : ERROR : Worker-2: Workflow Coach loader :  : FileWorkflowPersistor : Vector Creation : 2:19 : Unable to load node with ID suffix 10 into workflow, skipping it: null
+java.lang.NullPointerException
+	at org.knime.ext.textprocessing.preferences.StoragePreferenceInitializer.fileStoreChunkSize(StoragePreferenceInitializer.java:87)
+	at org.knime.ext.textprocessing.util.TextContainerDataCellFactoryBuilder.createDocumentCellFactory(TextContainerDataCellFactoryBuilder.java:72)
+	at org.knime.ext.textprocessing.nodes.transformation.documentvector.DocumentVectorNodeModel2.<init>(DocumentVectorNodeModel2.java:155)
+	at org.knime.ext.textprocessing.nodes.transformation.documentvector.DocumentVectorNodeFactory2.createNodeModel(DocumentVectorNodeFactory2.java:75)
+	at org.knime.ext.textprocessing.nodes.transformation.documentvector.DocumentVectorNodeFactory2.createNodeModel(DocumentVectorNodeFactory2.java:1)
+	at org.knime.core.node.NodeFactory.callCreateNodeModel(NodeFactory.java:520)
+	at org.knime.core.node.Node.<init>(Node.java:305)
+	at org.knime.core.node.workflow.FileNativeNodeContainerPersistor.preLoadNodeContainer(FileNativeNodeContainerPersistor.java:197)
+	at org.knime.core.node.workflow.FileWorkflowPersistor.loadNodeContainer(FileWorkflowPersistor.java:970)
+	at org.knime.core.node.workflow.WorkflowManager.postLoad(WorkflowManager.java:8507)
+	at org.knime.core.node.workflow.WorkflowManager.loadContent(WorkflowManager.java:8408)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8362)
+	at org.knime.core.node.workflow.WorkflowManager.load(WorkflowManager.java:8283)
+	at org.knime.workbench.repository.RepositoryFactory.loadMetaNode(RepositoryFactory.java:204)
+	at org.knime.workbench.repository.RepositoryFactory.createMetaNode(RepositoryFactory.java:152)
+	at org.knime.workbench.repository.RepositoryManager.readMetanodes(RepositoryManager.java:220)
+	at org.knime.workbench.repository.RepositoryManager.readRepository(RepositoryManager.java:176)
+	at org.knime.workbench.repository.RepositoryManager.getRoot(RepositoryManager.java:574)
+	at org.knime.workbench.repository.RepositoryManager.getRoot(RepositoryManager.java:587)
+	at org.knime.workbench.workflowcoach.ui.WorkflowCoachView$3.run(WorkflowCoachView.java:268)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2022-01-07 14:46:39,176 : WARN  : KNIME-Worker-3-Interactive Histogram (local) 0:85 :  : NodeContainer : Interactive Histogram (local) : 0:85 : Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+	at org.knime.core.node.workflow.WorkflowManager.doBeforeExecution(WorkflowManager.java:3182)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteStart(NodeContainer.java:607)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:171)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-07 14:46:47,915 : WARN  : KNIME-Worker-5-Missing Value 0:21 :  : Node : Missing Value : 0:21 : The current settings use missing value handling methods that cannot be represented in PMML 4.2
+2022-01-07 14:46:48,292 : WARN  : KNIME-Worker-3-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 14:46:48,294 : WARN  : KNIME-Worker-3-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-07 14:46:48,294 : WARN  : KNIME-Worker-3-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 14:46:48,294 : WARN  : KNIME-Worker-3-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 14:46:48,294 : WARN  : KNIME-Worker-3-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-07 14:46:48,310 : WARN  : KNIME-Worker-4-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 14:46:48,312 : WARN  : KNIME-Worker-4-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-07 14:46:48,312 : WARN  : KNIME-Worker-4-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 14:46:48,312 : WARN  : KNIME-Worker-4-Correlation Filter 0:11 :  : Node : Interactive Histogram (local) : 0:85 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 14:46:48,312 : WARN  : KNIME-Worker-4-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 14:46:48,312 : WARN  : KNIME-Worker-4-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-07 14:46:48,330 : WARN  : KNIME-Worker-5-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 14:46:48,330 : WARN  : KNIME-Worker-5-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:85 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 14:46:48,555 : WARN  : KNIME-Worker-3-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 14:46:48,555 : WARN  : KNIME-Worker-3-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:85 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 14:47:54,360 : WARN  : KNIME-Worker-4-X-Partitioner 0:75:2 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 14:47:54,360 : WARN  : KNIME-Worker-4-X-Partitioner 0:75:2 :  : Node : Interactive Histogram (local) : 0:86 : 3 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 14:47:55,178 : WARN  : KNIME-Worker-21-Math Formula 0:75:46 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 14:47:55,178 : WARN  : KNIME-Worker-21-Math Formula 0:75:46 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 14:47:55,193 : WARN  : KNIME-Worker-16-X-Partitioner 0:75:2 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 14:47:55,195 : WARN  : KNIME-Worker-16-X-Partitioner 0:75:2 :  : Node : Interactive Histogram (local) : 0:86 : 3 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 14:47:55,613 : WARN  : KNIME-Worker-24-Math Formula 0:75:46 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 14:47:55,613 : WARN  : KNIME-Worker-24-Math Formula 0:75:46 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 14:47:55,623 : WARN  : KNIME-Worker-7-X-Partitioner 0:75:2 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 14:47:55,624 : WARN  : KNIME-Worker-7-X-Partitioner 0:75:2 :  : Node : Interactive Histogram (local) : 0:86 : 3 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 14:47:55,913 : WARN  : KNIME-Worker-17-Math Formula 0:75:46 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 14:47:55,914 : WARN  : KNIME-Worker-17-Math Formula 0:75:46 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 14:47:55,923 : WARN  : KNIME-Worker-8-X-Partitioner 0:75:2 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 14:47:55,923 : WARN  : KNIME-Worker-8-X-Partitioner 0:75:2 :  : Node : Interactive Histogram (local) : 0:86 : 3 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 14:47:56,217 : WARN  : KNIME-Worker-12-Math Formula 0:75:46 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 14:47:56,218 : WARN  : KNIME-Worker-12-Math Formula 0:75:46 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 14:47:56,226 : WARN  : KNIME-Worker-9-X-Partitioner 0:75:2 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 14:47:56,226 : WARN  : KNIME-Worker-9-X-Partitioner 0:75:2 :  : Node : Interactive Histogram (local) : 0:86 : 3 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 14:47:56,505 : WARN  : KNIME-Worker-21-Math Formula 0:75:46 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 14:47:56,505 : WARN  : KNIME-Worker-21-Math Formula 0:75:46 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 14:47:56,513 : WARN  : KNIME-Worker-27-X-Partitioner 0:75:2 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 14:47:56,514 : WARN  : KNIME-Worker-27-X-Partitioner 0:75:2 :  : Node : Interactive Histogram (local) : 0:86 : 3 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 14:47:56,786 : WARN  : KNIME-Worker-27-Math Formula 0:75:46 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 14:47:56,786 : WARN  : KNIME-Worker-27-Math Formula 0:75:46 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 14:47:56,794 : WARN  : KNIME-Worker-3-X-Partitioner 0:75:2 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 14:47:56,795 : WARN  : KNIME-Worker-3-X-Partitioner 0:75:2 :  : Node : Interactive Histogram (local) : 0:86 : 3 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 14:47:57,049 : WARN  : KNIME-Worker-11-Math Formula 0:75:46 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 14:47:57,049 : WARN  : KNIME-Worker-11-Math Formula 0:75:46 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 14:47:57,058 : WARN  : KNIME-Worker-13-X-Partitioner 0:75:2 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 14:47:57,058 : WARN  : KNIME-Worker-13-X-Partitioner 0:75:2 :  : Node : Interactive Histogram (local) : 0:86 : 3 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 14:47:57,394 : WARN  : KNIME-Worker-9-Math Formula 0:75:46 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 14:47:57,394 : WARN  : KNIME-Worker-9-Math Formula 0:75:46 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 14:47:57,402 : WARN  : KNIME-Worker-20-X-Partitioner 0:75:2 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 14:47:57,402 : WARN  : KNIME-Worker-20-X-Partitioner 0:75:2 :  : Node : Interactive Histogram (local) : 0:86 : 3 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 14:47:57,666 : WARN  : KNIME-Worker-14-Math Formula 0:75:46 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 14:47:57,666 : WARN  : KNIME-Worker-14-Math Formula 0:75:46 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 14:47:57,674 : WARN  : KNIME-Worker-12-X-Partitioner 0:75:2 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 14:47:57,674 : WARN  : KNIME-Worker-12-X-Partitioner 0:75:2 :  : Node : Interactive Histogram (local) : 0:86 : 3 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 14:47:57,936 : WARN  : KNIME-Worker-20-Math Formula 0:75:46 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 14:47:57,936 : WARN  : KNIME-Worker-20-Math Formula 0:75:46 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 14:48:59,190 : WARN  : KNIME-Worker-4-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 14:48:59,225 : WARN  : KNIME-Worker-12-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 14:48:59,231 : WARN  : KNIME-Worker-5-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 14:48:59,263 : WARN  : KNIME-Worker-9-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 14:48:59,268 : WARN  : KNIME-Worker-27-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 14:48:59,293 : WARN  : KNIME-Worker-20-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 14:48:59,299 : WARN  : KNIME-Worker-15-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 14:48:59,320 : WARN  : KNIME-Worker-3-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 14:48:59,325 : WARN  : KNIME-Worker-21-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 14:48:59,347 : WARN  : KNIME-Worker-11-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 14:48:59,352 : WARN  : KNIME-Worker-10-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 14:48:59,373 : WARN  : KNIME-Worker-19-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 14:48:59,378 : WARN  : KNIME-Worker-6-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 14:48:59,397 : WARN  : KNIME-Worker-8-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 14:48:59,402 : WARN  : KNIME-Worker-14-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 14:48:59,422 : WARN  : KNIME-Worker-26-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 14:48:59,427 : WARN  : KNIME-Worker-22-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 14:48:59,446 : WARN  : KNIME-Worker-23-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 14:49:04,460 : WARN  : KNIME-Worker-19-X-Partitioner 0:67:2 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 14:49:05,233 : WARN  : KNIME-Worker-7-Math Formula 0:67:46 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 14:49:05,247 : WARN  : KNIME-Worker-8-X-Partitioner 0:67:2 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 14:49:05,338 : WARN  : KNIME-Worker-18-Math Formula 0:67:46 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 14:49:05,346 : WARN  : KNIME-Worker-26-X-Partitioner 0:67:2 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 14:49:05,435 : WARN  : KNIME-Worker-17-Math Formula 0:67:46 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 14:49:05,446 : WARN  : KNIME-Worker-23-X-Partitioner 0:67:2 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 14:49:05,494 : WARN  : KNIME-Worker-25-Math Formula 0:67:46 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 14:49:05,502 : WARN  : KNIME-Worker-20-X-Partitioner 0:67:2 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 14:49:05,559 : WARN  : KNIME-Worker-24-Math Formula 0:67:46 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 14:49:05,566 : WARN  : KNIME-Worker-3-X-Partitioner 0:67:2 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 14:49:05,599 : WARN  : KNIME-Worker-12-Math Formula 0:67:46 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 14:49:05,610 : WARN  : KNIME-Worker-11-X-Partitioner 0:67:2 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 14:49:05,699 : WARN  : KNIME-Worker-27-Math Formula 0:67:46 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 14:49:05,708 : WARN  : KNIME-Worker-19-X-Partitioner 0:67:2 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 14:49:05,727 : WARN  : KNIME-Worker-16-Math Formula 0:67:46 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 14:49:05,738 : WARN  : KNIME-Worker-8-X-Partitioner 0:67:2 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 14:49:05,821 : WARN  : KNIME-Worker-4-Math Formula 0:67:46 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 14:49:05,828 : WARN  : KNIME-Worker-26-X-Partitioner 0:67:2 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 14:49:05,844 : WARN  : KNIME-Worker-5-Math Formula 0:67:46 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 14:50:48,951 : WARN  : KNIME-Worker-28-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-07 14:50:49,050 : WARN  : KNIME-Worker-39-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-07 14:50:49,053 : WARN  : KNIME-Worker-34-Shapiro-Wilk Test 0:84 :  : Node : Shapiro-Wilk Test : 0:84 : The test might be inaccurate for data sets with more than 50 data points.
+2022-01-07 15:31:25,104 : WARN  : KNIME-Worker-6-Interactive Histogram (local) 0:86 :  : NodeContainer : Interactive Histogram (local) : 0:86 : Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+	at org.knime.core.node.workflow.WorkflowManager.doBeforeExecution(WorkflowManager.java:3182)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteStart(NodeContainer.java:607)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:171)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-07 15:31:58,361 : WARN  : KNIME-Worker-8-Missing Value 0:21 :  : Node : Missing Value : 0:21 : The current settings use missing value handling methods that cannot be represented in PMML 4.2
+2022-01-07 15:31:58,548 : WARN  : KNIME-Worker-6-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 15:31:58,551 : WARN  : KNIME-Worker-6-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-07 15:31:58,551 : WARN  : KNIME-Worker-6-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:31:58,552 : WARN  : KNIME-Worker-6-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 15:31:58,552 : WARN  : KNIME-Worker-6-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-07 15:31:58,568 : WARN  : KNIME-Worker-7-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 15:31:58,570 : WARN  : KNIME-Worker-7-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-07 15:31:58,570 : WARN  : KNIME-Worker-7-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:31:58,570 : WARN  : KNIME-Worker-7-Correlation Filter 0:11 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:31:58,570 : WARN  : KNIME-Worker-7-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 15:31:58,571 : WARN  : KNIME-Worker-7-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-07 15:31:58,590 : WARN  : KNIME-Worker-8-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:31:58,591 : WARN  : KNIME-Worker-8-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:31:58,729 : WARN  : KNIME-Worker-6-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:31:58,729 : WARN  : KNIME-Worker-6-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:32:24,425 : WARN  : main :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:32:24,427 : WARN  : main :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:32:28,541 : WARN  : KNIME-Worker-8-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:32:28,541 : WARN  : KNIME-Worker-8-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:32:28,553 : WARN  : KNIME-Worker-8-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:32:28,554 : WARN  : KNIME-Worker-8-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:32:28,583 : WARN  : KNIME-Worker-6-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:32:28,584 : WARN  : KNIME-Worker-6-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:32:28,593 : WARN  : KNIME-Worker-7-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:32:28,593 : WARN  : KNIME-Worker-7-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:32:28,619 : WARN  : KNIME-Worker-8-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:32:28,619 : WARN  : KNIME-Worker-8-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:32:28,628 : WARN  : KNIME-Worker-6-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:32:28,628 : WARN  : KNIME-Worker-6-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:32:28,652 : WARN  : KNIME-Worker-7-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:32:28,653 : WARN  : KNIME-Worker-7-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:32:28,662 : WARN  : KNIME-Worker-8-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:32:28,663 : WARN  : KNIME-Worker-8-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:32:28,689 : WARN  : KNIME-Worker-6-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:32:28,689 : WARN  : KNIME-Worker-6-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:32:28,696 : WARN  : KNIME-Worker-7-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:32:28,697 : WARN  : KNIME-Worker-7-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:32:28,718 : WARN  : KNIME-Worker-8-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:32:28,718 : WARN  : KNIME-Worker-8-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:32:28,726 : WARN  : KNIME-Worker-6-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:32:28,726 : WARN  : KNIME-Worker-6-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:32:28,744 : WARN  : KNIME-Worker-7-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:32:28,745 : WARN  : KNIME-Worker-7-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:32:28,750 : WARN  : KNIME-Worker-8-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:32:28,751 : WARN  : KNIME-Worker-8-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:32:28,769 : WARN  : KNIME-Worker-6-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:32:28,769 : WARN  : KNIME-Worker-6-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:32:28,776 : WARN  : KNIME-Worker-7-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:32:28,776 : WARN  : KNIME-Worker-7-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:32:28,809 : WARN  : KNIME-Worker-8-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:32:28,809 : WARN  : KNIME-Worker-8-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:32:28,816 : WARN  : KNIME-Worker-6-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:32:28,816 : WARN  : KNIME-Worker-6-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:32:28,833 : WARN  : KNIME-Worker-7-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:32:28,834 : WARN  : KNIME-Worker-7-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:32:44,050 : WARN  : main :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:32:44,052 : WARN  : main :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:32:44,054 : WARN  : main :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:32:44,055 : WARN  : main :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:32:49,203 : WARN  : KNIME-Worker-8-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:32:49,204 : WARN  : KNIME-Worker-8-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:32:49,220 : WARN  : KNIME-Worker-8-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:32:49,220 : WARN  : KNIME-Worker-8-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:33:16,550 : WARN  : main :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:33:16,551 : WARN  : main :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:33:20,511 : WARN  : KNIME-Worker-6-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:33:20,512 : WARN  : KNIME-Worker-6-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 15:33:30,466 : WARN  : KNIME-Worker-6-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:33:30,485 : WARN  : KNIME-Worker-7-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:33:30,490 : WARN  : KNIME-Worker-9-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:33:30,509 : WARN  : KNIME-Worker-6-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:33:30,515 : WARN  : KNIME-Worker-8-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:33:30,537 : WARN  : KNIME-Worker-9-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:33:30,543 : WARN  : KNIME-Worker-7-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:33:30,563 : WARN  : KNIME-Worker-8-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:33:30,568 : WARN  : KNIME-Worker-6-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:33:30,590 : WARN  : KNIME-Worker-7-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:33:30,596 : WARN  : KNIME-Worker-9-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:33:30,616 : WARN  : KNIME-Worker-6-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:33:30,621 : WARN  : KNIME-Worker-8-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:33:30,640 : WARN  : KNIME-Worker-9-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:33:30,646 : WARN  : KNIME-Worker-7-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:33:30,664 : WARN  : KNIME-Worker-8-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:33:30,671 : WARN  : KNIME-Worker-6-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 15:33:30,690 : WARN  : KNIME-Worker-7-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 16:43:24,402 : WARN  : main :  : Node : Row Sampling : 0:87 : No sampling method selected
+2022-01-07 16:43:32,895 : WARN  : KNIME-Worker-10-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-07 16:43:32,974 : WARN  : KNIME-Worker-23-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-07 16:57:30,742 : ERROR : KNIME-Worker-31-R Plot 0:89 :  : Node : R Plot : 0:89 : Execute failed: Could not connect to R. Probably, the R-Server is not running.
+Here's what you need to do:
+ 1) Check what R-server-host is configured in your Knime preferences.
+ 2) If your host is set to be 'localhost' start R and run the following command
+ library(Rserve); Rserve(args = "--vanilla")
+de.mpicbg.knime.scripting.core.exceptions.KnimeScriptingException: Could not connect to R. Probably, the R-Server is not running.
+Here's what you need to do:
+ 1) Check what R-server-host is configured in your Knime preferences.
+ 2) If your host is set to be 'localhost' start R and run the following command
+ library(Rserve); Rserve(args = "--vanilla")
+	at de.mpicbg.knime.scripting.r.RUtils.createConnection(RUtils.java:244)
+	at de.mpicbg.knime.scripting.r.AbstractRScriptingNodeModel.pushInputToR(AbstractRScriptingNodeModel.java:173)
+	at de.mpicbg.knime.scripting.r.AbstractRScriptingNodeModel.executeImpl(AbstractRScriptingNodeModel.java:375)
+	at de.mpicbg.knime.scripting.r.node.plot.RPlotNodeModel.executeImpl(RPlotNodeModel.java:48)
+	at de.mpicbg.knime.scripting.core.AbstractScriptingNodeModel.execute(AbstractScriptingNodeModel.java:176)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-07 16:59:44,985 : ERROR : KNIME-Worker-32-R Plot 0:89 :  : Node : R Plot : 0:89 : Execute failed: Could not connect to R. Probably, the R-Server is not running.
+Here's what you need to do:
+ 1) Check what R-server-host is configured in your Knime preferences.
+ 2) If your host is set to be 'localhost' start R and run the following command
+ library(Rserve); Rserve(args = "--vanilla")
+de.mpicbg.knime.scripting.core.exceptions.KnimeScriptingException: Could not connect to R. Probably, the R-Server is not running.
+Here's what you need to do:
+ 1) Check what R-server-host is configured in your Knime preferences.
+ 2) If your host is set to be 'localhost' start R and run the following command
+ library(Rserve); Rserve(args = "--vanilla")
+	at de.mpicbg.knime.scripting.r.RUtils.createConnection(RUtils.java:244)
+	at de.mpicbg.knime.scripting.r.AbstractRScriptingNodeModel.pushInputToR(AbstractRScriptingNodeModel.java:173)
+	at de.mpicbg.knime.scripting.r.AbstractRScriptingNodeModel.executeImpl(AbstractRScriptingNodeModel.java:375)
+	at de.mpicbg.knime.scripting.r.node.plot.RPlotNodeModel.executeImpl(RPlotNodeModel.java:48)
+	at de.mpicbg.knime.scripting.core.AbstractScriptingNodeModel.execute(AbstractScriptingNodeModel.java:176)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-07 17:00:46,629 : ERROR : KNIME-Worker-33-R Plot 0:89 :  : Node : R Plot : 0:89 : Execute failed: Could not connect to R. Probably, the R-Server is not running.
+Here's what you need to do:
+ 1) Check what R-server-host is configured in your Knime preferences.
+ 2) If your host is set to be 'localhost' start R and run the following command
+ library(Rserve); Rserve(args = "--vanilla")
+de.mpicbg.knime.scripting.core.exceptions.KnimeScriptingException: Could not connect to R. Probably, the R-Server is not running.
+Here's what you need to do:
+ 1) Check what R-server-host is configured in your Knime preferences.
+ 2) If your host is set to be 'localhost' start R and run the following command
+ library(Rserve); Rserve(args = "--vanilla")
+	at de.mpicbg.knime.scripting.r.RUtils.createConnection(RUtils.java:244)
+	at de.mpicbg.knime.scripting.r.AbstractRScriptingNodeModel.pushInputToR(AbstractRScriptingNodeModel.java:173)
+	at de.mpicbg.knime.scripting.r.AbstractRScriptingNodeModel.executeImpl(AbstractRScriptingNodeModel.java:375)
+	at de.mpicbg.knime.scripting.r.node.plot.RPlotNodeModel.executeImpl(RPlotNodeModel.java:48)
+	at de.mpicbg.knime.scripting.core.AbstractScriptingNodeModel.execute(AbstractScriptingNodeModel.java:176)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-07 17:06:02,677 : ERROR : KNIME-Worker-34-R Snippet 0:91 :  : Node : R Snippet : 0:91 : Execute failed: Could not find Rserve package. Please install it in your R installation by running "install.packages('Rserve',,'http://rforge.net/',type='source')".
+org.knime.r.controller.IRController$RException: Could not find Rserve package. Please install it in your R installation by running "install.packages('Rserve',,'http://rforge.net/',type='source')".
+	at org.knime.r.controller.RController.initR(RController.java:323)
+	at org.knime.r.controller.RController.initialize(RController.java:215)
+	at org.knime.r.RSnippetNodeModel.executeInternal(RSnippetNodeModel.java:164)
+	at org.knime.r.RSnippetNodeModel.execute(RSnippetNodeModel.java:154)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-07 17:08:10,919 : WARN  : ModalContext :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 17:08:10,944 : WARN  : ModalContext :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-07 17:08:10,952 : WARN  : ModalContext :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 17:10:29,821 : WARN  : KNIME-Worker-5-Python Plot 0:93 :  : NodeContainer : Python Plot : 0:93 : Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+	at org.knime.core.node.workflow.WorkflowManager.doBeforeExecution(WorkflowManager.java:3182)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteStart(NodeContainer.java:607)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:171)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-07 17:10:37,464 : WARN  : KNIME-Worker-7-Missing Value 0:21 :  : Node : Missing Value : 0:21 : The current settings use missing value handling methods that cannot be represented in PMML 4.2
+2022-01-07 17:10:37,615 : WARN  : KNIME-Worker-5-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 17:10:37,616 : WARN  : KNIME-Worker-5-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-07 17:10:37,616 : WARN  : KNIME-Worker-5-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 17:10:37,625 : WARN  : KNIME-Worker-5-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 17:10:37,626 : WARN  : KNIME-Worker-5-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-07 17:10:37,642 : WARN  : KNIME-Worker-6-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 17:10:37,643 : WARN  : KNIME-Worker-6-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-07 17:10:37,644 : WARN  : KNIME-Worker-6-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 17:10:37,644 : WARN  : KNIME-Worker-6-Correlation Filter 0:11 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 17:10:37,644 : WARN  : KNIME-Worker-6-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 17:10:37,644 : WARN  : KNIME-Worker-6-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-07 17:10:37,660 : WARN  : KNIME-Worker-7-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-07 17:10:37,806 : WARN  : KNIME-Worker-15-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-07 17:10:37,857 : ERROR : KNIME-Worker-11-Python Plot 0:93 :  : Node : Python Plot : 0:93 : Execute failed: Path to python executable is not set. Please configure under Preferences > KNIME > Python Scripting.
+de.mpicbg.knime.scripting.core.exceptions.KnimeScriptingException: Path to python executable is not set. Please configure under Preferences > KNIME > Python Scripting.
+	at de.mpicbg.knime.scripting.python.v2.AbstractPythonScriptingV2NodeModel.runScriptImpl(AbstractPythonScriptingV2NodeModel.java:646)
+	at de.mpicbg.knime.scripting.python.v2.AbstractPythonScriptingV2NodeModel.runScript(AbstractPythonScriptingV2NodeModel.java:618)
+	at de.mpicbg.knime.scripting.python.v2.node.plot.PythonPlotV2NodeModel.executeImpl(PythonPlotV2NodeModel.java:55)
+	at de.mpicbg.knime.scripting.core.AbstractScriptingNodeModel.execute(AbstractScriptingNodeModel.java:176)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-07 17:12:20,174 : ERROR : KNIME-Worker-22-Python Plot 0:93 :  : Node : Python Plot : 0:93 : Execute failed: Path to python executable is not set. Please configure under Preferences > KNIME > Python Scripting.
+de.mpicbg.knime.scripting.core.exceptions.KnimeScriptingException: Path to python executable is not set. Please configure under Preferences > KNIME > Python Scripting.
+	at de.mpicbg.knime.scripting.python.v2.AbstractPythonScriptingV2NodeModel.runScriptImpl(AbstractPythonScriptingV2NodeModel.java:646)
+	at de.mpicbg.knime.scripting.python.v2.AbstractPythonScriptingV2NodeModel.runScript(AbstractPythonScriptingV2NodeModel.java:618)
+	at de.mpicbg.knime.scripting.python.v2.node.plot.PythonPlotV2NodeModel.executeImpl(PythonPlotV2NodeModel.java:55)
+	at de.mpicbg.knime.scripting.core.AbstractScriptingNodeModel.execute(AbstractScriptingNodeModel.java:176)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-07 17:12:36,546 : ERROR : KNIME-Worker-23-Python Plot 0:93 :  : Node : Python Plot : 0:93 : Execute failed: Path to python executable is not set. Please configure under Preferences > KNIME > Python Scripting.
+de.mpicbg.knime.scripting.core.exceptions.KnimeScriptingException: Path to python executable is not set. Please configure under Preferences > KNIME > Python Scripting.
+	at de.mpicbg.knime.scripting.python.v2.AbstractPythonScriptingV2NodeModel.runScriptImpl(AbstractPythonScriptingV2NodeModel.java:646)
+	at de.mpicbg.knime.scripting.python.v2.AbstractPythonScriptingV2NodeModel.runScript(AbstractPythonScriptingV2NodeModel.java:618)
+	at de.mpicbg.knime.scripting.python.v2.node.plot.PythonPlotV2NodeModel.executeImpl(PythonPlotV2NodeModel.java:55)
+	at de.mpicbg.knime.scripting.core.AbstractScriptingNodeModel.execute(AbstractScriptingNodeModel.java:176)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-07 17:13:57,380 : ERROR : KNIME-Worker-28-Python View 0:95 :  : Node : Python View : 0:95 : Execute failed: No module named 'statsmodels'
+Traceback (most recent call last):
+File "<string>", line 4, in <module>
+ModuleNotFoundError: No module named 'statsmodels'
+
+org.knime.python2.kernel.PythonIOException: No module named 'statsmodels'
+Traceback (most recent call last):
+File "<string>", line 4, in <module>
+ModuleNotFoundError: No module named 'statsmodels'
+
+	at org.knime.python2.util.PythonUtils$Misc.executeCancelableUnwrapExecutionException(PythonUtils.java:310)
+	at org.knime.python2.util.PythonUtils$Misc.executeCancelable(PythonUtils.java:283)
+	at org.knime.python2.kernel.PythonKernel.executeCommandCancelable(PythonKernel.java:1482)
+	at org.knime.python2.kernel.PythonKernel.execute(PythonKernel.java:1413)
+	at org.knime.python2.nodes.view.PythonViewNodeModel.execute(PythonViewNodeModel.java:110)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: org.knime.python2.kernel.PythonIOException: No module named 'statsmodels'
+Traceback (most recent call last):
+File "<string>", line 4, in <module>
+ModuleNotFoundError: No module named 'statsmodels'
+
+	at org.knime.python2.kernel.PythonKernel.executeCommand(PythonKernel.java:1471)
+	at org.knime.python2.kernel.PythonKernel.execute(PythonKernel.java:1397)
+	at org.knime.python2.kernel.PythonKernel.lambda$8(PythonKernel.java:1413)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: Traceback (most recent call last):
+  File "F:\programmi\KNIME\plugins\org.knime.python2_4.4.1.v202108191134\py\messaging\RequestHandlers.py", line 96, in _handle_custom_message
+    response = self._respond(message, response_message_id, workspace)
+  File "F:\programmi\KNIME\plugins\org.knime.python2_4.4.1.v202108191134\py\messaging\RequestHandlers.py", line 376, in _respond
+    output, error = workspace.execute(source_code, request.id)
+  File "F:\programmi\KNIME\plugins\org.knime.python2_4.4.1.v202108191134\py\PythonKernelBase.py", line 289, in execute
+    exec(source_code, self._exec_env, self._exec_env)
+  File "<string>", line 4, in <module>
+ModuleNotFoundError: No module named 'statsmodels'
+
+2022-01-07 17:15:13,651 : ERROR : KNIME-Worker-29-Python View 0:95 :  : Node : Python View : 0:95 : Execute failed: No module named 'statsmodels'
+Traceback (most recent call last):
+File "<string>", line 4, in <module>
+ModuleNotFoundError: No module named 'statsmodels'
+
+org.knime.python2.kernel.PythonIOException: No module named 'statsmodels'
+Traceback (most recent call last):
+File "<string>", line 4, in <module>
+ModuleNotFoundError: No module named 'statsmodels'
+
+	at org.knime.python2.util.PythonUtils$Misc.executeCancelableUnwrapExecutionException(PythonUtils.java:310)
+	at org.knime.python2.util.PythonUtils$Misc.executeCancelable(PythonUtils.java:283)
+	at org.knime.python2.kernel.PythonKernel.executeCommandCancelable(PythonKernel.java:1482)
+	at org.knime.python2.kernel.PythonKernel.execute(PythonKernel.java:1413)
+	at org.knime.python2.nodes.view.PythonViewNodeModel.execute(PythonViewNodeModel.java:110)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: org.knime.python2.kernel.PythonIOException: No module named 'statsmodels'
+Traceback (most recent call last):
+File "<string>", line 4, in <module>
+ModuleNotFoundError: No module named 'statsmodels'
+
+	at org.knime.python2.kernel.PythonKernel.executeCommand(PythonKernel.java:1471)
+	at org.knime.python2.kernel.PythonKernel.execute(PythonKernel.java:1397)
+	at org.knime.python2.kernel.PythonKernel.lambda$8(PythonKernel.java:1413)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: Traceback (most recent call last):
+  File "F:\programmi\KNIME\plugins\org.knime.python2_4.4.1.v202108191134\py\messaging\RequestHandlers.py", line 96, in _handle_custom_message
+    response = self._respond(message, response_message_id, workspace)
+  File "F:\programmi\KNIME\plugins\org.knime.python2_4.4.1.v202108191134\py\messaging\RequestHandlers.py", line 376, in _respond
+    output, error = workspace.execute(source_code, request.id)
+  File "F:\programmi\KNIME\plugins\org.knime.python2_4.4.1.v202108191134\py\PythonKernelBase.py", line 289, in execute
+    exec(source_code, self._exec_env, self._exec_env)
+  File "<string>", line 4, in <module>
+ModuleNotFoundError: No module named 'statsmodels'
+
+2022-01-07 17:16:57,965 : ERROR : Clear OSGi configuration :  : InvokeInstallSiteAction :  :  : Could not clean OSGi configuration area: F:\programmi\KNIME\configuration\org.eclipse.osgi\305\0\.cp\os\win32\x86_64\localfile_1_0_0.dll
+2022-01-07 17:17:15,245 : WARN  : ModalContext :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 17:17:15,269 : WARN  : ModalContext :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-07 17:17:15,269 : WARN  : ModalContext :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 17:17:15,278 : WARN  : ModalContext :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 17:17:33,911 : WARN  : KNIME-Worker-2-R Plot 0:89 :  : NodeContainer : R Plot : 0:89 : Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loop as the workflow was restored with the loop being partially executed. Reset loop start and execute entire loop again.
+	at org.knime.core.node.workflow.WorkflowManager.doBeforeExecution(WorkflowManager.java:3182)
+	at org.knime.core.node.workflow.NodeContainer.notifyParentExecuteStart(NodeContainer.java:607)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:171)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-07 17:17:39,716 : WARN  : KNIME-Worker-1-Missing Value 0:21 :  : Node : Missing Value : 0:21 : The current settings use missing value handling methods that cannot be represented in PMML 4.2
+2022-01-07 17:17:39,878 : WARN  : KNIME-Worker-2-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 17:17:39,880 : WARN  : KNIME-Worker-2-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-07 17:17:39,880 : WARN  : KNIME-Worker-2-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 17:17:39,880 : WARN  : KNIME-Worker-2-Linear Correlation 0:15 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 17:17:39,880 : WARN  : KNIME-Worker-2-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 17:17:39,881 : WARN  : KNIME-Worker-2-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-07 17:17:39,900 : WARN  : KNIME-Worker-0-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-07 17:17:39,901 : WARN  : KNIME-Worker-0-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-07 17:17:39,902 : WARN  : KNIME-Worker-0-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 17:17:39,902 : WARN  : KNIME-Worker-0-Correlation Filter 0:11 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 17:17:39,902 : WARN  : KNIME-Worker-0-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
+2022-01-07 17:17:39,902 : WARN  : KNIME-Worker-0-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-07 17:17:39,921 : WARN  : KNIME-Worker-1-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-07 17:17:40,074 : WARN  : KNIME-Worker-8-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
+2022-01-07 17:17:42,116 : ERROR : KNIME-Worker-6-R Plot 0:89 :  : Node : R Plot : 0:89 : Execute failed: Could not connect to R. Probably, the R-Server is not running.
+Here's what you need to do:
+ 1) Check what R-server-host is configured in your Knime preferences.
+ 2) If your host is set to be 'localhost' start R and run the following command
+ library(Rserve); Rserve(args = "--vanilla")
+de.mpicbg.knime.scripting.core.exceptions.KnimeScriptingException: Could not connect to R. Probably, the R-Server is not running.
+Here's what you need to do:
+ 1) Check what R-server-host is configured in your Knime preferences.
+ 2) If your host is set to be 'localhost' start R and run the following command
+ library(Rserve); Rserve(args = "--vanilla")
+	at de.mpicbg.knime.scripting.r.RUtils.createConnection(RUtils.java:244)
+	at de.mpicbg.knime.scripting.r.AbstractRScriptingNodeModel.pushInputToR(AbstractRScriptingNodeModel.java:173)
+	at de.mpicbg.knime.scripting.r.AbstractRScriptingNodeModel.executeImpl(AbstractRScriptingNodeModel.java:375)
+	at de.mpicbg.knime.scripting.r.node.plot.RPlotNodeModel.executeImpl(RPlotNodeModel.java:48)
+	at de.mpicbg.knime.scripting.core.AbstractScriptingNodeModel.execute(AbstractScriptingNodeModel.java:176)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-07 17:18:30,021 : ERROR : KNIME-Worker-4-R Plot 0:89 :  : Node : R Plot : 0:89 : Execute failed: Could not connect to R. Probably, the R-Server is not running.
+Here's what you need to do:
+ 1) Check what R-server-host is configured in your Knime preferences.
+ 2) If your host is set to be 'localhost' start R and run the following command
+ library(Rserve); Rserve(args = "--vanilla")
+de.mpicbg.knime.scripting.core.exceptions.KnimeScriptingException: Could not connect to R. Probably, the R-Server is not running.
+Here's what you need to do:
+ 1) Check what R-server-host is configured in your Knime preferences.
+ 2) If your host is set to be 'localhost' start R and run the following command
+ library(Rserve); Rserve(args = "--vanilla")
+	at de.mpicbg.knime.scripting.r.RUtils.createConnection(RUtils.java:244)
+	at de.mpicbg.knime.scripting.r.AbstractRScriptingNodeModel.pushInputToR(AbstractRScriptingNodeModel.java:173)
+	at de.mpicbg.knime.scripting.r.AbstractRScriptingNodeModel.executeImpl(AbstractRScriptingNodeModel.java:375)
+	at de.mpicbg.knime.scripting.r.node.plot.RPlotNodeModel.executeImpl(RPlotNodeModel.java:48)
+	at de.mpicbg.knime.scripting.core.AbstractScriptingNodeModel.execute(AbstractScriptingNodeModel.java:176)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-07 17:25:55,249 : WARN  : KNIME-Worker-26-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 17:25:55,249 : WARN  : KNIME-Worker-26-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-07 17:25:55,328 : WARN  : KNIME-Worker-30-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-07 17:25:55,329 : WARN  : KNIME-Worker-30-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-08 10:56:29,844 : WARN  : ModalContext :  : Node : Scatter Plot (local) : 0:77 : Some columns are ignored: bounds missing.
+2022-01-08 10:56:29,904 : WARN  : ModalContext :  : Node : Scatter Plot (local) : 0:80 : Some columns are ignored: bounds missing.
+2022-01-08 10:56:29,904 : WARN  : ModalContext :  : Node : Scatter Plot (local) : 0:78 : Some columns are ignored: bounds missing.
+2022-01-08 10:56:29,989 : WARN  : ModalContext :  : Node : Scatter Plot (local) : 0:79 : Some columns are ignored: bounds missing.
