@@ -42,21 +42,27 @@
           <tags>persp.actionSet:org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo</tags>
           <tags>persp.actionSet:org.eclipse.ui.actionSet.openFiles</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_Y2c0FW1yEeyUO_Z9e07vEQ" selectedElement="_Y2c0Hm1yEeyUO_Z9e07vEQ" horizontal="true">
-            <children xsi:type="basic:PartSashContainer" xmi:id="_Y2c0Fm1yEeyUO_Z9e07vEQ" containerData="1967" selectedElement="_Y2c0F21yEeyUO_Z9e07vEQ">
-              <children xsi:type="basic:PartStack" xmi:id="_Y2c0F21yEeyUO_Z9e07vEQ" elementId="org.knime.workbench.explorer.viewMStack" containerData="3000" selectedElement="_Y2c0GG1yEeyUO_Z9e07vEQ">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_Y2c0Fm1yEeyUO_Z9e07vEQ" visible="false" containerData="1967" selectedElement="_Y2c0F21yEeyUO_Z9e07vEQ">
+              <children xsi:type="basic:PartStack" xmi:id="_Y2c0F21yEeyUO_Z9e07vEQ" elementId="org.knime.workbench.explorer.viewMStack" visible="false" containerData="3000" selectedElement="_Y2c0GG1yEeyUO_Z9e07vEQ">
+                <tags>Minimized</tags>
+                <tags>MinimizedByZoom</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_Y2c0GG1yEeyUO_Z9e07vEQ" elementId="org.knime.workbench.explorer.view" ref="_Y2dcKG1yEeyUO_Z9e07vEQ" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:KNIME Views</tags>
                 </children>
               </children>
-              <children xsi:type="basic:PartSashContainer" xmi:id="_Y2c0GW1yEeyUO_Z9e07vEQ" containerData="7000" selectedElement="_Y2c0HG1yEeyUO_Z9e07vEQ">
-                <children xsi:type="basic:PartStack" xmi:id="_Y2c0Gm1yEeyUO_Z9e07vEQ" elementId="org.knime.workbench.workflowcoach.viewMStack" containerData="2120" selectedElement="_Y2c0G21yEeyUO_Z9e07vEQ">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_Y2c0GW1yEeyUO_Z9e07vEQ" visible="false" containerData="7000" selectedElement="_Y2c0HG1yEeyUO_Z9e07vEQ">
+                <children xsi:type="basic:PartStack" xmi:id="_Y2c0Gm1yEeyUO_Z9e07vEQ" elementId="org.knime.workbench.workflowcoach.viewMStack" visible="false" containerData="2120" selectedElement="_Y2c0G21yEeyUO_Z9e07vEQ">
+                  <tags>Minimized</tags>
+                  <tags>MinimizedByZoom</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_Y2c0G21yEeyUO_Z9e07vEQ" elementId="org.knime.workbench.workflowcoach.view" ref="_Y2dcVm1yEeyUO_Z9e07vEQ" closeable="true">
                     <tags>View</tags>
                     <tags>categoryTag:KNIME Views</tags>
                   </children>
                 </children>
-                <children xsi:type="basic:PartStack" xmi:id="_Y2c0HG1yEeyUO_Z9e07vEQ" elementId="org.knime.workbench.repository.view.RepositoryViewMStack" containerData="7880" selectedElement="_Y2c0HW1yEeyUO_Z9e07vEQ">
+                <children xsi:type="basic:PartStack" xmi:id="_Y2c0HG1yEeyUO_Z9e07vEQ" elementId="org.knime.workbench.repository.view.RepositoryViewMStack" visible="false" containerData="7880" selectedElement="_Y2c0HW1yEeyUO_Z9e07vEQ">
+                  <tags>Minimized</tags>
+                  <tags>MinimizedByZoom</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_Y2c0HW1yEeyUO_Z9e07vEQ" elementId="org.knime.workbench.repository.view.RepositoryView" ref="_Y2dcNm1yEeyUO_Z9e07vEQ" closeable="true">
                     <tags>View</tags>
                     <tags>categoryTag:KNIME Views</tags>
@@ -67,7 +73,9 @@
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_Y2c0Hm1yEeyUO_Z9e07vEQ" containerData="8033" selectedElement="_Y2c0H21yEeyUO_Z9e07vEQ">
               <children xsi:type="basic:PartSashContainer" xmi:id="_Y2c0H21yEeyUO_Z9e07vEQ" containerData="7549" selectedElement="_Y2c0IG1yEeyUO_Z9e07vEQ" horizontal="true">
-                <children xsi:type="advanced:Placeholder" xmi:id="_Y2c0IG1yEeyUO_Z9e07vEQ" elementId="org.eclipse.ui.editorss" containerData="7174" ref="_Y2db3G1yEeyUO_Z9e07vEQ"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_Y2c0IG1yEeyUO_Z9e07vEQ" elementId="org.eclipse.ui.editorss" containerData="7174" ref="_Y2db3G1yEeyUO_Z9e07vEQ">
+                  <tags>Maximized</tags>
+                </children>
                 <children xsi:type="basic:PartStack" xmi:id="_Y2c0IW1yEeyUO_Z9e07vEQ" elementId="org.knime.workbench.helpviewMStack" visible="false" containerData="2826" selectedElement="_Y2c0Im1yEeyUO_Z9e07vEQ">
                   <tags>Minimized</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_Y2c0Im1yEeyUO_Z9e07vEQ" elementId="org.knime.workbench.helpview" ref="_Y2dcU21yEeyUO_Z9e07vEQ" closeable="true">
@@ -80,14 +88,18 @@
                   </children>
                 </children>
               </children>
-              <children xsi:type="basic:PartSashContainer" xmi:id="_Y2c0JG1yEeyUO_Z9e07vEQ" containerData="2451" selectedElement="_Y2c0J21yEeyUO_Z9e07vEQ" horizontal="true">
-                <children xsi:type="basic:PartStack" xmi:id="_Y2c0JW1yEeyUO_Z9e07vEQ" elementId="org.eclipse.ui.views.ContentOutlineMStack" containerData="3000" selectedElement="_Y2c0Jm1yEeyUO_Z9e07vEQ">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_Y2c0JG1yEeyUO_Z9e07vEQ" visible="false" containerData="2451" selectedElement="_Y2c0J21yEeyUO_Z9e07vEQ" horizontal="true">
+                <children xsi:type="basic:PartStack" xmi:id="_Y2c0JW1yEeyUO_Z9e07vEQ" elementId="org.eclipse.ui.views.ContentOutlineMStack" visible="false" containerData="3000" selectedElement="_Y2c0Jm1yEeyUO_Z9e07vEQ">
+                  <tags>Minimized</tags>
+                  <tags>MinimizedByZoom</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_Y2c0Jm1yEeyUO_Z9e07vEQ" elementId="org.eclipse.ui.views.ContentOutline" ref="_Y2dcTm1yEeyUO_Z9e07vEQ" closeable="true">
                     <tags>View</tags>
                     <tags>categoryTag:General</tags>
                   </children>
                 </children>
-                <children xsi:type="basic:PartStack" xmi:id="_Y2c0J21yEeyUO_Z9e07vEQ" elementId="org.eclipse.ui.console.ConsoleViewMStack" containerData="7000" selectedElement="_Y2dbIG1yEeyUO_Z9e07vEQ">
+                <children xsi:type="basic:PartStack" xmi:id="_Y2c0J21yEeyUO_Z9e07vEQ" elementId="org.eclipse.ui.console.ConsoleViewMStack" visible="false" containerData="7000" selectedElement="_Y2dbIG1yEeyUO_Z9e07vEQ">
+                  <tags>Minimized</tags>
+                  <tags>MinimizedByZoom</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_Y2dbIG1yEeyUO_Z9e07vEQ" elementId="org.eclipse.ui.console.ConsoleView" ref="_Y2dcQW1yEeyUO_Z9e07vEQ" closeable="true">
                     <tags>View</tags>
                     <tags>categoryTag:General</tags>
@@ -270,16 +282,16 @@
         <tags>Draggable</tags>
       </children>
     </trimBars>
-    <trimBars xmi:id="_Y2eCX21yEeyUO_Z9e07vEQ" elementId="org.eclipse.ui.trim.vertical1" contributorURI="platform:/plugin/org.eclipse.ui.workbench" toBeRendered="false" side="Left">
-      <children xsi:type="menu:ToolControl" xmi:id="_Has4cG1-Eey6gtzhIsxgOg" elementId="org.knime.workbench.explorer.viewMStack(IDEWindow).(org.knime.workbench.ui.ModellerPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+    <trimBars xmi:id="_Y2eCX21yEeyUO_Z9e07vEQ" elementId="org.eclipse.ui.trim.vertical1" contributorURI="platform:/plugin/org.eclipse.ui.workbench" side="Left">
+      <children xsi:type="menu:ToolControl" xmi:id="_Has4cG1-Eey6gtzhIsxgOg" elementId="org.knime.workbench.explorer.viewMStack(IDEWindow).(org.knime.workbench.ui.ModellerPerspective)" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
         <tags>TrimStack</tags>
         <tags>Draggable</tags>
       </children>
-      <children xsi:type="menu:ToolControl" xmi:id="_HbBBgG1-Eey6gtzhIsxgOg" elementId="org.knime.workbench.workflowcoach.viewMStack(IDEWindow).(org.knime.workbench.ui.ModellerPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+      <children xsi:type="menu:ToolControl" xmi:id="_HbBBgG1-Eey6gtzhIsxgOg" elementId="org.knime.workbench.workflowcoach.viewMStack(IDEWindow).(org.knime.workbench.ui.ModellerPerspective)" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
         <tags>TrimStack</tags>
         <tags>Draggable</tags>
       </children>
-      <children xsi:type="menu:ToolControl" xmi:id="_HbQ5IG1-Eey6gtzhIsxgOg" elementId="org.knime.workbench.repository.view.RepositoryViewMStack(IDEWindow).(org.knime.workbench.ui.ModellerPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+      <children xsi:type="menu:ToolControl" xmi:id="_HbQ5IG1-Eey6gtzhIsxgOg" elementId="org.knime.workbench.repository.view.RepositoryViewMStack(IDEWindow).(org.knime.workbench.ui.ModellerPerspective)" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
         <tags>TrimStack</tags>
         <tags>Draggable</tags>
       </children>
@@ -289,11 +301,11 @@
         <tags>TrimStack</tags>
         <tags>Draggable</tags>
       </children>
-      <children xsi:type="menu:ToolControl" xmi:id="_HbjNAG1-Eey6gtzhIsxgOg" elementId="org.eclipse.ui.views.ContentOutlineMStack(IDEWindow).(org.knime.workbench.ui.ModellerPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+      <children xsi:type="menu:ToolControl" xmi:id="_HbjNAG1-Eey6gtzhIsxgOg" elementId="org.eclipse.ui.views.ContentOutlineMStack(IDEWindow).(org.knime.workbench.ui.ModellerPerspective)" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
         <tags>TrimStack</tags>
         <tags>Draggable</tags>
       </children>
-      <children xsi:type="menu:ToolControl" xmi:id="_Hb0SwG1-Eey6gtzhIsxgOg" elementId="org.eclipse.ui.console.ConsoleViewMStack(IDEWindow).(org.knime.workbench.ui.ModellerPerspective)" toBeRendered="false" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
+      <children xsi:type="menu:ToolControl" xmi:id="_Hb0SwG1-Eey6gtzhIsxgOg" elementId="org.eclipse.ui.console.ConsoleViewMStack(IDEWindow).(org.knime.workbench.ui.ModellerPerspective)" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.TrimStack">
         <tags>TrimStack</tags>
         <tags>Draggable</tags>
       </children>

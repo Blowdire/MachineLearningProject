@@ -23,6 +23,8 @@
 \usepackage{setspace}
 \usepackage{multirow}
 \usepackage{float}
+
+
 \input{structure.tex} % Specifies the document structure and loads requires packages
 
 %----------------------------------------------------------------------------------------
@@ -35,8 +37,6 @@
 	Davide Abete, Fabrizio Cominetti e Agazzi Ruben % Authors
 }
 
-% Example of a one line author/institution relationship
-%\author{\newauthor{John Marston} \newinstitution{Universidad Nacional Autónoma de México, Mexico City, Mexico}}
 
 \date{\today} % Add a date here if you would like one to appear underneath the title block, use \today for the current date, leave empty for no date
 
@@ -129,6 +129,7 @@ Per risolvere questa problematica si è deciso di rimuovere i record che present
 \subsection{Data augmentation}
 Per essere in grado di allenare i vari regressori è necessario il dato relativo alla temperatura media terrestre del mese successivo. Per fare questo abbiamo ordinato in modo decrescente i dati in base alla colonna contenente la data utilizzando il nodo \textit{<<Sorter>>} e in seguito abbiamo utilizzato il nodo \textit{<<Lag Column>>} per creare una nuova colonna contenente la temperatura media del mese successivo.
 
+
 \subsection{Selezione delle variabili}
 Per selezionare le variabili da utilizzare per l'apprendimento dei regressori è stato utilizzato un filtro di correlazione in modo da eliminare attributi ridondanti. Il valore soglia di correlazione scelto è di 0.9. Alla fine del processo di feature selection sono state tenute 6 colonne su 10. Per effettuare questa operazione sono stati utilizzati i nodi \textit{<<Linear Correlation>>} e \textit{<<Correlation Filter>>}. Alla fine del processo di \textit{Feature Selection} le variabili utilizzate per allenare i vari regressori sono: 
 \begin{itemize}
@@ -147,7 +148,7 @@ Per effettuare la previsione della temperatura media terrestre globale del mese 
 	\item Random Forest
 \end{itemize}
 \subsection{Regressione Lineare}
-Il modello di regressione lineare consiste in una funzione lineare, che prende in ingresso le variabili esplicative, la cui risposta è il valore previsto della variabile target. Nel nostro caso utilizziamo le variabili esplicative selezionate tramite feature selection per predire la variabile \textit{LandAverageTemperature}
+Il modello di regressione lineare consiste in una funzione lineare, che prende in ingresso le variabili esplicative, la cui risposta è il valore previsto della variabile target \cite{}. Nel nostro caso utilizziamo le variabili esplicative selezionate tramite feature selection per predire la variabile \textit{LandAverageTemperature}
 \subsection{Regressione Polinomiale}
 Il modello di regressione polinomiale, a differenza di quello lineare, prevede il valore della variabile target tramite una funzione polinomiale, in cui si può specificare il grado della funzione. Nel nostro caso è stato scelta un polinomio di quarto grado.
 \subsection{XgBoost}
@@ -167,12 +168,13 @@ Nel nostro caso abbiamo utilizzato 10 fogli, i vari record sono scelti tramite r
 \section{Valutazione}
 Per la fase di valutazione dei vari modelli sono state prese in considerazione diverse metriche per ogni modello e, inoltre, è stata effettuata un analisi dei residui dove possibile.
 \subsection{Analisi r-quadro}
-Per tutti i modelli è stata eseguita una comparazione delle varie misure di $r^{2}$ intermedie ad ogni passo della cross validation, ottenendo i seguenti risultati:
+L'$R^{2}$, anche detto \textit{coefficiente di determinazione}, rappresenta in percentuale la proporzione della variazione della variabile dipendente predetta utilizzando le variabili indipendenti \cite{R-Quadro}.
+Per tutti i modelli è stata eseguita una comparazione delle varie misure di $R^{2}$ intermedie ad ogni passo della cross validation, ottenendo i seguenti risultati:
 \begin{figure}[H]
   \includegraphics[scale=0.5]{./Immagini/boxplot-r2.png}
-  \caption{Box plot relativo ai vari valori di $r^{2}$ di ogni ciclo della cross validation di ogni modello.}
+  \caption{Box plot relativo ai vari valori di $R^{2}$ di ogni ciclo della cross validation di ogni modello.}
 \end{figure}
-Come si può osservare dal box plot i valori migliori di $r^{2}$ sono stati ottenuti dai modelli \textit{Random Forest} e \textit{Tree Ensemble}, i quali hanno valori di $r^{2}$ compresi fra $[0,81, 0,91]$. Il fatto che questi due modelli abbiano valori simili era prevedibile, in quanto il modello \textit{Random Forest} è una variante particolare del modello \textit{Tree Ensemble}. Il valore peggiore di $r^{2}$ appartiene al modello di \textit{Regressione Polinomiale}, il quale, oltre ad avere una valore mediano pari a $0,76$, ha una grande varianza rispetto ai valori di $r^{2}$ dei vari cicli di cross validation. 
+Come si può osservare dal box plot i valori migliori di $R^{2}$ sono stati ottenuti dai modelli \textit{Random Forest} e \textit{Tree Ensemble}, i quali hanno valori di $R^{2}$ compresi fra $[0,81, 0,91]$. Il fatto che questi due modelli abbiano valori simili era prevedibile, in quanto il modello \textit{Random Forest} è una variante particolare del modello \textit{Tree Ensemble}. Il valore peggiore di $R^{2}$ appartiene al modello di \textit{Regressione Polinomiale}, il quale, oltre ad avere una valore mediano pari a $0,76$, ha una grande varianza rispetto ai valori di $R^{2}$ dei vari cicli di cross validation. 
 \subsection{Analisi Mean Squared Error}
 Per tutti i modelli presi in considerazione è stato calcolato il malore di \textit{Mean Squared Error} ad ogni ciclo di cross validation.
 I risultati ottenuti sono i seguenti:
@@ -198,7 +200,7 @@ Per confermare l'ipotesi visiva è stato eseguito il test d'ipotesi Shapiro-Wilk
 \subsubsection{Regressione Polinomiale}
 In seguito ad un analisi visiva dell'istogramma dei ai residui del modello di Regressione Polinomiale si può già stabilire che i residui del modello non sono distribuiti normalmente:
 \begin{figure}[H]
-  \includegraphics[scale=0.4]{./Immagini/hist-polinomial-regression.png}
+  \includegraphics[scale=0.38]{./Immagini/hist-polinomial-regression.png}
   \caption{Istogramma relativo ai residui del modello di Regressione Polinomiale.}
 \end{figure}
 Per confermare l'ipotesi visiva è stato eseguito il test d'ipotesi Shapiro-Wilk. Il test ha rigettato l'ipotesi che i campioni relativi ai residui utilizzati siano distribuiti seguendo una distribuzione normale.
@@ -206,13 +208,36 @@ Per confermare l'ipotesi visiva è stato eseguito il test d'ipotesi Shapiro-Wilk
   \includegraphics[scale=0.25]{./Immagini/qq-plot-polinomial-regression.png}
   \caption{Q Q Plot relativo ai residui del modello di Regressione Polinomiale.}
 \end{figure}
-
+\section{Conclusioni}
+Alla luce della fase di valutazione, per raggiungere l'obiettivo di predire la temperatura media del mese successivo, si può concludere che i modelli migliori sono il \textit{Tree Ensemble e Random Forest}, ovvero i due modelli con $R^{2}$ maggiore e \textit{MSE} minore, rispetto agli altri modelli. D'altro canto i modelli peggiori per la risoluzione di questo problema sono i modelli di \textit{Linear Regression e Polinomial Regression} che hanno ottenuto i peggiori risultati di $R^{2}$ e \textit{MSE}. Un eventuale sviluppo futuro potrebbe consistere in una migliore gestione dei valori mancanti all'interno del dataset, integrando la sorgente dati con altre sorgenti più complete, in modo da avere più dati da poter utilizzare nella fase di apprendimento dei modelli.
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
 
-\printbibliography[title={Bibliography}] % Print the bibliography, section title in curly brackets
+\begin{thebibliography}{10}
 
+\bibitem{ML-Book}
+  Kevin P. Murphy,
+  \textit{Machine Leraning A probabilistic Perspective}.
+\bibitem{Knime}
+  Knime WebSite,
+  \url{https://www.knime.com/}.
+\bibitem{Dataset}
+	Dataset Climate Change: Earth Surface Temperature Data,
+	\url{https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature\\-data}
+\bibitem{Citazione}
+	John Forbes Kerry.
+\bibitem{XgBoost}
+	XGBoost for Regression,\\
+	\url{https://machinelearningmastery.com/xgboost-for-regression/}\\
+	\textit{Jason Brownlee},
+	\textit{12-02-2021}
+\bibitem{R-Quadro}
+	Coefficient of Determination\\
+	\url{https://en.wikipedia.org/wiki/Coefficient_of_determination}
+\end{thebibliography}
+
+\printbibliography
 %----------------------------------------------------------------------------------------
 
 \end{document}
