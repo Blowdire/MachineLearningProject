@@ -2708,3 +2708,211 @@ org.knime.core.node.workflow.IllegalFlowObjectStackException: Can't continue loo
 2022-01-08 11:04:24,697 : WARN  : KNIME-Worker-23-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
 2022-01-08 11:04:24,718 : WARN  : KNIME-Worker-13-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:76 : Some columns are ignored: bounds missing.
 2022-01-08 11:04:24,852 : WARN  : KNIME-Worker-31-Python Script 0:69:40 :  : Node : Column Rename : 0:92:1 : The following columns are configured but no longer exist: "Mean squared error"
+2022-01-08 16:10:48,194 : WARN  : AWT-EventQueue-0 :  : Node : R Plot : 0:95:89 : You need to re-execute the node before the view will show up
+2022-01-08 16:10:48,201 : WARN  : AWT-EventQueue-0 :  : Node : R Plot : 0:95:89 : You need to re-execute the node before the view will show up
+2022-01-08 16:11:50,629 : ERROR : KNIME-Worker-8-CSV Reader 0:1 :  : Node : CSV Reader : 0:1 : Execute failed: The specified file F:\universita\DataScience\Machine learning\Progetto\MachineLearningProject\Data\GlobalTemperatures.csv does not exist.
+org.knime.core.node.InvalidSettingsException: The specified file F:\universita\DataScience\Machine learning\Progetto\MachineLearningProject\Data\GlobalTemperatures.csv does not exist.
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:269)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:219)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getRootPath(FileChooserPathAccessor.java:295)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.FileChooserPathAccessor.getFSPaths(FileChooserPathAccessor.java:202)
+	at org.knime.filehandling.core.node.table.reader.paths.PathSettings$1.getItems(PathSettings.java:105)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.getPaths(TableReaderNodeModel.java:195)
+	at org.knime.filehandling.core.node.table.reader.TableReaderNodeModel.execute(TableReaderNodeModel.java:158)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-08 16:14:14,582 : WARN  : KNIME-Worker-10-Missing Value 0:21 :  : Node : Missing Value : 0:21 : The current settings use missing value handling methods that cannot be represented in PMML 4.2
+2022-01-08 16:14:15,268 : WARN  : KNIME-Worker-11-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:15,296 : WARN  : KNIME-Worker-11-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:15,355 : WARN  : KNIME-Worker-9-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:15,357 : WARN  : KNIME-Worker-9-Correlation Filter 0:11 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-08 16:14:15,359 : WARN  : KNIME-Worker-9-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:15,484 : WARN  : KNIME-Worker-14-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:15,499 : WARN  : KNIME-Worker-12-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:15,501 : WARN  : KNIME-Worker-12-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-08 16:14:17,045 : WARN  : KNIME-Worker-17-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:17,132 : WARN  : KNIME-Worker-17-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-08 16:14:17,970 : WARN  : KNIME-Worker-9-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:17,971 : WARN  : KNIME-Worker-9-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-08 16:14:18,066 : WARN  : KNIME-Worker-11-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:18,124 : WARN  : KNIME-Worker-11-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:18,124 : WARN  : KNIME-Worker-11-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-08 16:14:18,158 : WARN  : KNIME-Worker-13-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:18,164 : WARN  : KNIME-Worker-17-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:18,164 : WARN  : KNIME-Worker-17-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-08 16:14:18,301 : WARN  : KNIME-Worker-9-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:18,302 : WARN  : KNIME-Worker-9-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-08 16:14:18,386 : WARN  : KNIME-Worker-15-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:18,427 : WARN  : KNIME-Worker-13-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:18,428 : WARN  : KNIME-Worker-13-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-08 16:14:18,444 : WARN  : KNIME-Worker-16-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:18,588 : WARN  : KNIME-Worker-9-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:18,589 : WARN  : KNIME-Worker-9-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-08 16:14:18,638 : WARN  : KNIME-Worker-11-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:18,687 : WARN  : KNIME-Worker-9-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:18,689 : WARN  : KNIME-Worker-9-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-08 16:14:18,770 : WARN  : KNIME-Worker-16-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:18,872 : WARN  : KNIME-Worker-9-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:18,873 : WARN  : KNIME-Worker-9-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-08 16:14:18,904 : WARN  : KNIME-Worker-16-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:18,905 : WARN  : KNIME-Worker-16-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-08 16:14:18,981 : WARN  : KNIME-Worker-15-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:19,175 : WARN  : KNIME-Worker-17-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:19,186 : WARN  : KNIME-Worker-13-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:19,187 : WARN  : KNIME-Worker-13-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-08 16:14:19,226 : WARN  : KNIME-Worker-15-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:19,227 : WARN  : KNIME-Worker-15-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-08 16:14:19,322 : WARN  : KNIME-Worker-11-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:19,323 : WARN  : KNIME-Worker-11-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-08 16:14:19,356 : WARN  : KNIME-Worker-16-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:19,357 : WARN  : KNIME-Worker-16-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-08 16:14:19,422 : WARN  : KNIME-Worker-15-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:19,515 : WARN  : KNIME-Worker-15-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:19,530 : WARN  : KNIME-Worker-15-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:19,531 : WARN  : KNIME-Worker-15-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-08 16:14:19,565 : WARN  : KNIME-Worker-17-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:19,566 : WARN  : KNIME-Worker-17-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-08 16:14:19,728 : WARN  : KNIME-Worker-9-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:19,738 : WARN  : KNIME-Worker-11-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:19,739 : WARN  : KNIME-Worker-11-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-08 16:14:19,769 : WARN  : KNIME-Worker-11-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:19,782 : WARN  : KNIME-Worker-16-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:19,783 : WARN  : KNIME-Worker-16-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-08 16:14:19,914 : WARN  : KNIME-Worker-16-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:19,915 : WARN  : KNIME-Worker-16-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-08 16:14:19,961 : WARN  : KNIME-Worker-16-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:19,987 : WARN  : KNIME-Worker-9-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:20,117 : WARN  : KNIME-Worker-17-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:20,144 : WARN  : KNIME-Worker-13-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:20,373 : ERROR : KNIME-Worker-11-Python Script 0:73:40 :  : Node : Python Script : 0:73:40 : Execute failed: Could not start Python. There are problems with your Python environment:
+Could not start Python executable at the given location (C:\Users\Ruben\.conda\envs\py3_knime\python.exe): Cannot run program "C:\Users\Ruben\.conda\envs\py3_knime\python.exe": CreateProcess error=2, The system cannot find the file specified
+org.knime.python2.kernel.PythonInstallationTestException: Could not start Python. There are problems with your Python environment:
+Could not start Python executable at the given location (C:\Users\Ruben\.conda\envs\py3_knime\python.exe): Cannot run program "C:\Users\Ruben\.conda\envs\py3_knime\python.exe": CreateProcess error=2, The system cannot find the file specified
+	at org.knime.python2.kernel.PythonKernel.testInstallation(PythonKernel.java:99)
+	at org.knime.python2.kernel.Python2KernelBackend.<init>(Python2KernelBackend.java:327)
+	at org.knime.python2.kernel.Python2KernelBackendFactory.createBackend(Python2KernelBackendFactory.java:66)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.createKernel(PythonKernelQueue.java:397)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.populateHolder(PythonKernelQueue.java:386)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.makeObject(PythonKernelQueue.java:369)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.makeObject(PythonKernelQueue.java:1)
+	at org.apache.commons.pool2.impl.GenericKeyedObjectPool.create(GenericKeyedObjectPool.java:1051)
+	at org.apache.commons.pool2.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:347)
+	at org.apache.commons.pool2.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:270)
+	at org.knime.python2.kernel.PythonKernelQueue.dequeueHolder(PythonKernelQueue.java:286)
+	at org.knime.python2.kernel.PythonKernelQueue.getNextKernelInternal(PythonKernelQueue.java:270)
+	at org.knime.python2.kernel.PythonKernelQueue.getNextKernel(PythonKernelQueue.java:185)
+	at org.knime.python2.kernel.PythonKernelQueue.getNextKernel(PythonKernelQueue.java:143)
+	at org.knime.python2.nodes.PythonNodeModel.getNextKernelFromQueue(PythonNodeModel.java:156)
+	at org.knime.python2.nodes.PythonNodeModel.getNextKernelFromQueue(PythonNodeModel.java:146)
+	at org.knime.python2.nodes.script2.PythonScriptNodeModel2.execute(PythonScriptNodeModel2.java:112)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-08 16:14:20,465 : WARN  : KNIME-Worker-12-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:20,506 : WARN  : KNIME-Worker-16-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:20,884 : ERROR : KNIME-Worker-14-Python Script 0:69:40 :  : Node : Python Script : 0:69:40 : Execute failed: Could not start Python. There are problems with your Python environment:
+Could not start Python executable at the given location (C:\Users\Ruben\.conda\envs\py3_knime\python.exe): Cannot run program "C:\Users\Ruben\.conda\envs\py3_knime\python.exe": CreateProcess error=2, The system cannot find the file specified
+org.knime.python2.kernel.PythonInstallationTestException: Could not start Python. There are problems with your Python environment:
+Could not start Python executable at the given location (C:\Users\Ruben\.conda\envs\py3_knime\python.exe): Cannot run program "C:\Users\Ruben\.conda\envs\py3_knime\python.exe": CreateProcess error=2, The system cannot find the file specified
+	at org.knime.python2.kernel.PythonKernel.testInstallation(PythonKernel.java:99)
+	at org.knime.python2.kernel.Python2KernelBackend.<init>(Python2KernelBackend.java:327)
+	at org.knime.python2.kernel.Python2KernelBackendFactory.createBackend(Python2KernelBackendFactory.java:66)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.createKernel(PythonKernelQueue.java:397)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.populateHolder(PythonKernelQueue.java:386)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.passivateObject(PythonKernelQueue.java:379)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.passivateObject(PythonKernelQueue.java:1)
+	at org.apache.commons.pool2.impl.GenericKeyedObjectPool.returnObject(GenericKeyedObjectPool.java:483)
+	at org.knime.python2.kernel.PythonKernelQueue.lambda$0(PythonKernelQueue.java:306)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-01-08 16:14:20,895 : WARN  : KNIME-Worker-11-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-08 16:14:23,389 : ERROR : KNIME-Worker-17-R Plot 0:95:89 :  : Node : R Plot : 0:95:89 : Execute failed: Could not connect to R. Probably, the R-Server is not running.
+Here's what you need to do:
+ 1) Check what R-server-host is configured in your Knime preferences.
+ 2) If your host is set to be 'localhost' start R and run the following command
+ library(Rserve); Rserve(args = "--vanilla")
+de.mpicbg.knime.scripting.core.exceptions.KnimeScriptingException: Could not connect to R. Probably, the R-Server is not running.
+Here's what you need to do:
+ 1) Check what R-server-host is configured in your Knime preferences.
+ 2) If your host is set to be 'localhost' start R and run the following command
+ library(Rserve); Rserve(args = "--vanilla")
+	at de.mpicbg.knime.scripting.r.RUtils.createConnection(RUtils.java:244)
+	at de.mpicbg.knime.scripting.r.AbstractRScriptingNodeModel.pushInputToR(AbstractRScriptingNodeModel.java:173)
+	at de.mpicbg.knime.scripting.r.AbstractRScriptingNodeModel.executeImpl(AbstractRScriptingNodeModel.java:375)
+	at de.mpicbg.knime.scripting.r.node.plot.RPlotNodeModel.executeImpl(RPlotNodeModel.java:48)
+	at de.mpicbg.knime.scripting.core.AbstractScriptingNodeModel.execute(AbstractScriptingNodeModel.java:176)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1267)
+	at org.knime.core.node.Node.execute(Node.java:1041)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-08 16:14:31,810 : ERROR : KNIME-Worker-14-Python Script 0:67:40 :  : Node : Python Script : 0:67:40 : Execute failed: Could not start Python. There are problems with your Python environment:
+Could not start Python executable at the given location (C:\Users\Ruben\.conda\envs\py3_knime\python.exe): Cannot run program "C:\Users\Ruben\.conda\envs\py3_knime\python.exe": CreateProcess error=2, The system cannot find the file specified
+org.knime.python2.kernel.PythonInstallationTestException: Could not start Python. There are problems with your Python environment:
+Could not start Python executable at the given location (C:\Users\Ruben\.conda\envs\py3_knime\python.exe): Cannot run program "C:\Users\Ruben\.conda\envs\py3_knime\python.exe": CreateProcess error=2, The system cannot find the file specified
+	at org.knime.python2.kernel.PythonKernel.testInstallation(PythonKernel.java:99)
+	at org.knime.python2.kernel.Python2KernelBackend.<init>(Python2KernelBackend.java:327)
+	at org.knime.python2.kernel.Python2KernelBackendFactory.createBackend(Python2KernelBackendFactory.java:66)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.createKernel(PythonKernelQueue.java:397)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.populateHolder(PythonKernelQueue.java:386)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.passivateObject(PythonKernelQueue.java:379)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.passivateObject(PythonKernelQueue.java:1)
+	at org.apache.commons.pool2.impl.GenericKeyedObjectPool.returnObject(GenericKeyedObjectPool.java:483)
+	at org.knime.python2.kernel.PythonKernelQueue.lambda$0(PythonKernelQueue.java:306)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-01-08 16:14:40,809 : ERROR : KNIME-Worker-15-Python Script 0:75:40 :  : Node : Python Script : 0:75:40 : Execute failed: Could not start Python. There are problems with your Python environment:
+Could not start Python executable at the given location (C:\Users\Ruben\.conda\envs\py3_knime\python.exe): Cannot run program "C:\Users\Ruben\.conda\envs\py3_knime\python.exe": CreateProcess error=2, The system cannot find the file specified
+org.knime.python2.kernel.PythonInstallationTestException: Could not start Python. There are problems with your Python environment:
+Could not start Python executable at the given location (C:\Users\Ruben\.conda\envs\py3_knime\python.exe): Cannot run program "C:\Users\Ruben\.conda\envs\py3_knime\python.exe": CreateProcess error=2, The system cannot find the file specified
+	at org.knime.python2.kernel.PythonKernel.testInstallation(PythonKernel.java:99)
+	at org.knime.python2.kernel.Python2KernelBackend.<init>(Python2KernelBackend.java:327)
+	at org.knime.python2.kernel.Python2KernelBackendFactory.createBackend(Python2KernelBackendFactory.java:66)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.createKernel(PythonKernelQueue.java:397)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.populateHolder(PythonKernelQueue.java:386)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.passivateObject(PythonKernelQueue.java:379)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.passivateObject(PythonKernelQueue.java:1)
+	at org.apache.commons.pool2.impl.GenericKeyedObjectPool.returnObject(GenericKeyedObjectPool.java:483)
+	at org.knime.python2.kernel.PythonKernelQueue.lambda$0(PythonKernelQueue.java:306)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2022-01-08 16:14:41,281 : ERROR : KNIME-Worker-14-Python Script 0:74:40 :  : Node : Python Script : 0:74:40 : Execute failed: Could not start Python. There are problems with your Python environment:
+Could not start Python executable at the given location (C:\Users\Ruben\.conda\envs\py3_knime\python.exe): Cannot run program "C:\Users\Ruben\.conda\envs\py3_knime\python.exe": CreateProcess error=2, The system cannot find the file specified
+org.knime.python2.kernel.PythonInstallationTestException: Could not start Python. There are problems with your Python environment:
+Could not start Python executable at the given location (C:\Users\Ruben\.conda\envs\py3_knime\python.exe): Cannot run program "C:\Users\Ruben\.conda\envs\py3_knime\python.exe": CreateProcess error=2, The system cannot find the file specified
+	at org.knime.python2.kernel.PythonKernel.testInstallation(PythonKernel.java:99)
+	at org.knime.python2.kernel.Python2KernelBackend.<init>(Python2KernelBackend.java:327)
+	at org.knime.python2.kernel.Python2KernelBackendFactory.createBackend(Python2KernelBackendFactory.java:66)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.createKernel(PythonKernelQueue.java:397)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.populateHolder(PythonKernelQueue.java:386)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.passivateObject(PythonKernelQueue.java:379)
+	at org.knime.python2.kernel.PythonKernelQueue$KeyedPooledPythonKernelFactory.passivateObject(PythonKernelQueue.java:1)
+	at org.apache.commons.pool2.impl.GenericKeyedObjectPool.returnObject(GenericKeyedObjectPool.java:483)
+	at org.knime.python2.kernel.PythonKernelQueue.lambda$0(PythonKernelQueue.java:306)
+	at java.base/java.lang.Thread.run(Unknown Source)
