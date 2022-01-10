@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="boxPlotInternals">
+    <entry key="numberOf" type="xint" value="5"/>
+    <config key="colSpec0">
+        <entry key="column_name" type="xstring" value="R_Squared Linear Regression"/>
+        <config key="element_names">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+        <config key="column_type">
+            <entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+        </config>
+        <config key="column_domain">
+            <config key="lower_bound">
+                <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+                <config key="org.knime.core.data.def.DoubleCell">
+                    <entry key="DoubleCell" type="xdouble" value="0.7209519154098633"/>
+                </config>
+            </config>
+            <config key="upper_bound">
+                <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+                <config key="org.knime.core.data.def.DoubleCell">
+                    <entry key="DoubleCell" type="xdouble" value="0.7709133026888491"/>
+                </config>
+            </config>
+        </config>
+        <config key="column_properties"/>
+        <config key="meta_data"/>
+    </config>
+    <config key="colSpec1">
+        <entry key="column_name" type="xstring" value="R_Squared Random Forest"/>
+        <config key="element_names">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+        <config key="column_type">
+            <entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+        </config>
+        <config key="column_domain">
+            <config key="lower_bound">
+                <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+                <config key="org.knime.core.data.def.DoubleCell">
+                    <entry key="DoubleCell" type="xdouble" value="0.8410350336578786"/>
+                </config>
+            </config>
+            <config key="upper_bound">
+                <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+                <config key="org.knime.core.data.def.DoubleCell">
+                    <entry key="DoubleCell" type="xdouble" value="0.8933745536735433"/>
+                </config>
+            </config>
+        </config>
+        <config key="column_properties"/>
+        <config key="meta_data"/>
+    </config>
+    <config key="colSpec2">
+        <entry key="column_name" type="xstring" value="R_Squared Polynomial Regression"/>
+        <config key="element_names">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+        <config key="column_type">
+            <entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+        </config>
+        <config key="column_domain">
+            <config key="lower_bound">
+                <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+                <config key="org.knime.core.data.def.DoubleCell">
+                    <entry key="DoubleCell" type="xdouble" value="0.7234840914082069"/>
+                </config>
+            </config>
+            <config key="upper_bound">
+                <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+                <config key="org.knime.core.data.def.DoubleCell">
+                    <entry key="DoubleCell" type="xdouble" value="0.7684900092851586"/>
+                </config>
+            </config>
+        </config>
+        <config key="column_properties"/>
+        <config key="meta_data"/>
+    </config>
+    <config key="colSpec3">
+        <entry key="column_name" type="xstring" value="R_Squared XgBoost"/>
+        <config key="element_names">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+        <config key="column_type">
+            <entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+        </config>
+        <config key="column_domain">
+            <config key="lower_bound">
+                <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+                <config key="org.knime.core.data.def.DoubleCell">
+                    <entry key="DoubleCell" type="xdouble" value="0.7210273654718676"/>
+                </config>
+            </config>
+            <config key="upper_bound">
+                <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+                <config key="org.knime.core.data.def.DoubleCell">
+                    <entry key="DoubleCell" type="xdouble" value="0.771277307088796"/>
+                </config>
+            </config>
+        </config>
+        <config key="column_properties"/>
+        <config key="meta_data"/>
+    </config>
+    <config key="colSpec4">
+        <entry key="column_name" type="xstring" value="R_Squared Tree Ensemble"/>
+        <config key="element_names">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+        <config key="column_type">
+            <entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+        </config>
+        <config key="column_domain">
+            <config key="lower_bound">
+                <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+                <config key="org.knime.core.data.def.DoubleCell">
+                    <entry key="DoubleCell" type="xdouble" value="0.8409320094924914"/>
+                </config>
+            </config>
+            <config key="upper_bound">
+                <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+                <config key="org.knime.core.data.def.DoubleCell">
+                    <entry key="DoubleCell" type="xdouble" value="0.8886947114486159"/>
+                </config>
+            </config>
+        </config>
+        <config key="column_properties"/>
+        <config key="meta_data"/>
+    </config>
+    <config key="statsR_Squared Linear Regression">
+        <entry key="array-size" type="xint" value="7"/>
+        <entry key="0" type="xdouble" value="0.7209519154098633"/>
+        <entry key="1" type="xdouble" value="0.7209519154098633"/>
+        <entry key="2" type="xdouble" value="0.7310529601275065"/>
+        <entry key="3" type="xdouble" value="0.7459873179532848"/>
+        <entry key="4" type="xdouble" value="0.7680855535519474"/>
+        <entry key="5" type="xdouble" value="0.7709133026888491"/>
+        <entry key="6" type="xdouble" value="0.7709133026888491"/>
+    </config>
+    <config key="mildrowR_Squared Linear Regression"/>
+    <config key="mildR_Squared Linear Regression">
+        <entry key="array-size" type="xint" value="0"/>
+    </config>
+    <config key="extremerowR_Squared Linear Regression"/>
+    <config key="extremeR_Squared Linear Regression">
+        <entry key="array-size" type="xint" value="0"/>
+    </config>
+    <config key="statsR_Squared Random Forest">
+        <entry key="array-size" type="xint" value="7"/>
+        <entry key="0" type="xdouble" value="0.8410350336578786"/>
+        <entry key="1" type="xdouble" value="0.8410350336578786"/>
+        <entry key="2" type="xdouble" value="0.8544847545584598"/>
+        <entry key="3" type="xdouble" value="0.8658728942603945"/>
+        <entry key="4" type="xdouble" value="0.8850173554875157"/>
+        <entry key="5" type="xdouble" value="0.8933745536735433"/>
+        <entry key="6" type="xdouble" value="0.8933745536735433"/>
+    </config>
+    <config key="mildrowR_Squared Random Forest"/>
+    <config key="mildR_Squared Random Forest">
+        <entry key="array-size" type="xint" value="0"/>
+    </config>
+    <config key="extremerowR_Squared Random Forest"/>
+    <config key="extremeR_Squared Random Forest">
+        <entry key="array-size" type="xint" value="0"/>
+    </config>
+    <config key="statsR_Squared Polynomial Regression">
+        <entry key="array-size" type="xint" value="7"/>
+        <entry key="0" type="xdouble" value="0.7234840914082069"/>
+        <entry key="1" type="xdouble" value="0.7234840914082069"/>
+        <entry key="2" type="xdouble" value="0.7328545659700172"/>
+        <entry key="3" type="xdouble" value="0.743140108809053"/>
+        <entry key="4" type="xdouble" value="0.7667226969713241"/>
+        <entry key="5" type="xdouble" value="0.7684900092851586"/>
+        <entry key="6" type="xdouble" value="0.7684900092851586"/>
+    </config>
+    <config key="mildrowR_Squared Polynomial Regression"/>
+    <config key="mildR_Squared Polynomial Regression">
+        <entry key="array-size" type="xint" value="0"/>
+    </config>
+    <config key="extremerowR_Squared Polynomial Regression"/>
+    <config key="extremeR_Squared Polynomial Regression">
+        <entry key="array-size" type="xint" value="0"/>
+    </config>
+    <config key="statsR_Squared XgBoost">
+        <entry key="array-size" type="xint" value="7"/>
+        <entry key="0" type="xdouble" value="0.7210273654718676"/>
+        <entry key="1" type="xdouble" value="0.7210273654718676"/>
+        <entry key="2" type="xdouble" value="0.731137515228564"/>
+        <entry key="3" type="xdouble" value="0.7461603312119255"/>
+        <entry key="4" type="xdouble" value="0.7674751319990107"/>
+        <entry key="5" type="xdouble" value="0.771277307088796"/>
+        <entry key="6" type="xdouble" value="0.771277307088796"/>
+    </config>
+    <config key="mildrowR_Squared XgBoost"/>
+    <config key="mildR_Squared XgBoost">
+        <entry key="array-size" type="xint" value="0"/>
+    </config>
+    <config key="extremerowR_Squared XgBoost"/>
+    <config key="extremeR_Squared XgBoost">
+        <entry key="array-size" type="xint" value="0"/>
+    </config>
+    <config key="statsR_Squared Tree Ensemble">
+        <entry key="array-size" type="xint" value="7"/>
+        <entry key="0" type="xdouble" value="0.8409320094924914"/>
+        <entry key="1" type="xdouble" value="0.8409320094924914"/>
+        <entry key="2" type="xdouble" value="0.8529964861935533"/>
+        <entry key="3" type="xdouble" value="0.8651708567010334"/>
+        <entry key="4" type="xdouble" value="0.885183724308505"/>
+        <entry key="5" type="xdouble" value="0.8886947114486159"/>
+        <entry key="6" type="xdouble" value="0.8886947114486159"/>
+    </config>
+    <config key="mildrowR_Squared Tree Ensemble"/>
+    <config key="mildR_Squared Tree Ensemble">
+        <entry key="array-size" type="xint" value="0"/>
+    </config>
+    <config key="extremerowR_Squared Tree Ensemble"/>
+    <config key="extremeR_Squared Tree Ensemble">
+        <entry key="array-size" type="xint" value="0"/>
+    </config>
+</config>

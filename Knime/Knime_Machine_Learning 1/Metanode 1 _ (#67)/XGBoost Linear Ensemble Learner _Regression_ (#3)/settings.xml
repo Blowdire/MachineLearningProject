@@ -32,7 +32,6 @@
                     <entry key="pattern" type="xstring" value=""/>
                     <entry key="type" type="xstring" value="Wildcard"/>
                     <entry key="caseSensitive" type="xboolean" value="true"/>
-                    <entry key="excludeMatching" type="xboolean" value="false"/>
                 </config>
                 <config key="datatype">
                     <config key="typelist">
@@ -57,25 +56,30 @@
         <entry key="manualNumThreads" type="xboolean" value="false"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
     <entry key="factory" type="xstring" value="org.knime.xgboost.base.nodes.learner.XGBLinearRegressionLearnerNodeFactory"/>
     <entry key="node-name" type="xstring" value="XGBoost Linear Ensemble Learner (Regression)"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME XGBoost Integration"/>
     <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.xgboost"/>
     <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-bundle-version" type="xstring" value="4.5.0.v202107011904"/>
+    <entry key="node-bundle-version" type="xstring" value="4.4.0.v202104131257"/>
     <entry key="node-feature-name" type="xstring" value="KNIME XGBoost Integration"/>
     <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.xgboost.feature.group"/>
     <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
-    <entry key="node-feature-version" type="xstring" value="4.5.0.v202107011904"/>
+    <entry key="node-feature-version" type="xstring" value="4.4.0.v202104131257"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="XGBoost Linear Ensemble Learner (Regression)"/>
-    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports">
         <config key="port_1">
             <entry key="index" type="xint" value="1"/>
-            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.xgboost.core.model.XGBModelPortObjectSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.xgboost.core.model.XGBModelPortObject"/>
+            <entry key="port_object_summary" type="xstring" value="XGBoostModel"/>
+            <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
+            <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
