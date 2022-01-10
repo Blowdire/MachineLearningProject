@@ -2916,3 +2916,146 @@ Could not start Python executable at the given location (C:\Users\Ruben\.conda\e
 	at org.apache.commons.pool2.impl.GenericKeyedObjectPool.returnObject(GenericKeyedObjectPool.java:483)
 	at org.knime.python2.kernel.PythonKernelQueue.lambda$0(PythonKernelQueue.java:306)
 	at java.base/java.lang.Thread.run(Unknown Source)
+2022-01-10 15:22:35,507 : WARN  : KNIME-Worker-0-Missing Value 0:21 :  : Node : Missing Value : 0:21 : The current settings use missing value handling methods that cannot be represented in PMML 4.2
+2022-01-10 15:22:35,753 : WARN  : KNIME-Worker-1-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:35,763 : WARN  : KNIME-Worker-1-Linear Correlation 0:15 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:35,788 : WARN  : KNIME-Worker-2-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:35,789 : WARN  : KNIME-Worker-2-Correlation Filter 0:11 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:35,789 : WARN  : KNIME-Worker-2-Correlation Filter 0:11 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:35,790 : WARN  : KNIME-Worker-2-Correlation Filter 0:11 :  : Node : Interactive Histogram (local) : 0:95:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:35,831 : WARN  : KNIME-Worker-3-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:35,833 : WARN  : KNIME-Worker-3-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:35,837 : WARN  : KNIME-Worker-5-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:35,837 : WARN  : KNIME-Worker-5-X-Partitioner 0:69:2 :  : Node : Interactive Histogram (local) : 0:95:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,309 : WARN  : KNIME-Worker-14-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,311 : WARN  : KNIME-Worker-14-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,407 : WARN  : KNIME-Worker-19-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,408 : WARN  : KNIME-Worker-19-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,430 : WARN  : KNIME-Worker-19-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,430 : WARN  : KNIME-Worker-19-Math Formula 0:69:34 :  : Node : Interactive Histogram (local) : 0:95:86 : Column Residual contains no valid domain an will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,445 : WARN  : KNIME-Worker-12-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,446 : WARN  : KNIME-Worker-12-X-Partitioner 0:69:2 :  : Node : Interactive Histogram (local) : 0:95:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,469 : WARN  : KNIME-Worker-21-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,470 : WARN  : KNIME-Worker-21-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,480 : WARN  : KNIME-Worker-22-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,480 : WARN  : KNIME-Worker-22-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,493 : WARN  : KNIME-Worker-15-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,494 : WARN  : KNIME-Worker-15-Math Formula 0:69:34 :  : Node : Interactive Histogram (local) : 0:95:86 : Column Residual contains no valid domain an will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,507 : WARN  : KNIME-Worker-7-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,508 : WARN  : KNIME-Worker-7-X-Partitioner 0:69:2 :  : Node : Interactive Histogram (local) : 0:95:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,523 : WARN  : KNIME-Worker-13-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,524 : WARN  : KNIME-Worker-13-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,537 : WARN  : KNIME-Worker-18-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,537 : WARN  : KNIME-Worker-18-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,549 : WARN  : KNIME-Worker-17-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,551 : WARN  : KNIME-Worker-17-Math Formula 0:69:34 :  : Node : Interactive Histogram (local) : 0:95:86 : Column Residual contains no valid domain an will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,590 : WARN  : KNIME-Worker-6-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,591 : WARN  : KNIME-Worker-6-X-Partitioner 0:69:2 :  : Node : Interactive Histogram (local) : 0:95:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,601 : WARN  : KNIME-Worker-19-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,602 : WARN  : KNIME-Worker-19-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,620 : WARN  : KNIME-Worker-23-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,620 : WARN  : KNIME-Worker-23-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,678 : WARN  : KNIME-Worker-6-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,679 : WARN  : KNIME-Worker-6-Math Formula 0:69:34 :  : Node : Interactive Histogram (local) : 0:95:86 : Column Residual contains no valid domain an will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,683 : WARN  : KNIME-Worker-24-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,684 : WARN  : KNIME-Worker-24-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,697 : WARN  : KNIME-Worker-14-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,698 : WARN  : KNIME-Worker-14-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,701 : WARN  : KNIME-Worker-22-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,701 : WARN  : KNIME-Worker-22-X-Partitioner 0:69:2 :  : Node : Interactive Histogram (local) : 0:95:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,744 : WARN  : KNIME-Worker-11-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,746 : WARN  : KNIME-Worker-11-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,765 : WARN  : KNIME-Worker-14-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,766 : WARN  : KNIME-Worker-14-Math Formula 0:69:34 :  : Node : Interactive Histogram (local) : 0:95:86 : Column Residual contains no valid domain an will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,784 : WARN  : KNIME-Worker-9-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,806 : WARN  : KNIME-Worker-9-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,808 : WARN  : KNIME-Worker-8-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,809 : WARN  : KNIME-Worker-8-X-Partitioner 0:69:2 :  : Node : Interactive Histogram (local) : 0:95:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,839 : WARN  : KNIME-Worker-17-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,840 : WARN  : KNIME-Worker-17-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,843 : WARN  : KNIME-Worker-11-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,844 : WARN  : KNIME-Worker-11-Math Formula 0:69:34 :  : Node : Interactive Histogram (local) : 0:95:86 : Column Residual contains no valid domain an will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,849 : WARN  : KNIME-Worker-8-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,850 : WARN  : KNIME-Worker-8-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,856 : WARN  : KNIME-Worker-22-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,856 : WARN  : KNIME-Worker-22-X-Partitioner 0:69:2 :  : Node : Interactive Histogram (local) : 0:95:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,874 : WARN  : KNIME-Worker-21-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,875 : WARN  : KNIME-Worker-21-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,884 : WARN  : KNIME-Worker-23-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,884 : WARN  : KNIME-Worker-23-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,887 : WARN  : KNIME-Worker-7-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,887 : WARN  : KNIME-Worker-7-Math Formula 0:69:34 :  : Node : Interactive Histogram (local) : 0:95:86 : Column Residual contains no valid domain an will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,893 : WARN  : KNIME-Worker-9-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,894 : WARN  : KNIME-Worker-9-X-Partitioner 0:69:2 :  : Node : Interactive Histogram (local) : 0:95:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,929 : WARN  : KNIME-Worker-12-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,929 : WARN  : KNIME-Worker-12-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,937 : WARN  : KNIME-Worker-14-X-Partitioner 0:73:2 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,938 : WARN  : KNIME-Worker-14-X-Partitioner 0:73:2 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,943 : WARN  : KNIME-Worker-8-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,944 : WARN  : KNIME-Worker-8-Math Formula 0:69:34 :  : Node : Interactive Histogram (local) : 0:95:86 : Column Residual contains no valid domain an will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,952 : WARN  : KNIME-Worker-24-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,953 : WARN  : KNIME-Worker-24-X-Partitioner 0:69:2 :  : Node : Interactive Histogram (local) : 0:95:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,966 : WARN  : KNIME-Worker-25-Math Formula 0:73:54 :  : Node : Scatter Plot (local) : 0:96:78 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,966 : WARN  : KNIME-Worker-25-Math Formula 0:73:54 :  : Node : Interactive Histogram (local) : 0:96:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,979 : WARN  : KNIME-Worker-25-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,979 : WARN  : KNIME-Worker-25-Math Formula 0:69:34 :  : Node : Interactive Histogram (local) : 0:95:86 : Column Residual contains no valid domain an will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:37,988 : WARN  : KNIME-Worker-26-X-Partitioner 0:69:2 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:37,988 : WARN  : KNIME-Worker-26-X-Partitioner 0:69:2 :  : Node : Interactive Histogram (local) : 0:95:86 : 2 columns without a valid domain will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:38,041 : WARN  : KNIME-Worker-18-Math Formula 0:69:34 :  : Node : Scatter Plot (local) : 0:95:76 : Some columns are ignored: bounds missing.
+2022-01-10 15:22:38,042 : WARN  : KNIME-Worker-18-Math Formula 0:69:34 :  : Node : Interactive Histogram (local) : 0:95:86 : Column Residual contains no valid domain an will be ignored. In order to calculate the domain use the Nominal Values or Domain Calculator node.
+2022-01-10 15:22:40,049 : ERROR : KNIME-Worker-16-R Plot 0:96:89 :  : Node : R Plot : 0:96:89 : Execute failed: Could not connect to R. Probably, the R-Server is not running.
+Here's what you need to do:
+ 1) Check what R-server-host is configured in your Knime preferences.
+ 2) If your host is set to be 'localhost' start R and run the following command
+ library(Rserve); Rserve(args = "--vanilla")
+de.mpicbg.knime.scripting.core.exceptions.KnimeScriptingException: Could not connect to R. Probably, the R-Server is not running.
+Here's what you need to do:
+ 1) Check what R-server-host is configured in your Knime preferences.
+ 2) If your host is set to be 'localhost' start R and run the following command
+ library(Rserve); Rserve(args = "--vanilla")
+	at de.mpicbg.knime.scripting.r.RUtils.createConnection(RUtils.java:244)
+	at de.mpicbg.knime.scripting.r.AbstractRScriptingNodeModel.pushInputToR(AbstractRScriptingNodeModel.java:173)
+	at de.mpicbg.knime.scripting.r.AbstractRScriptingNodeModel.executeImpl(AbstractRScriptingNodeModel.java:375)
+	at de.mpicbg.knime.scripting.r.node.plot.RPlotNodeModel.executeImpl(RPlotNodeModel.java:48)
+	at de.mpicbg.knime.scripting.core.AbstractScriptingNodeModel.execute(AbstractScriptingNodeModel.java:176)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2022-01-10 15:22:40,088 : ERROR : KNIME-Worker-10-R Plot 0:95:89 :  : Node : R Plot : 0:95:89 : Execute failed: Could not connect to R. Probably, the R-Server is not running.
+Here's what you need to do:
+ 1) Check what R-server-host is configured in your Knime preferences.
+ 2) If your host is set to be 'localhost' start R and run the following command
+ library(Rserve); Rserve(args = "--vanilla")
+de.mpicbg.knime.scripting.core.exceptions.KnimeScriptingException: Could not connect to R. Probably, the R-Server is not running.
+Here's what you need to do:
+ 1) Check what R-server-host is configured in your Knime preferences.
+ 2) If your host is set to be 'localhost' start R and run the following command
+ library(Rserve); Rserve(args = "--vanilla")
+	at de.mpicbg.knime.scripting.r.RUtils.createConnection(RUtils.java:244)
+	at de.mpicbg.knime.scripting.r.AbstractRScriptingNodeModel.pushInputToR(AbstractRScriptingNodeModel.java:173)
+	at de.mpicbg.knime.scripting.r.AbstractRScriptingNodeModel.executeImpl(AbstractRScriptingNodeModel.java:375)
+	at de.mpicbg.knime.scripting.r.node.plot.RPlotNodeModel.executeImpl(RPlotNodeModel.java:48)
+	at de.mpicbg.knime.scripting.core.AbstractScriptingNodeModel.execute(AbstractScriptingNodeModel.java:176)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:549)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1259)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:559)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:95)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:201)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:365)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:219)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="boxPlotInternals">
+    <entry key="numberOf" type="xint" value="5"/>
+    <config key="colSpec0">
+        <entry key="column_name" type="xstring" value="Linear Regression MSE"/>
+        <config key="element_names">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+        <config key="column_type">
+            <entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+        </config>
+        <config key="column_domain">
+            <config key="lower_bound">
+                <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+                <config key="org.knime.core.data.def.DoubleCell">
+                    <entry key="DoubleCell" type="xdouble" value="4.35430064480958"/>
+                </config>
+            </config>
+            <config key="upper_bound">
+                <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+                <config key="org.knime.core.data.def.DoubleCell">
+                    <entry key="DoubleCell" type="xdouble" value="4.93888142750428"/>
+                </config>
+            </config>
+        </config>
+        <config key="column_properties"/>
+        <config key="meta_data"/>
+    </config>
+    <config key="colSpec1">
+        <entry key="column_name" type="xstring" value="Random Forest MSE"/>
+        <config key="element_names">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+        <config key="column_type">
+            <entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+        </config>
+        <config key="column_domain">
+            <config key="lower_bound">
+                <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+                <config key="org.knime.core.data.def.DoubleCell">
+                    <entry key="DoubleCell" type="xdouble" value="2.049672437513065"/>
+                </config>
+            </config>
+            <config key="upper_bound">
+                <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+                <config key="org.knime.core.data.def.DoubleCell">
+                    <entry key="DoubleCell" type="xdouble" value="2.7177482811674993"/>
+                </config>
+            </config>
+        </config>
+        <config key="column_properties"/>
+        <config key="meta_data"/>
+    </config>
+    <config key="colSpec2">
+        <entry key="column_name" type="xstring" value="Plynomial Regression MSE"/>
+        <config key="element_names">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+        <config key="column_type">
+            <entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+        </config>
+        <config key="column_domain">
+            <config key="lower_bound">
+                <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+                <config key="org.knime.core.data.def.DoubleCell">
+                    <entry key="DoubleCell" type="xdouble" value="4.432091509539504"/>
+                </config>
+            </config>
+            <config key="upper_bound">
+                <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+                <config key="org.knime.core.data.def.DoubleCell">
+                    <entry key="DoubleCell" type="xdouble" value="4.931291394278919"/>
+                </config>
+            </config>
+        </config>
+        <config key="column_properties"/>
+        <config key="meta_data"/>
+    </config>
+    <config key="colSpec3">
+        <entry key="column_name" type="xstring" value="XGBoost MSE"/>
+        <config key="element_names">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+        <config key="column_type">
+            <entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+        </config>
+        <config key="column_domain">
+            <config key="lower_bound">
+                <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+                <config key="org.knime.core.data.def.DoubleCell">
+                    <entry key="DoubleCell" type="xdouble" value="4.350837160991479"/>
+                </config>
+            </config>
+            <config key="upper_bound">
+                <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+                <config key="org.knime.core.data.def.DoubleCell">
+                    <entry key="DoubleCell" type="xdouble" value="4.938655343193401"/>
+                </config>
+            </config>
+        </config>
+        <config key="column_properties"/>
+        <config key="meta_data"/>
+    </config>
+    <config key="colSpec4">
+        <entry key="column_name" type="xstring" value="Tree ensemble MSE"/>
+        <config key="element_names">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+        <config key="column_type">
+            <entry key="cell_class" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+        </config>
+        <config key="column_domain">
+            <config key="lower_bound">
+                <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+                <config key="org.knime.core.data.def.DoubleCell">
+                    <entry key="DoubleCell" type="xdouble" value="2.138462738294471"/>
+                </config>
+            </config>
+            <config key="upper_bound">
+                <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
+                <config key="org.knime.core.data.def.DoubleCell">
+                    <entry key="DoubleCell" type="xdouble" value="2.709512964728"/>
+                </config>
+            </config>
+        </config>
+        <config key="column_properties"/>
+        <config key="meta_data"/>
+    </config>
+    <config key="statsLinear Regression MSE">
+        <entry key="array-size" type="xint" value="7"/>
+        <entry key="0" type="xdouble" value="4.35430064480958"/>
+        <entry key="1" type="xdouble" value="4.35430064480958"/>
+        <entry key="2" type="xdouble" value="4.453185198820268"/>
+        <entry key="3" type="xdouble" value="4.592608957385547"/>
+        <entry key="4" type="xdouble" value="4.699498509658336"/>
+        <entry key="5" type="xdouble" value="4.93888142750428"/>
+        <entry key="6" type="xdouble" value="4.93888142750428"/>
+    </config>
+    <config key="mildrowLinear Regression MSE"/>
+    <config key="mildLinear Regression MSE">
+        <entry key="array-size" type="xint" value="0"/>
+    </config>
+    <config key="extremerowLinear Regression MSE"/>
+    <config key="extremeLinear Regression MSE">
+        <entry key="array-size" type="xint" value="0"/>
+    </config>
+    <config key="statsRandom Forest MSE">
+        <entry key="array-size" type="xint" value="7"/>
+        <entry key="0" type="xdouble" value="2.049672437513065"/>
+        <entry key="1" type="xdouble" value="2.049672437513065"/>
+        <entry key="2" type="xdouble" value="2.141839257593747"/>
+        <entry key="3" type="xdouble" value="2.3637781176386925"/>
+        <entry key="4" type="xdouble" value="2.564299015702512"/>
+        <entry key="5" type="xdouble" value="2.7177482811674993"/>
+        <entry key="6" type="xdouble" value="2.7177482811674993"/>
+    </config>
+    <config key="mildrowRandom Forest MSE"/>
+    <config key="mildRandom Forest MSE">
+        <entry key="array-size" type="xint" value="0"/>
+    </config>
+    <config key="extremerowRandom Forest MSE"/>
+    <config key="extremeRandom Forest MSE">
+        <entry key="array-size" type="xint" value="0"/>
+    </config>
+    <config key="statsPlynomial Regression MSE">
+        <entry key="array-size" type="xint" value="7"/>
+        <entry key="0" type="xdouble" value="4.432091509539504"/>
+        <entry key="1" type="xdouble" value="4.432091509539504"/>
+        <entry key="2" type="xdouble" value="4.459867618995544"/>
+        <entry key="3" type="xdouble" value="4.579085251031133"/>
+        <entry key="4" type="xdouble" value="4.695799514901779"/>
+        <entry key="5" type="xdouble" value="4.931291394278919"/>
+        <entry key="6" type="xdouble" value="4.931291394278919"/>
+    </config>
+    <config key="mildrowPlynomial Regression MSE"/>
+    <config key="mildPlynomial Regression MSE">
+        <entry key="array-size" type="xint" value="0"/>
+    </config>
+    <config key="extremerowPlynomial Regression MSE"/>
+    <config key="extremePlynomial Regression MSE">
+        <entry key="array-size" type="xint" value="0"/>
+    </config>
+    <config key="statsXGBoost MSE">
+        <entry key="array-size" type="xint" value="7"/>
+        <entry key="0" type="xdouble" value="4.350837160991479"/>
+        <entry key="1" type="xdouble" value="4.350837160991479"/>
+        <entry key="2" type="xdouble" value="4.466400993137626"/>
+        <entry key="3" type="xdouble" value="4.5953080785136615"/>
+        <entry key="4" type="xdouble" value="4.699821491801866"/>
+        <entry key="5" type="xdouble" value="4.938655343193401"/>
+        <entry key="6" type="xdouble" value="4.938655343193401"/>
+    </config>
+    <config key="mildrowXGBoost MSE"/>
+    <config key="mildXGBoost MSE">
+        <entry key="array-size" type="xint" value="0"/>
+    </config>
+    <config key="extremerowXGBoost MSE"/>
+    <config key="extremeXGBoost MSE">
+        <entry key="array-size" type="xint" value="0"/>
+    </config>
+    <config key="statsTree ensemble MSE">
+        <entry key="array-size" type="xint" value="7"/>
+        <entry key="0" type="xdouble" value="2.138462738294471"/>
+        <entry key="1" type="xdouble" value="2.138462738294471"/>
+        <entry key="2" type="xdouble" value="2.152870937686934"/>
+        <entry key="3" type="xdouble" value="2.381336925852011"/>
+        <entry key="4" type="xdouble" value="2.5931670592944744"/>
+        <entry key="5" type="xdouble" value="2.709512964728"/>
+        <entry key="6" type="xdouble" value="2.709512964728"/>
+    </config>
+    <config key="mildrowTree ensemble MSE"/>
+    <config key="mildTree ensemble MSE">
+        <entry key="array-size" type="xint" value="0"/>
+    </config>
+    <config key="extremerowTree ensemble MSE"/>
+    <config key="extremeTree ensemble MSE">
+        <entry key="array-size" type="xint" value="0"/>
+    </config>
+</config>
