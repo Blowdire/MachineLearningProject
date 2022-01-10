@@ -633,7 +633,7 @@
                 "nrexecs": 0,
                 "nrfails": 0,
                 "exectime": 0,
-                "nrcreated": 1,
+                "nrcreated": 2,
                 "successor": "n/a"
             },
             {
@@ -670,15 +670,15 @@
         "wrappedNodes": {
         }
     },
-    "uptime": 2197222,
-    "workflowsOpened": 16,
+    "uptime": 2207356,
+    "workflowsOpened": 17,
     "remoteWorkflowsOpened": 0,
     "columnarStorageWorkflowsOpened": 0,
     "workflowsImported": 0,
     "workflowsExported": 0,
-    "launches": 30,
+    "launches": 31,
     "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
-    "timeSinceLastStart": 1380422,
+    "timeSinceLastStart": 2511393,
     "crashes": 3,
     "properlyShutDown": true
 }
