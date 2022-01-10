@@ -23,7 +23,8 @@
 \usepackage{setspace}
 \usepackage{multirow}
 \usepackage{float}
-
+\usepackage{hyperref}
+\usepackage[USenglish,UKenglish,french,spanish,italian]{babel}
 
 \input{structure.tex} % Specifies the document structure and loads requires packages
 
@@ -37,11 +38,11 @@
 	Davide Abete, Fabrizio Cominetti e Agazzi Ruben % Authors
 }
 
-\date{\today} % Add a date here if you would like one to appear underneath the title block, use \today for the current date, leave empty for no date
-
 %----------------------------------------------------------------------------------------
 
 \begin{document}
+
+\selectlanguage{italian}
 
 \maketitle % Print the title
 
@@ -230,6 +231,6 @@ Come nel caso precedente, per confermare l'ipotesi visiva è stato eseguito il t
 \section{Conclusioni}
 Alla luce della fase di valutazione, per raggiungere l'obiettivo di predire la temperatura media del mese successivo, si può concludere che i modelli migliori sono il \textit{Tree Ensemble ed il Random Forest}, ovvero i due modelli con $R^{2}$ maggiore e \textit{MSE} minore rispetto agli altri modelli. D'altro canto i modelli peggiori per la risoluzione di questo problema sono i modelli di \textit{Linear Regression e Polinomial Regression} che hanno ottenuto i peggiori risultati di $R^{2}$ e \textit{MSE}. Un eventuale sviluppo futuro potrebbe consistere in una migliore gestione dei valori mancanti all'interno del dataset, integrando la sorgente dati con altre sorgenti più complete, in modo da avere più dati da poter utilizzare nella fase di apprendimento dei modelli.
 
-\printbibliography %Prints bibliography
+\printbibliography[title={Bibliografia}] %Prints bibliography
 
 \end{document}
