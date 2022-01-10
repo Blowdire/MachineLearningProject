@@ -57,7 +57,7 @@
 \bigskip
 \bigskip
 \bigskip
-\lettrineabstract{Il progetto consiste nell'analisi di vari modelli di regressione applicati ad un dataset contenente le informazioni ambientali riferite alla temperatura globale a partire dal Gennaio 1850 al Novembre 2015.}
+\lettrineabstract{Il progetto consiste nell'analisi di vari modelli di regressione applicati ad un dataset contenente le informazioni ambientali riferite alla temperatura globale a partire dal Gennaio 1750 al Novembre 2015.}
 
 %----------------------------------------------------------------------------------------
 %	ARTICLE CONTENTS
@@ -67,25 +67,27 @@
 \textit{Il cambiamento climatico è reale. La sfida è avvincente. E più a lungo aspettiamo, più difficile sarà risolvere il problema.} \cite{climatequote}
 \bigskip
 
-Il cambiamento climatico è da molti definito come 'la più grande minaccia del nostro tempo'. L'ultimo secolo si è reso protagonista di un aumento graduale e preoccupante della temperatura globale, ed oggi questo tema ha assunto rilevanza cruciale in numerosi dibattiti politici relativi al futuro del pianeta. \cite{climatepaper} %citare magari una ricerca
-Scopo di questo progetto è di realizzare modelli di machine learning con il fine di prevedere le future temperature medie globali. Precisamente, saranno utilizzati modelli di regressione per prevedere la temperatura del mese successivo a quello preso in considerazione.
-(Lo scopo di questo lavoro consiste nel realizzare e successivamente analizzare vari modelli di regressione con il fine di prevedere la temperatura media globale del mese successivo, sulla base dei dati rilevati durante la mensilità precedente.
+Il cambiamento climatico è da molti definito come \textit{"la più grande minaccia del nostro tempo"}. L'ultimo secolo si è reso protagonista di un aumento graduale e preoccupante della temperatura globale, ed oggi questo tema ha assunto rilevanza cruciale in numerosi dibattiti politici relativi al futuro del pianeta \cite{climatepaper}. %citare magari una ricerca
+
+Lo scopo di questo lavoro consiste nel realizzare e successivamente analizzare vari modelli di regressione con il fine di prevedere la temperatura media globale del mese successivo, sulla base dei dati rilevati durante la mensilità precedente.
 Come specificato in apertura di sezione, la scelta di questo progetto è stata influenzata dal crescente interesse verso le tematiche riguardanti il cambiamento climatico, sia da un punto di vista personale che, appunto, globale.
-I dati utilizzati per realizzare questo progetto sono scaricabili dalla piattaforma Kaggle al seguente indirizzo () e contengono diverse misure di temperature medie, rilevate ogni mese a partire dal Gennaio 1750 al Novembre 2015.
+I dati utilizzati per realizzare questo progetto sono scaricabili dalla piattaforma Kaggle \cite{dataset} e contengono diverse misure di temperature medie, rilevate ogni mese a partire dal Gennaio 1750 al Novembre 2015.
 
 %------------------------------------------------
 
 \section{Dataset}
-Il dataset utilizzato è intitolato "Climate Change: Earth Surface Temperature Data". \cite{dataset} %citazione
-Come precisato poco sopra, il dataset è stato ottenuto tramite la piattaforma Kaggle, sulla quale è stata resa disponibile una versione ripulita del dataset fornito dalla "Berkeley Earth", un'organizzazione non-profit indipendente specializata in temi di 'environmental data science'.
-L'organizzazione Berkeley Earth definisce il problema del global warming come 'la sfida definitiva del nostro tempo' e pone l'accento sulla necessità di ottenere con urgenza dati di qualità e informazioni scientifiche di valore sul tema.
+Il dataset utilizzato è intitolato "Climate Change: Earth Surface Temperature Data" \cite{dataset}. %citazione
+Come precisato poco sopra, il dataset è stato ottenuto tramite la piattaforma Kaggle; il quale è una versione ripulita del dataset fornito dalla "Berkeley Earth", un'organizzazione no-profit indipendente specializata in temi di \textit{"environmental data science"}.
+L'organizzazione Berkeley Earth definisce il problema del global warming come \textit{"la sfida definitiva del nostro tempo"} e pone l'accento sulla necessità di ottenere con urgenza dati di qualità e informazioni scientifiche di valore sul tema.
 Il progetto è stato svolto principalmente tramite l'utilizzo della piattaforma Knime e, in particolari casi, dei linguaggi di programmazione Python e R.
 
 \subsection{Descrizione del dataset}
 Il dataset è composto da 3192 record e dai seguenti 9 attributi:
-\begin{itemize}
+\begin{enumerate}
+ 
+
 	\item dt: data di rilevamento dei dati
-	\item landAverageTemperature: temperatura media globale del terreno espressa in gradi Celsius.
+	\item LandAverageTemperature: temperatura media globale del terreno espressa in gradi Celsius.
 	\item LandAverageTemperatureUncertainty: intervallo di confidenza al $95\%$ intorno alla media della temperatura globale
 	\item LandMaxTemperature: media della temperatura massima globale del terreno espressa in gradi Celsius
 	\item LandMaxTemperatureUncertainty:  intervallo di confidenza al $95\%$ intorno alla media della temperatura massima globale
@@ -93,7 +95,7 @@ Il dataset è composto da 3192 record e dai seguenti 9 attributi:
 	\item LandMinTemperatureUncertainty: intervallo di confidenza al $95\%$ intorno alla media della temperatura minima globale
 	\item LandAndOceanAverageTemperature: temperatura media globale del terrestre e oceanica espressa in gradi Celsius.
 	\item LandAndOceanAverageTemperatureUncertainty: intervallo di confidenza al $95\%$ intorno alla media della temperatura media terrestre e oceanica globale.
-\end{itemize}
+\end{enumerate}
 
 \subsection{Esplorazione dei dati}
 Per la fase di esplorazione dei dati è stato utilizzato principalmente il nodo \textit{<<Statistics>>}, presente all'interno della piattaforma Knime \cite{knimewebsite}, attraverso il quale sono stati rilevati alcuni indici di posizione, variabilità e il numero di missing values, dei quali ne elencheremo i principali di seguito:
@@ -104,27 +106,27 @@ Per la fase di esplorazione dei dati è stato utilizzato principalmente il nodo 
 \begin{center}
 \begin{tabular}{||c c c c||} 
  \hline
- Colonna  & Media & STD & Missing V. \\ [0.5ex] 
+ Attributo  & Media & STD & Missing V. \\ [0.5ex] 
  \hline\hline
-	Col. 1 &   8.3747 & 4.3813 & 12 \\
+	Col. 2 &   8.3747 & 4.3813 & 12 \\
 \hline\hline
-	Col. 2 &   0.9385& 1.0964 & 12 \\
+	Col. 3 &   0.9385& 1.0964 & 12 \\
 	\hline\hline
-	Col. 3 & 14.3506 & 4.3096 & 1200 \\
+	Col. 4 & 14.3506 & 4.3096 & 1200 \\
 	\hline\hline
-	Col. 4 & 0.4798 & 0.5832 & 1200 \\
+	Col. 5 & 0.4798 & 0.5832 & 1200 \\
 	\hline\hline
-	Col. 5 &2.7436 & 4.1558 & 1200 \\
+	Col. 6 &2.7436 & 4.1558 & 1200 \\
 	\hline\hline
-	Col. 6 & 0.4318 & 0.4458 & 1200 \\
+	Col. 7 & 0.4318 & 0.4458 & 1200 \\
 	\hline\hline
-	Col. 7 & 15.2126 & 1.2741 & 1200 \\
+	Col. 8 & 15.2126 & 1.2741 & 1200 \\
 	\hline\hline
-	Col. 8 & 0.1285 & 0.0736 & 1200 \\[0.5ex] \hline 
+	Col. 9 & 0.1285 & 0.0736 & 1200 \\[0.5ex] \hline 
 \end{tabular}
 \end{center}
 
-La fase di esplorazione ha permesso di identificare la variabile target che ci interessa prevedere, ovvero \textit{landAverageTemperature} del mese successivo, e le colonne restanti che fungono da attributi esplicativi.
+La fase di esplorazione ha permesso di identificare la variabile target che ci interessa prevedere, ovvero \textit{LandAverageTemperature} del mese successivo, mentre le colonne restanti che fungono da attributi esplicativi.
 La variabile target selezionata è di tipo numerico continuo e assume valori fra $[-2.080, 19.021]$ con una precisione di 3 cifre decimali.
 
 \section{Pre-processing}
@@ -134,15 +136,17 @@ Durante la fase di esplorazione dei dati si è potuto osservare che molte colonn
 Per risolvere questa problematica si è deciso di rimuovere i record che presentavano missing values, eliminando quindi 1200 righe e riducendo l'intervallo di tempo dei valori che, a questo punto, partono dal Gennaio 1850 invece che dal Gennaio 1750. Per eliminare le righe che presentavano missing values è stato utilizzato il nodo di Knime chiamato \textit{<<Missing Values>>}, configurato in modo tale da rimuovere i record contenenti valori mancanti.
 
 \subsection{Data augmentation}
-Per essere in grado di allenare i vari regressori è necessario il dato relativo alla temperatura media terrestre del mese successivo. Per fare questo abbiamo ordinato in modo decrescente i dati in base alla colonna contenente la data utilizzando il nodo \textit{<<Sorter>>} e in seguito abbiamo utilizzato il nodo \textit{<<Lag Column>>} per creare una nuova colonna contenente la temperatura media del mese successivo.
+Per essere in grado di allenare i vari modelli è necessario il dato relativo alla temperatura media terrestre del mese successivo. Per fare questo abbiamo ordinato in modo decrescente i dati in base alla colonna contenente la data utilizzando il nodo \textit{<<Sorter>>} e in seguito abbiamo utilizzato il nodo \textit{<<Lag Column>>} per creare una nuova colonna contenente la temperatura media del mese successivo.
 
 \subsection{Selezione delle variabili}
-Per selezionare le variabili da utilizzare per l'apprendimento dei regressori è stato utilizzato un filtro di correlazione in modo da eliminare attributi ridondanti. Il valore soglia di correlazione scelto è di 0.9. Alla fine del processo di feature selection sono state tenute 6 colonne su 10. Per effettuare questa operazione sono stati utilizzati i nodi \textit{<<Linear Correlation>>} e \textit{<<Correlation Filter>>}. Alla fine del processo di \textit{Feature Selection} le variabili utilizzate per allenare i vari regressori sono dunque: 
+Per selezionare le variabili da utilizzare per l'apprendimento dei modelli è stato utilizzato un filtro di correlazione in modo da eliminare attributi ridondanti. Il valore soglia di correlazione scelto è di 0.9. Alla fine del processo di feature selection sono state tenute 6 variabili attributo su 10. Per effettuare questa operazione sono stati utilizzati i nodi \textit{<<Linear Correlation>>} e \textit{<<Correlation Filter>>}. Alla fine del processo di \textit{Feature Selection} le variabili utilizzate per allenare i vari regressori sono dunque: 
 \begin{itemize}
 	\item LandAverageTemperature
 	\item LandAverageTemperatureUncertainity
 	\item LandMaxTemperatureUncertainity
 	\item LandMinTemperatureUncertainity
+	\item LandAverageTemperatureNextMonth (varibile target)
+	\item dt (non utilizzata in quanto data)
 \end{itemize}
 
 \section{Modelli}
@@ -156,34 +160,34 @@ Per effettuare la previsione della temperatura media terrestre globale del mese 
 \end{itemize}
 
 \subsection{Regressione Lineare}
-Il modello di regressione lineare consiste in una funzione lineare, che prende in ingresso le variabili esplicative, la cui risposta è il valore previsto della variabile target \cite{mlbook}. Nel nostro caso utilizziamo le variabili esplicative selezionate tramite feature selection per predire la variabile \textit{LandAverageTemperature}
+Il modello di regressione lineare consiste in una funzione lineare, che prende in ingresso le variabili esplicative, la cui risposta è il valore previsto della variabile target \cite{mlbook}. Nel nostro caso utilizziamo le variabili esplicative selezionate tramite feature selection per predire la variabile \textit{LandAverageTemperatureNextMonth}.
 
 \subsection{Regressione Polinomiale}
 Il modello di regressione polinomiale, a differenza di quello lineare, prevede il valore della variabile target tramite una funzione polinomiale, in cui si può specificare il grado della funzione \cite{mlbook}. Nel nostro caso è stato scelta un polinomio di quarto grado.
-
+\subsection{Tree Ensemble}
+Il modello di regressione Tree Ensemble allena un insieme di alberi di regressione. Tipicamente ogni albero è allenato utilizzando un diverso set di righe e/o colonne del dataset. Il valore di un nodo foglia di un albero di decisione consiste nella media della variabile target dei record del dataset contenuti nel percorso del nodo foglia. Detto questo l'output di un modello di regressione Tree Ensemble è la media delle previsioni ottenute dai vari alberi di regressione \cite{treeensemble}.
 \subsection{Random Forest}
 Il modello di regression Random Forest è un tipo particolare di modello Tree Ensemble. In particolare il Random Forest, a differenza del modello Tree Ensemble, seleziona le variabili esplicative, usate per l'allenamto dei singoli alberi, in modo casuale \cite{randomforest}.
 
 \subsection{XgBoost}
-XgBoost è un implementazione di alberi di decisione con gradient boosting. Gli alberi di decisione sono aggiunti uno alla volta all'insieme di alberi, e configurati in modo da correggere gli errori di previsione degli alberi precedenti \cite{xgboost}. I vantaggi di XgBoost consistono nel fatto che l'apprendimento del modello è parallelizzabile, e quindi molto veloce; gestisce autonomamente eventuali missing values e inoltre previene l'overfitting del modello tramite \textit{Regularization}
+XgBoost è un implementazione di alberi di decisione con gradient boosting. Gli alberi di decisione sono aggiunti uno alla volta all'insieme di alberi, e configurati in modo da correggere gli errori di previsione degli alberi precedenti \cite{xgboost}. I vantaggi di XgBoost consistono nel fatto che l'apprendimento del modello è parallelizzabile, e quindi molto veloce; gestisce autonomamente eventuali missing values e inoltre previene l'overfitting del modello tramite \textit{Regularization}.
 
-\subsection{Tree Ensemble}
-Il modello di regressione Tree Ensemble allena un insieme di alberi di regressione. Tipicamente ogni albero è allenato utilizzando un diverso set di righe e/o colonne del dataset. Il valore di un nodo foglia di un albero di decisione consiste nella media della variabile target dei record del dataset contenuti nel percorso del nodo foglia. Detto questo l'output di un modello di regressione Tree Ensemble è la media delle previsioni ottenute dai vari alberi di regressione \cite{treeensemble}.
+
 
 \section{Training}
 Per la fase di training dei modelli di regressione è stato utilizzato l'approccio della \textit{Cross Validation}.
 
 \subsection{Cross Validation}
-La Cross Validation consiste nel dividere i dati di training in \textit{K} "fogli". Per ogni foglio $k \in \lbrace1,..., K\rbrace$, eseguiamo l'allenamento del modello utilizzando $K-1$ fogli, ed eseguiamo il test sul foglio rimanente; inoltre viene eseguita questa operazione a rotazione, con numero di ripetizioni uguale al numero di fogli, in modo da eseguire il training e il testing utilizzando tutti i sottoinsiemi. Infine si calcola l'errore facendo una media fra gli errori riscontrati durante ogni ciclo di training-testing. \cite{mlbook} %citare libro
-L'approccio della cross validation è molto utile in quanto permette di allenare e testare i vari regressori con tutti i dati presenti nel dataset.
-Nel nostro caso abbiamo utilizzato 10 fogli, i vari record sono scelti tramite random sampling. Per l'implementazione della cross validation è stato creato per ogni modello un meta nodo, con all'interno un nodo x-partitioner, il quale effettua la divisione in "fogli", e un nodo x-aggregator per aggregare i vari risultati; inoltre, siccome il nodo x-aggregator non fornisce i valori intermedi di $R^{2}$ relativo ad ogni ciclo di cross validation, abbiamo inserito un nodo di tipo \textit{Python Script} per fornire in output queste informazioni mancanti.
+La Cross Validation consiste nel dividere i dati di training in \textit{K} "fogli". Per ogni foglio $k \in \lbrace1,..., K\rbrace$, eseguiamo il training del modello utilizzando $K-1$ fogli, ed eseguiamo il test sul foglio rimanente; inoltre questa operazione viene iterata più volte, con numero di iterazioni pari al numero di fogli, in modo da eseguire il training e il testing utilizzando tutti i sottoinsiemi. Infine si calcola l'errore facendo una media fra gli errori riscontrati durante ogni ciclo di training-testing. \cite{mlbook} %citare libro
+L'approccio della cross validation è molto utile in quanto permette di allenare e testare i vari modelli con tutti i dati presenti nel dataset.
+Nel nostro caso abbiamo utilizzato 10 fogli, i vari record sono scelti tramite random sampling. Per l'implementazione della cross validation è stato creato per ogni modello un meta nodo, con all'interno un nodo x-partitioner, il quale effettua la divisione in "fogli", e un nodo x-aggregator per aggregare i vari risultati. Siccome il nodo x-aggregator non fornisce i valori intermedi di $R^{2}$ relativo ad ogni ciclo di cross validation, abbiamo inserito un nodo di tipo \textit{Python Script} per fornire in output queste informazioni mancanti.
 
 \section{Valutazione}
 Per la fase di valutazione dei vari modelli sono state prese in considerazione diverse metriche per ogni modello, come ad esempio i valori del coefficiente di determinazione e dell'errore quadratico medio. Inoltre, è stata effettuata un analisi dei residui dove possibile.
 
 \subsection{Analisi $R^{2}$}
 L'$R^{2}$, ovvero il \textit{coefficiente di determinazione}, rappresenta in percentuale la proporzione della variazione della variabile dipendente predetta utilizzando le variabili indipendenti \cite{r2}.\[R^{2} = 1 - \frac{SS_{res}}{SS_{tot}}\]
-Per tutti i modelli è stata eseguita una comparazione delle varie misure di $R^{2}$ intermedie ad ogni passo della cross validation, misure poi estratte tramite uno script python che, in una fase successiva del workflow, abbiamo indirizzato e aggregato per ottenere una comparazione di tutti i modelli:
+Per tutti i modelli è stata eseguita una comparazione delle varie misure di $R^{2}$ intermedie ad ogni passo della cross validation, misure poi estratte tramite uno script python che, in una fase successiva del workflow, abbiamo  aggregato per ottenere una comparazione di tutti i modelli:
 \begin{figure}[H]
   \includegraphics[scale=0.5]{./Immagini/boxplot-r2.png}
   \caption{Box plot relativo ai vari valori di $R^{2}$ di ogni ciclo della cross validation di ogni modello.}
