@@ -25,7 +25,11 @@
         <config key="styles"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="EXECUTED"/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <config key="nodecontainer_message">
+        <entry key="type" type="xstring" value="ERROR"/>
+        <entry key="message" type="xstring" value="R Plot 0:95:89: Could not connect to R. Probably, the R-Server is not running.%%00010Here's what you need to do:%%00010 1) Check what R-server-host is configured in your Knime preferences.%%00010 2) If your host is set to be 'localhost' start R and run the following command%%00010 library(Rserve); Rserve(args = &quot;--vanilla&quot;)"/>
+    </config>
     <config key="workflow_credentials"/>
     <config key="nodes">
         <config key="node_76">

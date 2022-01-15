@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_Y2c0EG1yEeyUO_Z9e07vEQ" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_Y2c0EW1yEeyUO_Z9e07vEQ" bindingContexts="_Y2gfO21yEeyUO_Z9e07vEQ">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;.log&quot; tooltip=&quot;F:\universita\DataScience\Machine learning\Progetto\MachineLearningProject\Knime\.metadata\.log&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/F:/universita/DataScience/Machine%20learning/Progetto/MachineLearningProject/Knime/.metadata/.log&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.knime.workbench.editor.WorkflowEditor&quot; name=&quot;workflow.knime&quot; tooltip=&quot;knime://LOCAL/Knime_Machine_Learning%201/workflow.knime&quot;>&#xD;&#xA;&lt;persistable uri=&quot;knime://LOCAL/Knime_Machine_Learning%201/workflow.knime&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.knime.workbench.editor.WorkflowEditor&quot; name=&quot;workflow.knime&quot; tooltip=&quot;knime://LOCAL/Knime_Machine_Learning/workflow.knime&quot;>&#xD;&#xA;&lt;persistable uri=&quot;knime://LOCAL/Knime_Machine_Learning/workflow.knime&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.knime.workbench.editor.WorkflowEditor&quot; name=&quot;workflow.knime&quot; tooltip=&quot;knime://LOCAL/Knime_Machine_Learning%201/workflow.knime&quot;>&#xD;&#xA;&lt;persistable uri=&quot;knime://LOCAL/Knime_Machine_Learning%201/workflow.knime&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;.log&quot; tooltip=&quot;F:\universita\DataScience\Machine learning\Progetto\MachineLearningProject\Knime\.metadata\.log&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/F:/universita/DataScience/Machine%20learning/Progetto/MachineLearningProject/Knime/.metadata/.log&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.knime.workbench.editor.WorkflowEditor&quot; name=&quot;workflow.knime&quot; tooltip=&quot;knime://LOCAL/Knime_Machine_Learning/workflow.knime&quot;>&#xD;&#xA;&lt;persistable uri=&quot;knime://LOCAL/Knime_Machine_Learning/workflow.knime&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_Y2c0EW1yEeyUO_Z9e07vEQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_Y2c0Em1yEeyUO_Z9e07vEQ" x="0" y="0" width="697" height="768">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_Y2c0EW1yEeyUO_Z9e07vEQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_Y2c0Em1yEeyUO_Z9e07vEQ" x="996" y="-8" width="697" height="768">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
@@ -80,8 +80,8 @@
                   </children>
                 </children>
               </children>
-              <children xsi:type="basic:PartSashContainer" xmi:id="_Gh3KkHIhEeyIybZlu77B0Q" containerData="2058" selectedElement="_GFXb0XIhEeyIybZlu77B0Q" horizontal="true">
-                <children xsi:type="basic:PartStack" xmi:id="_Y2c0JW1yEeyUO_Z9e07vEQ" elementId="org.eclipse.ui.views.ContentOutlineMStack" containerData="5000" selectedElement="_z32igXIgEeyIybZlu77B0Q">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_Gh3KkHIhEeyIybZlu77B0Q" containerData="2058" selectedElement="_Y2c0JW1yEeyUO_Z9e07vEQ" horizontal="true">
+                <children xsi:type="basic:PartStack" xmi:id="_Y2c0JW1yEeyUO_Z9e07vEQ" elementId="org.eclipse.ui.views.ContentOutlineMStack" containerData="5000" selectedElement="_Y2c0Jm1yEeyUO_Z9e07vEQ">
                   <tags>General</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_Y2c0Jm1yEeyUO_Z9e07vEQ" elementId="org.eclipse.ui.views.ContentOutline" ref="_Y2dcTm1yEeyUO_Z9e07vEQ" closeable="true">
                     <tags>View</tags>
@@ -137,7 +137,7 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_Y2db3G1yEeyUO_Z9e07vEQ" elementId="org.eclipse.ui.editorss" selectedElement="_Y2db3W1yEeyUO_Z9e07vEQ">
-      <children xsi:type="basic:PartStack" xmi:id="_Y2db3W1yEeyUO_Z9e07vEQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_uq5VcHIgEeyIybZlu77B0Q">
+      <children xsi:type="basic:PartStack" xmi:id="_Y2db3W1yEeyUO_Z9e07vEQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_Y2dbIW1yEeyUO_Z9e07vEQ">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
@@ -150,7 +150,6 @@
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.knime.workbench.editor.WorkflowEditor</tags>
-          <tags>active</tags>
           <tags>activeOnClose</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_CQ1aQHIhEeyIybZlu77B0Q" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label=".log" iconURI="platform:/plugin/org.eclipse.ui.editors/icons/full/obj16/file_obj.png" closeable="true">
@@ -206,11 +205,12 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_Y2dcT21yEeyUO_Z9e07vEQ" elementId="org.eclipse.ui.views.ContentOutline">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_Y2dcUm1yEeyUO_Z9e07vEQ" elementId="org.eclipse.ui.views.ContentOutline" visible="false"/>
+      <toolbar xmi:id="_Y2dcUm1yEeyUO_Z9e07vEQ" elementId="org.eclipse.ui.views.ContentOutline"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_Y2dcU21yEeyUO_Z9e07vEQ" elementId="org.knime.workbench.helpview" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Description" iconURI="platform:/plugin/org.knime.workbench.editor/icons/node_description.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.knime.workbench.descriptionview.DescriptionView"/>
@@ -222,7 +222,7 @@
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_Y2dcVW1yEeyUO_Z9e07vEQ" elementId="org.knime.workbench.helpview"/>
+      <toolbar xmi:id="_Y2dcVW1yEeyUO_Z9e07vEQ" elementId="org.knime.workbench.helpview" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_Y2dcVm1yEeyUO_Z9e07vEQ" elementId="org.knime.workbench.workflowcoach.view" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Workflow Coach" iconURI="platform:/plugin/org.knime.workbench.workflowcoach/icons/workflow-coach.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.knime.workbench.workflowcoach.ui.WorkflowCoachView"/>
@@ -242,11 +242,13 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:KNIME Views</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_5geX4HIgEeyIybZlu77B0Q" elementId="org.knime.workbench.nodemonitorview.nodemonitorview">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_5geX4XIgEeyIybZlu77B0Q" elementId="org.knime.workbench.nodemonitorview.nodemonitorview" visible="false"/>
+      <toolbar xmi:id="_5geX4XIgEeyIybZlu77B0Q" elementId="org.knime.workbench.nodemonitorview.nodemonitorview"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_Y2dcW21yEeyUO_Z9e07vEQ" elementId="com.knime.workbench.hubview" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="KNIME Hub" iconURI="platform:/plugin/com.knime.workbench.hubview/icons/knime.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="com.knime.workbench.hubview.HubView"/>
@@ -270,7 +272,7 @@
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_z7hhkXIgEeyIybZlu77B0Q" elementId="org.eclipse.pde.runtime.LogView"/>
+      <toolbar xmi:id="_z7hhkXIgEeyIybZlu77B0Q" elementId="org.eclipse.pde.runtime.LogView" visible="false"/>
     </sharedElements>
     <trimBars xmi:id="_Y2dcXG1yEeyUO_Z9e07vEQ" elementId="org.eclipse.ui.main.toolbar" contributorURI="platform:/plugin/org.eclipse.ui.workbench">
       <children xsi:type="menu:ToolBar" xmi:id="_Y2dcXW1yEeyUO_Z9e07vEQ" elementId="main">

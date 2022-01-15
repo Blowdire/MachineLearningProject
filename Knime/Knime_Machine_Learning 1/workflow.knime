@@ -8,10 +8,14 @@
         <entry key="authored-by" type="xstring" value="Ruben"/>
         <entry key="authored-when" type="xstring" value="2021-12-19 16:01:30 +0100"/>
         <entry key="lastEdited-by" type="xstring" value="Ruben"/>
-        <entry key="lastEdited-when" type="xstring" value="2022-01-10 15:28:59 +0100"/>
+        <entry key="lastEdited-when" type="xstring" value="2022-01-13 14:14:08 +0100"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="EXECUTED"/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <config key="nodecontainer_message">
+        <entry key="type" type="xstring" value="ERROR"/>
+        <entry key="message" type="xstring" value="Residuals Analysis 0:96: R Plot 0:96:89: Could not connect to R. Probably, the R-Server is not running.%%00010Here's what you need to do:%%00010 1) Check what R-server-host is configured in your Knime preferences.%%00010 2) If your host is set to be 'localhost' start R and run the following command%%00010 library(Rserve); Rserve(args = &quot;--vanilla&quot;)%%00010Residuals Analysis 0:95: R Plot 0:95:89: Could not connect to R. Probably, the R-Server is not running.%%00010Here's what you need to do:%%00010 1) Check what R-server-host is configured in your Knime preferences.%%00010 2) If your host is set to be 'localhost' start R and run the following command%%00010 library(Rserve); Rserve(args = &quot;--vanilla&quot;)"/>
+    </config>
     <config key="workflow_credentials"/>
     <config key="annotations">
         <config key="annotation_0">

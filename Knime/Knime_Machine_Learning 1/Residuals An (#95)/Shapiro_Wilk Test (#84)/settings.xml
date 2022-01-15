@@ -6,13 +6,13 @@
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="shapiro-p-value"/>
             <entry key="class" type="xstring" value="DOUBLE"/>
-            <entry key="value" type="xdouble" value="0.0025792224472364067"/>
+            <entry key="value" type="xdouble" value="0.03670719349713014"/>
         </config>
         <config key="Variable_1">
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="shapiro-statistic"/>
             <entry key="class" type="xstring" value="DOUBLE"/>
-            <entry key="value" type="xdouble" value="0.9210750572278464"/>
+            <entry key="value" type="xdouble" value="0.9507732811038362"/>
         </config>
     </config>
     <config key="internal_node_subsettings">

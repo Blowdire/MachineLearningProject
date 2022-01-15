@@ -15,7 +15,7 @@
             <entry key="type" type="xstring" value="variable"/>
             <entry key="name" type="xstring" value="maxIterations"/>
             <entry key="class" type="xstring" value="INTEGER"/>
-            <entry key="value" type="xint" value="0"/>
+            <entry key="value" type="xint" value="-1"/>
         </config>
         <config key="Loop_Execute_3">
             <entry key="type" type="xstring" value="loopcontext_execute"/>
@@ -93,6 +93,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" value="filestore"/>
-        <entry key="file_store_id" type="xstring" value="e93db5d2-c349-42a9-989e-b92bf8a69585"/>
+        <entry key="file_store_id" type="xstring" value="b7e802f5-650e-4343-9522-9d7aa7a0bf28"/>
     </config>
 </config>

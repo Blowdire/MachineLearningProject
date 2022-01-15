@@ -13,13 +13,13 @@
             <config key="lower_bound">
                 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
                 <config key="org.knime.core.data.def.DoubleCell">
-                    <entry key="DoubleCell" type="xdouble" value="0.7209519154098633"/>
+                    <entry key="DoubleCell" type="xdouble" value="0.7211907576411037"/>
                 </config>
             </config>
             <config key="upper_bound">
                 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
                 <config key="org.knime.core.data.def.DoubleCell">
-                    <entry key="DoubleCell" type="xdouble" value="0.7709133026888491"/>
+                    <entry key="DoubleCell" type="xdouble" value="0.7701931881167561"/>
                 </config>
             </config>
         </config>
@@ -38,13 +38,13 @@
             <config key="lower_bound">
                 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
                 <config key="org.knime.core.data.def.DoubleCell">
-                    <entry key="DoubleCell" type="xdouble" value="0.8410350336578786"/>
+                    <entry key="DoubleCell" type="xdouble" value="0.8533087116392518"/>
                 </config>
             </config>
             <config key="upper_bound">
                 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
                 <config key="org.knime.core.data.def.DoubleCell">
-                    <entry key="DoubleCell" type="xdouble" value="0.8933745536735433"/>
+                    <entry key="DoubleCell" type="xdouble" value="0.8836352625641152"/>
                 </config>
             </config>
         </config>
@@ -63,13 +63,13 @@
             <config key="lower_bound">
                 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
                 <config key="org.knime.core.data.def.DoubleCell">
-                    <entry key="DoubleCell" type="xdouble" value="0.7234840914082069"/>
+                    <entry key="DoubleCell" type="xdouble" value="0.7249510298791172"/>
                 </config>
             </config>
             <config key="upper_bound">
                 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
                 <config key="org.knime.core.data.def.DoubleCell">
-                    <entry key="DoubleCell" type="xdouble" value="0.7684900092851586"/>
+                    <entry key="DoubleCell" type="xdouble" value="0.7712679115787731"/>
                 </config>
             </config>
         </config>
@@ -88,13 +88,13 @@
             <config key="lower_bound">
                 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
                 <config key="org.knime.core.data.def.DoubleCell">
-                    <entry key="DoubleCell" type="xdouble" value="0.7210273654718676"/>
+                    <entry key="DoubleCell" type="xdouble" value="0.7215536118632537"/>
                 </config>
             </config>
             <config key="upper_bound">
                 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
                 <config key="org.knime.core.data.def.DoubleCell">
-                    <entry key="DoubleCell" type="xdouble" value="0.771277307088796"/>
+                    <entry key="DoubleCell" type="xdouble" value="0.7703192891200735"/>
                 </config>
             </config>
         </config>
@@ -113,13 +113,13 @@
             <config key="lower_bound">
                 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
                 <config key="org.knime.core.data.def.DoubleCell">
-                    <entry key="DoubleCell" type="xdouble" value="0.8409320094924914"/>
+                    <entry key="DoubleCell" type="xdouble" value="0.85187054137782"/>
                 </config>
             </config>
             <config key="upper_bound">
                 <entry key="datacell" type="xstring" value="org.knime.core.data.def.DoubleCell"/>
                 <config key="org.knime.core.data.def.DoubleCell">
-                    <entry key="DoubleCell" type="xdouble" value="0.8886947114486159"/>
+                    <entry key="DoubleCell" type="xdouble" value="0.8827750912603091"/>
                 </config>
             </config>
         </config>
@@ -128,13 +128,13 @@
     </config>
     <config key="statsR_Squared Linear Regression">
         <entry key="array-size" type="xint" value="7"/>
-        <entry key="0" type="xdouble" value="0.7209519154098633"/>
-        <entry key="1" type="xdouble" value="0.7209519154098633"/>
-        <entry key="2" type="xdouble" value="0.7310529601275065"/>
-        <entry key="3" type="xdouble" value="0.7459873179532848"/>
-        <entry key="4" type="xdouble" value="0.7680855535519474"/>
-        <entry key="5" type="xdouble" value="0.7709133026888491"/>
-        <entry key="6" type="xdouble" value="0.7709133026888491"/>
+        <entry key="0" type="xdouble" value="0.7211907576411037"/>
+        <entry key="1" type="xdouble" value="0.7211907576411037"/>
+        <entry key="2" type="xdouble" value="0.7386707763079181"/>
+        <entry key="3" type="xdouble" value="0.7454401592699882"/>
+        <entry key="4" type="xdouble" value="0.7591208901639366"/>
+        <entry key="5" type="xdouble" value="0.7701931881167561"/>
+        <entry key="6" type="xdouble" value="0.7701931881167561"/>
     </config>
     <config key="mildrowR_Squared Linear Regression"/>
     <config key="mildR_Squared Linear Regression">
@@ -146,13 +146,13 @@
     </config>
     <config key="statsR_Squared Random Forest">
         <entry key="array-size" type="xint" value="7"/>
-        <entry key="0" type="xdouble" value="0.8410350336578786"/>
-        <entry key="1" type="xdouble" value="0.8410350336578786"/>
-        <entry key="2" type="xdouble" value="0.8544847545584598"/>
-        <entry key="3" type="xdouble" value="0.8658728942603945"/>
-        <entry key="4" type="xdouble" value="0.8850173554875157"/>
-        <entry key="5" type="xdouble" value="0.8933745536735433"/>
-        <entry key="6" type="xdouble" value="0.8933745536735433"/>
+        <entry key="0" type="xdouble" value="0.8533087116392518"/>
+        <entry key="1" type="xdouble" value="0.8533087116392518"/>
+        <entry key="2" type="xdouble" value="0.8559403178756163"/>
+        <entry key="3" type="xdouble" value="0.8717530310760261"/>
+        <entry key="4" type="xdouble" value="0.8777507272649666"/>
+        <entry key="5" type="xdouble" value="0.8836352625641152"/>
+        <entry key="6" type="xdouble" value="0.8836352625641152"/>
     </config>
     <config key="mildrowR_Squared Random Forest"/>
     <config key="mildR_Squared Random Forest">
@@ -164,13 +164,13 @@
     </config>
     <config key="statsR_Squared Polynomial Regression">
         <entry key="array-size" type="xint" value="7"/>
-        <entry key="0" type="xdouble" value="0.7234840914082069"/>
-        <entry key="1" type="xdouble" value="0.7234840914082069"/>
-        <entry key="2" type="xdouble" value="0.7328545659700172"/>
-        <entry key="3" type="xdouble" value="0.743140108809053"/>
-        <entry key="4" type="xdouble" value="0.7667226969713241"/>
-        <entry key="5" type="xdouble" value="0.7684900092851586"/>
-        <entry key="6" type="xdouble" value="0.7684900092851586"/>
+        <entry key="0" type="xdouble" value="0.7249510298791172"/>
+        <entry key="1" type="xdouble" value="0.7249510298791172"/>
+        <entry key="2" type="xdouble" value="0.7388458669278193"/>
+        <entry key="3" type="xdouble" value="0.7441392890032962"/>
+        <entry key="4" type="xdouble" value="0.7562476952763858"/>
+        <entry key="5" type="xdouble" value="0.7712679115787731"/>
+        <entry key="6" type="xdouble" value="0.7712679115787731"/>
     </config>
     <config key="mildrowR_Squared Polynomial Regression"/>
     <config key="mildR_Squared Polynomial Regression">
@@ -182,13 +182,13 @@
     </config>
     <config key="statsR_Squared XgBoost">
         <entry key="array-size" type="xint" value="7"/>
-        <entry key="0" type="xdouble" value="0.7210273654718676"/>
-        <entry key="1" type="xdouble" value="0.7210273654718676"/>
-        <entry key="2" type="xdouble" value="0.731137515228564"/>
-        <entry key="3" type="xdouble" value="0.7461603312119255"/>
-        <entry key="4" type="xdouble" value="0.7674751319990107"/>
-        <entry key="5" type="xdouble" value="0.771277307088796"/>
-        <entry key="6" type="xdouble" value="0.771277307088796"/>
+        <entry key="0" type="xdouble" value="0.7215536118632537"/>
+        <entry key="1" type="xdouble" value="0.7215536118632537"/>
+        <entry key="2" type="xdouble" value="0.7391839512712434"/>
+        <entry key="3" type="xdouble" value="0.7453529104430954"/>
+        <entry key="4" type="xdouble" value="0.7585939825306226"/>
+        <entry key="5" type="xdouble" value="0.7703192891200735"/>
+        <entry key="6" type="xdouble" value="0.7703192891200735"/>
     </config>
     <config key="mildrowR_Squared XgBoost"/>
     <config key="mildR_Squared XgBoost">
@@ -200,13 +200,13 @@
     </config>
     <config key="statsR_Squared Tree Ensemble">
         <entry key="array-size" type="xint" value="7"/>
-        <entry key="0" type="xdouble" value="0.8409320094924914"/>
-        <entry key="1" type="xdouble" value="0.8409320094924914"/>
-        <entry key="2" type="xdouble" value="0.8529964861935533"/>
-        <entry key="3" type="xdouble" value="0.8651708567010334"/>
-        <entry key="4" type="xdouble" value="0.885183724308505"/>
-        <entry key="5" type="xdouble" value="0.8886947114486159"/>
-        <entry key="6" type="xdouble" value="0.8886947114486159"/>
+        <entry key="0" type="xdouble" value="0.85187054137782"/>
+        <entry key="1" type="xdouble" value="0.85187054137782"/>
+        <entry key="2" type="xdouble" value="0.8558372238914361"/>
+        <entry key="3" type="xdouble" value="0.8719878003180439"/>
+        <entry key="4" type="xdouble" value="0.8787497774472912"/>
+        <entry key="5" type="xdouble" value="0.8827750912603091"/>
+        <entry key="6" type="xdouble" value="0.8827750912603091"/>
     </config>
     <config key="mildrowR_Squared Tree Ensemble"/>
     <config key="mildR_Squared Tree Ensemble">
